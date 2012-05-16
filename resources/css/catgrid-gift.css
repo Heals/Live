@@ -1,0 +1,15 @@
+#category-left-nav {float:left;width:200px;background-color:#f1f1f1;}
+.leftnav-header p{color:#333333;text-decoration: none;display: block;padding: 0 0 0 20px;text-transform:uppercase;font-size:14px;margin:8px 0 15px 0;}
+.accordion_area {width: 200px;margin:0 0 15px 0;background-color:#f1f1f1;}
+h5.acc_trigger_gift {width: 190px;font-size: 11px;float: left;background-color:#f1f1f1;margin:0;padding-top:10px;padding-bottom:10px;float: left;}
+h5.acc_trigger_gift a {color:#333333;text-decoration: none;display: block;padding: 0 0 0 20px;text-transform:uppercase;background: url(../images/bg_arrowdown_bullet.gif) 5px 5px no-repeat;}
+h5.acc_trigger_gift a:hover {text-decoration:underline;}
+h5.active {background-position: left bottom;}
+.acc_accordion_area{margin: 0 0 0 5px; padding: 0;width: 190px;background-color:#f1f1f1;overflow: hidden;float: left;}
+.acc_accordion_area .block_gifts:hover, .shopbybrand_area .block_gift_voucher:hover{cursor:pointer;}
+.acc_accordion_area .block_gifts p, .shopbybrand_area .block_gift_voucher p{border-bottom:1px dotted #cccccc;padding-top:5px;padding-bottom:5px;margin:0;}
+.acc_accordion_area .block_gifts p:hover, .shopbybrand_area .block_gift_voucher p:hover{background-color:#f0c7d6;}
+.acc_accordion_area .block_gifts p a, .shopbybrand_area .block_gift_voucher p a{color:#666666;text-decoration:none;margin-left:15px;display:block;}
+.border-top {border-top:1px dotted #cccccc;}
+.shopbybrand_area .block_gift_voucher {padding:50px 8px 0 7px; margin:0;}
+.shopbybrand_area {margin: 0 0 0 5px;}

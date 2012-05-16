@@ -1,0 +1,14 @@
+#myaccountWrapper {width:940px;height:auto;overflow:hidden;}
+.myaccountLeftnav-header {float:left;}
+.myaccountLeftnav {width:197px;background-color:#F1F1F1;float:left;padding-bottom:32767px;margin-bottom:-32767px;border:1px solid #b4b4b4;clear:both;}
+.myaccountLeftnav-contents {margin:5px;}
+.myaccountLeftnav-contents img {margin-bottom:15px;}
+.myaccountLeftnav-contents a {margin-left:15px;color:#333;}
+.myaccountLeftnav-contents p {margin-left:15px;color:#333;}
+.leftnavLine {margin:15px 0 10px 0;background-color:#b4b4b4;height:1px;width:187px;clear:both;}
+.myaccountDetails {width:709px;background-color:#F1F1F1;height:100%;margin-left:10px;float:left;border:1px solid #b4b4b4;padding:10px;}
+.myaccountDetails p {margin:0 0 10px 0;}
+.myaccountDetails img {margin:10px 3px 0 0;float:left;}
+.myaccountDetails-body {width:687px;height:auto;border:1px solid #b4b4b4;background-color:#EAE4E7;clear:both;}
+.myaccountDetails-body {padding:10px;}
+.f-myformdetail, .f-oradeadd {border:0;}

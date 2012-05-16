@@ -1,0 +1,92 @@
+.leftnav-header p{color:#333333;text-decoration: none;display: block;padding: 0 0 0 5px;text-transform:uppercase;font-size:14px;margin:8px 0 15px 0;}
+#content-default_nocoltwothree, #productdetail_bottom {
+background:none;}
+#category-container {width:940px;background-color:#ffffff;height:auto;overflow:hidden;}
+#category-left-nav {width:190px;background-color:#f1f1f1;float:left;padding-bottom: 32767px;margin-bottom: -32767px;}
+.accordion_area {width: 190px;margin:0 0 15px 0;background-color:#f1f1f1;height:auto;}
+h5.acc_trigger, h5.acc_trigger_gift {width: 190px;font-size: 11px;float: left;background-color:#f1f1f1;margin:0;padding-top:10px;padding-bottom:10px;float: left;}
+h5.acc_trigger a, h5.acc_trigger_gift a {color:#333333;text-decoration: none;display: block;padding: 0 0 0 20px;text-transform:uppercase;background: url(../images/bg_arrowdown_bullet.gif) 5px 5px no-repeat;}
+h5.acc_trigger a:hover, h5.acc_trigger_gift a:hover {text-decoration:underline;}
+h5.active {background-position: left bottom;}
+.acc_accordion_area, .shopbybrand_area {margin: 0; padding: 0;width: 190px;background-color:#f1f1f1;overflow: hidden;float: left;}
+.acc_accordion_area .block_christmas, .shopbybrand_area .block_christmas, .acc_accordion_area .block_office, .shopbybrand_area .block_office, .acc_accordion_area .block_dining, .shopbybrand_area .block_dining, .acc_accordion_area .block_furniture, .shopbybrand_area .block_furniture, .acc_accordion_area .block_accessories, .shopbybrand_area .block_accessories, .acc_accordion_area .block_lighting, .shopbybrand_area .block_lighting, .acc_accordion_area .block_gifts, .shopbybrand_area .block_gifts, .acc_accordion_area .block_toiletries, .shopbybrand_area .block_toiletries, .acc_accordion_area .block_garden, .shopbybrand_area .block_garden, .acc_accordion_area .block_bathroom, .shopbybrand_area .block_bathroom, .acc_accordion_area .block_bedroom, .shopbybrand_area .block_bedroom, .acc_accordion_area .block_sale, .shopbybrand_area .block_sale{margin:0 5px 0 5px;padding:0;}
+.shopbybrand_area .block_gift_voucher {margin:50px 8px 0 7px; padding:0;}
+.acc_accordion_area .block_dining:hover, .shopbybrand_area .block_dining:hover, .acc_accordion_area .block_office:hover, .shopbybrand_area .block_office:hover, .acc_accordion_area .block_christmas:hover, .shopbybrand_area .block_christmas:hover, .acc_accordion_area .block_furniture:hover, .shopbybrand_area .block_furniture:hover, .acc_accordion_area .block_accessories:hover, .shopbybrand_area .block_accessories:hover, .acc_accordion_area .block_lighting:hover, .shopbybrand_area .block_lighting:hover, .acc_accordion_area .block_gifts:hover, .shopbybrand_area .block_gifts:hover, .acc_accordion_area .block_toiletries:hover, .shopbybrand_area .block_toiletries:hover, .acc_accordion_area .block_garden:hover, .shopbybrand_area .block_garden:hover, .acc_accordion_area .block_bathroom:hover, .shopbybrand_area .block_bathroom:hover, .acc_accordion_area .block_bedroom:hover, .shopbybrand_area .block_bedroom:hover, .acc_accordion_area .block_sale:hover, .shopbybrand_area .block_sale:hover, .shopbybrand_area .block_gift_voucher:hover {cursor:pointer;}
+.acc_accordion_area .block_dining p, .shopbybrand_area .block_dining p, .acc_accordion_area .block_furniture p, .shopbybrand_area .block_furniture p, .acc_accordion_area .block_accessories p, .shopbybrand_area .block_accessories p, .acc_accordion_area .block_lighting p, .shopbybrand_area .block_lighting p, .acc_accordion_area .block_gifts p, .shopbybrand_area .block_gifts p, .acc_accordion_area .block_toiletries p, .shopbybrand_area .block_toiletries p, .acc_accordion_area .block_garden p, .shopbybrand_area .block_garden p, .acc_accordion_area .block_bathroom p, .shopbybrand_area .block_bathroom p, .acc_accordion_area .block_bedroom p, .shopbybrand_area .block_bedroom p, .acc_accordion_area .block_sale p, .shopbybrand_area .block_sale p, .acc_accordion_area .block_office p, .shopbybrand_area .block_office p, .acc_accordion_area .block_christmas p, .shopbybrand_area .block_christmas p, .shopbybrand_area .block_gift_voucher p {border-bottom:1px dotted #cccccc;padding-top:5px;padding-bottom:5px;margin:0;}
+.acc_accordion_area .block_dining p:hover, .shopbybrand_area .block_dining p:hover {background-color:#e8e5dc;}
+.acc_accordion_area .block_furniture p:hover, .shopbybrand_area .block_furniture p:hover {background-color:#E6E3EF;}
+.acc_accordion_area .block_accessories p:hover, .shopbybrand_area .block_accessories p:hover {background-color:#f0eadd;}
+.acc_accordion_area .block_lighting p:hover, .shopbybrand_area .block_lighting p:hover {background-color:#e2e2e2;}
+.acc_accordion_area .block_gifts p:hover, .shopbybrand_area .block_gifts p:hover, .shopbybrand_area .block_gift_voucher p:hover {background-color:#f0c7d6;}
+.acc_accordion_area .block_toiletries p:hover, .shopbybrand_area .block_toiletries p:hover {background-color:#ddeee6;}
+.acc_accordion_area .block_garden p:hover, .shopbybrand_area .block_garden p:hover {background-color:#ced698;}
+.acc_accordion_area .block_bathroom p:hover, .shopbybrand_area .block_bathroom p:hover {background-color:#ddeee6;}
+.acc_accordion_area .block_office p:hover, .shopbybrand_area .block_office p:hover {background-color:#f8e8de;}
+.acc_accordion_area .block_bedroom p:hover, .shopbybrand_area .block_bedroom p:hover {background-color:#d3dde7;}
+.acc_accordion_area .block_sale p:hover, .shopbybrand_area .block_sale p:hover {background-color:#ecc3c0;}
+.acc_accordion_area .block_christmas p:hover, .shopbybrand_area .block_christmas p:hover {background-color:#d7bdc9;}
+.acc_accordion_area .block_dining p a, .acc_accordion_area .block_office p a, .shopbybrand_area .block_office p a, .acc_accordion_area .block_christmas p a, .shopbybrand_area .block_christmas p a, .shopbybrand_area .block_dining p a, .acc_accordion_area .block_furniture p a, .shopbybrand_area .block_furniture p a, .acc_accordion_area .block_accessories p a, .shopbybrand_area .block_accessories p a, .acc_accordion_area .block_lighting p a, .shopbybrand_area .block_lighting p a, .acc_accordion_area .block_gifts p a, .shopbybrand_area .block_gifts p a, .acc_accordion_area .block_toiletries p a, .shopbybrand_area .block_toiletries p a, .acc_accordion_area .block_garden p a, .shopbybrand_area .block_garden p a, .acc_accordion_area .block_bathroom p a, .shopbybrand_area .block_bathroom p a, .acc_accordion_area .block_bedroom p a, .shopbybrand_area .block_bedroom p a, .acc_accordion_area .block_sale p a, .shopbybrand_area .block_sale p a, .shopbybrand_area .block_gift_voucher p a {color:#666666;text-decoration:none;margin-left:15px;display:block;}
+.border-top {border-top:1px dotted #cccccc;}
+#category-main-content {width:740px;background-color:#f1f1f1;height:100%;margin-left:10px;float:left;}
+#categorylist {background-color: #ffffff;}
+#sub_categories {width:740px;height:auto;}
+.sub_category_grid {width:234px;height:276px;border:1px solid #cccccc;margin:8px 0 8px 8px;float:left;}
+.sub_category_image {width:234px;height:145px;border:0;}
+.sub_category_title {background:url(../images/gradient.gif);background-repeat-x: repeat;background-repeat-y: norepeat;background-position-x: 0px;background-position-y: 0px;width:234px;height:23px;border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;padding-top:5px;}
+.sub_category_title a {color:#333333;font-size:13px;margin:10px;text-decoration:none;text-transform:uppercase;}
+.sub_category_title a:hover {color:#333333;font-size:13px;text-decoration:underline;}
+.sub_category_sub_headings_christmas,
+.sub_category_sub_headings_office,
+.sub_category_sub_headings_dining, .sub_category_sub_headings_furniture, .sub_category_sub_headings_accessories,
+.sub_category_sub_headings_lighting, .sub_category_sub_headings_gifts, .sub_category_sub_headings_toiletries, .sub_category_sub_headings_garden, .sub_category_sub_headings_bathroom, .sub_category_sub_headings_bedroom, .sub_category_sub_headings_sale{width:234px;height:98px;padding-top:3px;}
+.sub_category_sub_headings_christmas{background:#d7bdc9;}
+.sub_category_sub_headings_office{background:#f8e8de;}
+.sub_category_sub_headings_dining{background:#e8e5dc;}
+.sub_category_sub_headings_furniture{background:#E6E3EF;}
+.sub_category_sub_headings_accessories{background:#f0eadd;}
+.sub_category_sub_headings_lighting{background:#e2e2e2;}
+.sub_category_sub_headings_gifts{background:#f0c7d6;}
+.sub_category_sub_headings_toiletries{background:#ddeee6;}
+.sub_category_sub_headings_garden{background:#ced698;}
+.sub_category_sub_headings_bathroom{background:#ddeee6;}
+.sub_category_sub_headings_bedroom{background:#d3dde7;}
+.sub_category_sub_headings_sale{background:#ecc3c0;}
+.sub_headings {margin-left:10px;width:234px;height:16px;}
+.sub_headings a {color:#444444;text-decoration:none;float:left;width:243px;}
+.sub_headings a:hover {color:#333333;text-decoration:underline;}
+.category-top-banner {width:724px;height:232px;background-color:#ffffff;margin:8px;z-index:50;}
+.seotext-overlay {width:230px;height:111px;margin:56px 0 0 492px;z-index:100;position:absolute;}
+.seotext-overlay p {font-size:11px;color:#ffffff;}
+.slider_container {width:740px;height:283px;background-color:#f1f1f1;float:left;}
+.slider_inner {width:724px;height:275px;margin:8px;}
+.slider_tab{width:724px;height:30px;float:left;}
+.slider_tab a{width:169px;height:30px;margin-right:6px;float:left;text-align: center;padding: 7px;text-decoration: none;color: #555555;background-color:#e0e0e0;}
+.slider_tab a.active{background: #ffffff;color:#333333;}
+.slider_body {width:724px;height:237px;background-color:#ffffff;float:left;position: relative;}
+.slider_product {width:171px;height:221px;background-color:#e6e6e6;position:relative;z-index:500;margin:8px 0 0 8px;float:left;}
+.title_slider {float: left;vertical-align: text-top;padding:0;margin:0;height:27px;width:167px;overflow:hidden;}
+h2 {text-transform: uppercase;text-align: left;padding: 0px 4px 0px 4px;font-size:10px;color:#666666;margin:0;}
+.slider_carousel {position: absolute;top: 0;left: 0;}
+.window {height:229px;width:724px;overflow: hidden;position: relative;}
+.slider_carousel1, .slider_carousel2 {height:229px;width: 724px;float:left;position:absolute;}
+.slider_carousel1 li, .slider_carousel2 li{display:inline;}
+.slider_carousel1 {left:0;}
+.slider_carousel2 {left:724px;}
+.slider_carousel1 ul, .slider_carousel2 ul {margin-top:0;width: 100%;padding:0;list-style: none;}
+.normalprice {display: block;padding: 5px 5px 0 0;font-weight: bold;font-size: 12px;margin: 0;float: right;}
+.fromprice {display: block;padding: 5px 5px 0 4px;font-weight: normal;font-size: 11px;margin: 0;float: right;text-transform:uppercase;}
+.fromprice span {font-weight: bold;font-size: 12px;margin: 0;padding: 0;}
+.fromsaleprice {display: block;text-transform: uppercase;color: #C00;font-size: 11px;margin: 0;padding: 5px 5px 0 0;float: right;}
+.fromsaleprice span {font-weight: bold;font-size: 12px;margin: 0;padding: 0;}
+.wasprice {color: #6D6D6D;display: block;text-decoration: none;margin: 0;padding: 5px 0 0 4px;font-size:11px;height:0;float:left;}
+.wasprice span {text-decoration:line-through;font-weight: bold;font-size:12px;}
+.nowprice {display: block;font-weight: normal;margin:0;padding: 5px 4px 0 0;float: right;color: #C00 !important;font-size:11px}
+.nowprice span {font-weight: bold;font-size:12px;}
+.shopbybrand_area .block_sbb{margin:0 5px 0 5px;padding:0;}
+.shopbybrand_area .block_sbb:hover {cursor:pointer;}
+.shopbybrand_area .block_sbb p {border-bottom:1px dotted #cccccc;padding-top:5px;padding-bottom:5px;margin:0;}
+.shopbybrand_area .block_sbb p:hover {background-color:#e2e2e2;}
+.shopbybrand_area .block_sbb p a {color:#666666;text-decoration:none;margin-left:15px;display:block;}
+.sub_category_grid_sbb {width:234px;height:auto;border:1px solid #cccccc;margin:8px 0 8px 8px;float:left;padding-bottom: 10px;background-color: white;}
+.sub_category_sbb_letter {width:234px;height:70px;border:0;background-color:#ffffff;}
+.sub_category_sub_headings_sbb_row1, .sub_category_sub_headings_sbb_row2, .sub_category_sub_headings_sbb_row3, .sub_category_sub_headings_sbb_row4, .sub_category_sub_headings_sbb_row5, .sub_category_sub_headings_sbb_row6, .sub_category_sub_headings_sbb_row7, .sub_category_sub_headings_sbb_row8{width:234px;auto;padding-top:3px;background-color:#ffffff;}
