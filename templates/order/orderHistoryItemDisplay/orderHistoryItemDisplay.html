@@ -1,0 +1,101 @@
+<venda_detblock_item>
+	<venda_tpcomment><!-- standard products detblock include --></venda_tpcomment>
+	<venda_block label=12,oiivref=notnull>
+		<li>
+
+<span class="qtyof"><venda_oiqty></span> x 	
+<venda_tpcomment><!-- if product is not a gift certificate --></venda_tpcomment>
+
+<venda_block label=35,oiivref!=giftcert>
+<span class="sku"><venda_invtref></span> - 
+<venda_block label=111,invtatt1=notnull>
+<venda_tpcomment><!-- attributes --></venda_tpcomment>
+<a href="<venda_dispview invt=<venda_invtparef>>"><venda_oiivname><venda_block label=211,oicf_description=notnull> - <venda_oicf_description></venda_block label=211></a> <venda_text id=site.my_account.order_history.product_name.attribute_start><venda_invtatt1><venda_block label=112,invtatt2=notnull><venda_text id=site.my_account.order_history.product_name.attribute_separator><venda_invtatt2></venda_block label=112><venda_block label=113,invtatt3=notnull><venda_text id=site.my_account.order_history.product_name.attribute_separator><venda_invtatt3></venda_block label=113><venda_block label=114,invtatt4=notnull><venda_text id=site.my_account.order_history.product_name.attribute_separator><venda_invtatt4></venda_block label=114><venda_text id=site.my_account.order_history.product_name.attribute_end></venda_block label=111>
+<venda_block label=115,invtatt1=null><venda_tpcomment><!-- no attributes --></venda_tpcomment><a href="<venda_dispview invt=<venda_oiivref>>"><venda_oiivname><venda_block label=215,oicf_description=notnull> - <venda_oicf_description></venda_block label=215></a></venda_block label=115>
+<span class="orderextendfield"><venda_extflds exfldtype=orderitem,group=1,template=oixfields_display,type=includes,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixfields_display,type=includes,ref=<venda_invtref>,displayonly=1></span>
+<venda_block label=2more,oiqty&gt;1>
+<br />Price: £<venda_oisub> each.
+</venda_block label=2more>
+<br /><br /><font style="float:right;font-weight:bold;">Product Total: £<venda_oiextsub></font>
+</venda_block label=35>
+			
+			<venda_tpcomment><!-- if product is a gift certificate --></venda_tpcomment>
+			<venda_block label=36,oiivref=giftcert><a href="<venda_codehttp>?ex=co_wizr-giftcertificates&bsref=<venda_bsref>"><venda_oiivname></a>
+			<input type=hidden name=amount-<venda_lineid> value="<venda_invtsymsell>">
+			<input type=hidden name=comment-<venda_lineid> value="<venda_oicmt>">
+			<input type=hidden name=email-<venda_lineid> value="<venda_rpemail>">
+			<input type=hidden name=to-<venda_lineid> value="<venda_gcto>">
+			<input type=hidden name=from-<venda_lineid> value="<venda_gcfrom>">
+<br /><br /><font style="float:right;font-weight:bold;">Product Total: £<venda_oiextsub></font>
+			</venda_block label=36>	
+		</li>
+	</venda_block label=12>
+</venda_detblock_item>
+
+<venda_tpcomment>
+<!-- 
+Bundle Types:
+Default = 0
+Product bundle = 1
+Customisationcost = 2
+
+The work to support bundles has only been tested to support default (forced products) and is based on similar work already completed for the shopcart. When the bundle product detail examples are complete this can be fully tested.
+-->
+</venda_tpcomment>	
+
+<venda_detblock_bundle>
+<li>
+<venda_tpcomment><!-- bundle products detblock include --></venda_tpcomment>
+	<venda_detblock_bundleditem>
+		<venda_block label=12,oiivref=notnull>
+			<venda_block label=496,mode=value,<venda_setting type=ebiz,name=bundletype>!=2,<venda_oiivtype>!=customisationcost,operator=or>
+			<venda_tpcomment><!-- Will show the bundle items for bundle type: default, product bundle and only the main product for customisationcost --></venda_tpcomment>	
+				<li class="bundlemain">
+					<span class="qty">
+					<venda_block label=513,mode=value,<venda_setting type=ebiz,name=bundletype>=0,<venda_setting type=ebiz,name=bundletype>=2,operator=or>
+						<venda_text id=site.my_account.order_history.bundlequantity>
+					</venda_block label=513>
+					<venda_block label=514,mode=value,<venda_setting type=ebiz,name=bundletype>=1>
+						<venda_text id=site.my_account.order_history.oiqty>
+					</venda_block label=514>		
+					</span>
+					
+					<venda_block label=111,invtatt1=notnull>
+					<venda_tpcomment><!-- if product has attributes --></venda_tpcomment>
+						 <venda_text id=site.my_account.order_history.product_name.attribute_start><venda_invtatt1><venda_block label=7,invtatt2=notnull><venda_text id=site.my_account.order_history.product_name.attribute_separator><venda_invtatt2></venda_block label=7><venda_block label=8,invtatt3=notnull><venda_text id=site.my_account.order_history.product_name.attribute_separator><venda_invtatt3></venda_block label=8><venda_block label=9,invtatt4=notnull><venda_text id=site.my_account.order_history.product_name.attribute_separator><venda_invtatt4></venda_block label=9><venda_text id=site.my_account.order_history.product_name.attribute_end><venda_extflds exfldtype=orderitem,group=1,template=oixfields_display,type=includes,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixfields_display,type=includes,ref=<venda_invtref>,displayonly=1><span class="sku"><venda_text id=site.my_account.order_history.product_sku><venda_invtref></span></span>
+					</venda_block label=111>
+			
+					<venda_block label=113,invtatt1=null>
+					<venda_tpcomment><!-- if product has no attributes --></venda_tpcomment>
+						<span class="name"><a href="<venda_dispview invt=<venda_invtref>>"><venda_invtname></a><venda_extflds exfldtype=orderitem,group=1,template=oixfields_display,type=includes,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixfields_display,type=includes,ref=<venda_invtref>,displayonly=1><span class="sku"><venda_text id=site.my_account.order_history.product_sku><venda_invtref></span></span>
+					</venda_block label=113>	
+				</li>	
+			11</venda_block label=496>		
+	
+			<venda_block label=886,mode=value,<venda_setting type=ebiz,name=bundletype>=2,<venda_oiivtype>=customisationcost>
+			<venda_tpcomment><!-- Customisationcost ivtype display - will only show if bundle type is 2 (customisationcost) and ivtype is customisationcost, the ivtype should be considered as an ebiz switch and everything inside label 886 might be better off in an include due to a very high chance of it being customised --></venda_tpcomment>	
+				<li class="customisationitem">
+					<venda_invtname>
+				</li>
+			</venda_block label=886>		
+		22</venda_block label=12>
+	33</venda_detblock_bundleditem>
+
+		<venda_block label=986,mode=value,<venda_setting type=ebiz,name=bundletype>=1>
+			<span class="bundleheader"><venda_text id=site.my_account.order_history.bundlequantity> <venda_text id=site.my_account.order_history.product_bundle.heading></span>
+		</venda_block label=986>
+
+		<venda_tpcomment><!-- generates each item within the bundle --></venda_tpcomment>	
+		<ul><venda_detail_bundleditem></ul>
+
+		<venda_block label=987,mode=value,<venda_setting type=ebiz,name=bundletype>=1>
+			<div class="endbundleline"></div>
+		</venda_block label=987>
+</li>
+</venda_detblock_bundle>
+
+<venda_tpcomment><!-- normal products --></venda_tpcomment>
+<venda_detail_item>
+
+<venda_tpcomment><!-- bundle products --></venda_tpcomment>
+<venda_detail_bundle>

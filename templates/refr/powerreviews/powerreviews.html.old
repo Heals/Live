@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<product_dump>
+<venda_detail>
+</product_dump>
+
+<venda_detblock><venda_block label=100,invtref1!=giftcert>
+<product>
+<product_id><venda_invtref1></product_id>
+<product_name><![CDATA[<venda_invtname1>]]></product_name>
+<pick_location><![CDATA[<venda_invtpickloc1>]]></pick_location>
+<price><venda_invtsell1></price>
+<was_price><venda_invtwas1></was_price>
+<short_description><![CDATA[<venda_invtdesc11>]]></short_description>
+<long_description><![CDATA[<venda_invtdesc21>]]></long_description>
+<small_image_url><venda_invtmedfilename1 key=thumb></small_image_url>
+<long_image_url><venda_invtmedfilename1 key=medium></long_image_url>
+<product_url><![CDATA[<venda_dispview invt=<venda_invtref1>>&source=powerreviews]]></product_url>
+<stock_level><venda_invtavail1></stock_level>
+<category><venda_cattree format=text,sep=&gt;></category>
+<brand><![CDATA[<venda_invtbrand1>]]></brand>
+</product>
+</venda_block label=100>
+</venda_detblock>

@@ -1,0 +1,83 @@
+<div id="buttons">
+<input type="image" onclick="document.loginform.registered[0].checked=false;document.loginform.registered[1].checked=true;" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/bt_login.gif" alt="<venda_text id=site.button.continue>" class="right">
+</div>
+
+<script type="text/javascript">
+<!-- 
+function cleanUp() {
+	if ((document.loginform.email.value.substring(0,1)=='<') || (document.loginform.email.value.substring(0,4)=='user')) {
+		document.loginform.email.value='';
+	}
+
+	if (document.loginform.password.value!='') {
+		document.loginform.password.value='';
+	}
+}
+
+cleanUp();
+
+function checkUser() {
+	if (document.loginform.password.value!='') {
+	
+	}
+}
+
+function checkemail(str) {
+	var filter =/^\w+[\+\.\w-]*@([\w-]+\.)*\w+[\w-]*\.([a-z]{2,7}|\d+)$/i;
+	return (filter.test(str));
+}
+
+function passEmail() {
+	if(document.loginform.registered[1].checked==true){
+		if (document.loginform.email.value=='') {
+			alert('<venda_text id=site.sign_in.js_validation.email_address>');
+			return false;
+		}
+		if (document.loginform.password.value=='') {
+			alert('<venda_text id=site.sign_in.js_validation.password>');
+			return false;
+		}
+	}
+	if (document.loginform.registered[0].checked==true) {
+		<venda_block label=151,usgrref=instore>
+		<venda_tpcomment>// instore users must log out if they wish to register as a normal user</venda_tpcomment>
+		alert('<venda_text id=site.sign_in.instore.js_alert>');
+		return false;
+		</venda_block label=151>
+		<venda_block label=152,usgrref!=instore>
+
+
+			<venda_block label=68,workflow!=shopcart,workflow!=refer,workflow!=giftlist>
+			var signInIframe = document.getElementById('iframewrapper'); <venda_tpcomment>// variable to check if the login is loaded via the popup</venda_tpcomment>
+			<venda_block label=29,mode=value,<venda_setting type=ebiz,name=bypasspclookup>!=1>
+			var locationURL = '<venda_codehttps>?ex=co_wizr-register&bsref=<venda_bsref>&step=zipcode&glxt=<venda_glxt mode=make,glxtusertype=>&log=2<venda_block label=20,mode=value,<venda_htxt mode=get,name=group>=press>&assignusgrref=press</venda_block label=20>';
+			</venda_block label=29>
+			<venda_block label=30,mode=value,<venda_setting type=ebiz,name=bypasspclookup>=1>
+			var locationURL = '<venda_codehttps>?ex=co_wizr-register&bsref=<venda_bsref>&step=billto&param1=details&glxt=<venda_glxt mode=make,glxtusertype=>&log=2<venda_block label=20,mode=value,<venda_htxt mode=get,name=group>=press>&assignusgrref=press</venda_block label=20>';
+			</venda_block label=30>
+			if(!signInIframe){location.href=locationURL;}
+			else{parent.location.href=locationURL;}
+			</venda_block label=68>
+            
+			<venda_block label=69,workflow=shopcart>
+			<venda_block label=32,mode=value,<venda_setting type=ebiz,name=bypasspclookup>!=1>location.href='<venda_codehttps>?ex=co_wizr-shopcart&bsref=<venda_bsref>&step=zipcode&param1=<venda_param1>&glxt=<venda_glxt mode=make,glxtusertype=>&log=2&htxt=<venda_htxt mode=make,step=1>';</venda_block label=32>
+                                <venda_block label=33,mode=value,<venda_setting type=ebiz,name=bypasspclookup>=1>location.href='<venda_codehttps>?ex=co_wizr-shopcart&bsref=<venda_bsref>&step=billto&param1=details&glxt=<venda_glxt mode=make,glxtusertype=>&log=2&htxt=<venda_htxt mode=make,step=1>';</venda_block label=33>
+			</venda_block label=69>
+            
+			<venda_block label=70,workflow=refer>
+			 <venda_block label=34,mode=value,<venda_setting type=ebiz,name=bypasspclookup>!=1>location.href='<venda_codehttps>?ex=co_wizr-refer&bsref=<venda_bsref>&step=zipcode&param1=<venda_param1>&glxt=<venda_glxt mode=make,glxtusertype=>&log=2';</venda_block label=34>
+                                <venda_block label=35,mode=value,<venda_setting type=ebiz,name=bypasspclookup>=1>location.href='<venda_codehttps>?ex=co_wizr-refer&bsref=<venda_bsref>&step=billto&param1=details&glxt=<venda_glxt mode=make,glxtusertype=>&log=2';</venda_block label=35>
+			</venda_block label=70>
+            
+            <venda_block label=71,workflow=giftlist>
+			<venda_block label=36,mode=value,<venda_setting type=ebiz,name=bypasspclookup>!=1>location.href='<venda_codehttps>?ex=co_wizr-register&bsref=<venda_bsref>&step=zipcode&glxt=<venda_glxt mode=make,glxtusertype=>&log=2';</venda_block label=36>
+                                <venda_block label=37,mode=value,<venda_setting type=ebiz,name=bypasspclookup>=1>location.href='<venda_codehttps>?ex=co_wizr-register&bsref=<venda_bsref>&step=billto&param1=details&glxt=<venda_glxt mode=make,glxtusertype=>&log=2';</venda_block label=37>
+			</venda_block label=71>
+				
+			return false;
+		</venda_block label=152>
+	}
+}
+// -->
+</script>
+

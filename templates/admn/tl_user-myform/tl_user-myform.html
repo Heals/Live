@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="
+<venda_entmediaadd>/ebiz/<venda_bsref>/resources/css/myaccount.css" type="text/css" media="screen, projector">
+<script>
+function hideTabs(a){$(a).hide()}function showTabs(a){$(a).show()}
+</script>
+<div class="myaccountDetails">
+<venda_userinfo>
+<p><span>Welcome <venda_sesname></span> to your Heals.co.uk account.
+<br><br>Please use the tabs below to add or edit delivery, billing or email address details and to amend your account password. Follow the links to the left to view your order history or request a Heal's brochure.</p>
+
+<venda_block label=emailyes,sesblkpost=1,sesblkemail=1,sesblksms=1,sesblktrdcomm=1,operator=or><p>You are currently subscribed to receive: Email Newsletters</p></venda_block label=emailyes>		
+<venda_block label=emailno,sesblkemail!=1,sesblkpost!=1,sesblksms!=1><p>You are currently not subscribed to receive any email updates, special offers and promotions. To subscribe, please use the 'Newsletter Sign Up' form at the bottom of the page.</p></venda_block label=emailno>
+</venda_userinfo>
+
+<div style="overflow:hidden;">
+<a href="javascript:showTabs('.myaccountBillingDetails,.myaccountBillingTabon,.myaccountDeliveryTaboff,.myaccountEmailTaboff')" onClick="javascript:hideTabs('.myaccountBillingTaboff,.myaccountEmailDetails,.myaccountDeliveryTabon,.myaccountEmailTabon')">
+<div class="myaccountBillingTaboff" <venda_block mode=value,<venda_htxt mode=get,name=pass>=change>style="display:block"</venda_block><venda_block mode=value,<venda_htxt mode=get,name=addr>=change>style="display:none"</venda_block>>
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/my-account/my-account-billing-address-off.gif" border="0">
+</div>
+<div class="myaccountBillingTabon" <venda_block mode=value,<venda_htxt mode=get,name=pass>=change>style="display:none"</venda_block><venda_block mode=value,<venda_htxt mode=get,name=addr>=change>style="display:block"</venda_block>>
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/my-account/my-account-billing-address-on.gif" border="0">
+</div>
+</a>
+
+<a href="<venda_codehttps>?ex=co_wizr-manageaddresses&bsref=<venda_bsref>">
+<div class="myaccountDeliveryTaboff" style="display:block">
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/my-account/my-account-delivery-address-off.gif" border="0">
+</div>
+</a>
+
+<a href="javascript:showTabs('.myaccountEmailDetails,.myaccountEmailTabon,.myaccountBillingTaboff,.myaccountDeliveryTaboff')" onClick="javascript:hideTabs('.myaccountBillingDetails,.myaccountBillingTabon,.myaccountDeliveryTabon,.myaccountEmailTaboff')">
+<div class="myaccountEmailTaboff" <venda_block mode=value,<venda_htxt mode=get,name=pass>=change>style="display:none"</venda_block><venda_block mode=value,<venda_htxt mode=get,name=addr>=change>style="display:block"</venda_block>>
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/my-account/my-account-email-address-off.gif" border="0">
+</div>
+<div class="myaccountEmailTabon" <venda_block mode=value,<venda_htxt mode=get,name=pass>=change>style="display:block"</venda_block><venda_block mode=value,<venda_htxt mode=get,name=addr>=change>style="display:none"</venda_block>>
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/my-account/my-account-email-address-on.gif" border="0">
+</div>
+</a>
+</div>
+
+<div class="myaccountDetails-body">
+<venda_zones type=countries,template=zoneJs>
+<venda_block label=10,param1!=survey>
+
+<div class="myaccountBillingDetails" <venda_block mode=value,<venda_htxt mode=get,name=addr>=change>style="display:block"</venda_block><venda_block mode=value,<venda_htxt mode=get,name=pass>=change>style="display:none"</venda_block>>
+<p>If you wish to update any of your details, make your changes below and click on the 'Submit' beneath the form.</p>
+<p>Fields with an asterisk (<span class="required">*</span>) must be filled in.</p>
+<venda_form>
+<input type="hidden" name="PrimaryForm">
+<venda_inctemplate type=admn/tl_user-myform,name=edit_billing_details>
+</form>
+</div>
+
+<div class="myaccountEmailDetails" <venda_block mode=value,<venda_htxt mode=get,name=pass>=change>style="display:block"</venda_block><venda_block mode=value,<venda_htxt mode=get,name=addr>=change>style="display:none"</venda_block>>
+<venda_form>
+<input type="hidden" name="PrimaryForm">
+<venda_inctemplate type=admn/tl_user-myform,name=change_email_address_password>
+</form>
+</div>
+
+</venda_block label=10>
+</div>
+
+</div>
+
+<!--
+page:tl_user-myform.html
+-->
+<venda_tpxt mode=set,name=track,value=user-myform>
+<venda_inctemplate name=hbxlocalvars10,type=includes/tracking>
+<venda_inctemplate name=hitboxOthers,type=includes/tracking>
+<venda_inctemplate name=cmCreateRegistrationTag,type=includes/tracking/coremetrics>
+<venda_inctemplate name=cm-tl_user-myform,type=includes/tracking/coremetrics>

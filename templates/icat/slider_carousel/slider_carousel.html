@@ -1,0 +1,133 @@
+<link rel="stylesheet" href="
+<venda_entmediaadd>/ebiz/<venda_bsref>/resources/css/catgrid.css" type="text/css" media="screen, projector">
+<venda_detblock>
+<li>
+<script>
+function showadd(a) {
+$(a).show();}
+function hideadd(a) {
+$(a).hide();}
+</script>
+<div class="slider_product">
+	<!-- product image -->
+	<div class="skunu hide"><venda_invtref1></div>
+<div onmouseover="showadd('.add<venda_invtref1>')" onmouseout="hideadd('.add<venda_invtref1>')">
+<venda_block label=1221212,invtivtype1=normal,invtivtype1=gardenfurniture,invtivtype1=furniture,operator=or>
+<venda_block label=10,invtavail1&gt;0>
+<!-- if product doesn't have attributes -->
+<form name="form<venda_invtref1>" action="<venda_codehttp>" method="get" id="addproduct<venda_invtref1>form">
+<input type="hidden" name="bsref" value="<venda_bsref>">
+<input type="hidden" name="log" value="22">
+<input type="hidden" name="mode" value="add">
+<input type="hidden" name="layout" value="">
+<!-- "ex" sends user to basket if "co_wizr-shopcart" - or leaves on current page if "co_disp-shopc" -->
+<!-- will leave on current page by default - "Buy Now" button changes "ex" value and sends to basket (unless js disabled) -->
+<input type="hidden" name="ex" value="co_disp-shopc">
+<!-- "buy" defines sku to add if "ex" is "co_disp-shopc" -->
+<input type="hidden" name="buy" value="<venda_invtref1>">
+<!-- "ivref" defines sku to add if "ex" is "co_wizr-shopcart" -->
+<input type="hidden" name="ivref" value="<venda_invtref1>">
+<!-- "icat" defines next step if "ex" is "co_disp-shopc" (sends to home page without this field) - could be set to send to any invt or page instead -->
+<input type="hidden" name="icat" value="<venda_tpxt mode=get,name=icatref>">
+<input type="hidden" name="curpage" value=""><!-- tpxt "curpage"-->
+<input name="qty" id="qty" type="hidden" value="1">
+
+<input type="image" class="add<venda_invtref1>" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/slider_add.gif" alt="Add to Basket" onClick="availsetcookie();document.form.ex.value='co_disp-shopc';" style="width:167px;height:20px;position:absolute;z-index:1000;top:149px;left:2px;display:none;">
+</form>
+</venda_block label=10>
+
+<venda_block label=11,invtavail1=0>
+<!-- if product doesn't have attributes -->
+<form name="form<venda_invtref1>" action="<venda_codehttp>" method="get" id="addproduct<venda_invtref1>form">
+<input type="hidden" name="bsref" value="<venda_bsref>">
+<input type="hidden" name="log" value="22">
+<input type="hidden" name="mode" value="add">
+<input type="hidden" name="layout" value="">
+<!-- "ex" sends user to basket if "co_wizr-shopcart" - or leaves on current page if "co_disp-shopc" -->
+<!-- will leave on current page by default - "Buy Now" button changes "ex" value and sends to basket (unless js disabled) -->
+<input type="hidden" name="ex" value="co_disp-shopc">
+<!-- "buy" defines sku to add if "ex" is "co_disp-shopc" -->
+<input type="hidden" name="buy" value="<venda_invtref1>">
+<!-- "ivref" defines sku to add if "ex" is "co_wizr-shopcart" -->
+<input type="hidden" name="ivref" value="<venda_invtref1>">
+<!-- "icat" defines next step if "ex" is "co_disp-shopc" (sends to home page without this field) - could be set to send to any invt or page instead -->
+<input type="hidden" name="icat" value="<venda_tpxt mode=get,name=icatref>">
+<input type="hidden" name="curpage" value=""><!-- tpxt "curpage"-->
+<input name="qty" id="qty" type="hidden" value="1">
+
+<venda_block label=39,etadyleft1&gt;0>
+<input type="image" class="add<venda_invtref1>" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/slider_add.gif" alt="Add to Basket" onClick="availsetcookie();document.form.ex.value='co_disp-shopc';" style="width:167px;height:20px;position:absolute;z-index:1000;top:149px;left:2px;display:none;">
+</venda_block label=39>
+
+</form>
+</venda_block label=11>
+</venda_block label=1221212>
+
+<venda_block label=1101,invtavail1=0,etadyleft1&lt;0>
+	<a href="<venda_dispview invt=<venda_invtref1>>">
+<img class="add<venda_invtref1>" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/slider_moreinfo.gif" alt="More Info" style="width:167px;height:20px;position:absolute;z-index:1000;top:149px;left:2px;display:none;"></a>
+</venda_block label=1101>
+
+<venda_block label=1102,invtivtype1=range,invtivtype1=gardenfurniturerange,invtivtype1=furniturerange,operator=or>
+	<a href="<venda_dispview invt=<venda_invtref1>>">
+<img class="add<venda_invtref1>" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/slider_moreinfo.gif" alt="More Info" style="width:167px;height:20px;position:absolute;z-index:1000;top:149px;left:2px;display:none;"></a>
+</venda_block label=1102>
+
+	<div class="image" style="padding:2px;">
+<venda_block label=4,med-medium1=notnull>
+	<a href="<venda_dispview invt=<venda_invtref1>>"><venda_media rec=invt1,type=movie-swf-pict,key=medium,width=167,height=167></a></venda_block label=4>
+
+	        <venda_block label=142,med-medium1=null>
+	                <a href="<venda_dispview invt=<venda_invtref1>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_s.gif" alt="<venda_text id=site.link.alt.no_image.icat>"></a>
+	        </venda_block label=142>
+	</div>
+</div>
+	<!-- product image -->
+
+	<div class="title_slider"><h2><a href="<venda_dispview invt=<venda_invtref1>>"><venda_invtname1></a></h2></div>
+
+	<div class="details_slider">
+
+			<!-- Product has no attributes -->
+<venda_block label=12125453,invtivtype1=normal,invtivtype1=gardenfurniture,invtivtype1=furniture,operator=or>
+					<div class="pricedetail">
+
+	<venda_block label=111,invtsavingonwas1=null>
+								<p class="normalprice"><venda_currsym><venda_invtsell1></p>
+							</venda_block label=111>
+						
+							<venda_block label=11,invtsavingonwas1=notnull,invtwas!=0.00>
+								<p class="nowprice">NOW <span><venda_currsym><venda_invtsell1></span></p>
+								<p class="wasprice">WAS <span><venda_currsym><venda_invtwas1></span></p>
+							</venda_block label=11>
+					</div>
+			</venda_block label=12125453>
+
+
+			<!-- Product has some attribute -->
+
+					<venda_block label=12125454,invtivtype1=range,invtivtype1=furniturerange,invtivtype1=gardenfurniturerange,operator=or>
+				<div class="priceattr_slider">
+<venda_block label=8001,invtatrminsubwas1=0.00>
+						<p class="fromprice">
+		<venda_block label=35,invtatrminsubsell1&gt;0.00>
+							FROM <span><venda_currsym><venda_invtatrminsubsell1></span>
+							</venda_block label=35>
+						</p>
+						    <venda_block label=36,invtatrminsubsell1=0.00><p class="normalprice"><venda_invtsymsell1></p></venda_block label=36>
+					</venda_block label=8001>
+					<venda_block label=8002,invtatrminsubwas1!=0.00>
+					<p class="fromsaleprice">
+						Sale Prices From <span><venda_currsym><venda_invtatrminsubsell1></span>
+					</p>
+					</venda_block label=8002>
+				</div>	
+					</venda_block label=12125454>
+</div>
+</div>
+</li>
+</venda_detblock>
+
+<ul>
+<venda_detail>
+</ul>

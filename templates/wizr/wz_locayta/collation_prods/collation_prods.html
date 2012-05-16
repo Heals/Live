@@ -1,0 +1,44 @@
+<venda_detblock_single>
+	<venda_block label=342,type1=invt>
+		<venda_tpcomment><!-- The form tags have to be on this template because the searchparameters field has to be on this template. venda_searchparameters does not translate on templates/invt/locaytainvt and we cannot pass it as a tpxt because the value is too long. --></venda_tpcomment>
+		<form name="form<venda_ref1>" action="<venda_codehttp>" method="get" id="addproduct<venda_ref1>form">
+		<input type="hidden" name="searchparameters" value="<venda_searchparameters>">
+		<venda_inventory ref=<venda_ref1>,temp=locaytainvt>
+		</form>
+	</venda_block label=342>
+	<venda_block label=343,type1=page>
+		<venda_page page=<venda_ref1>,template=locaytapage>
+	</venda_block label=343>
+	<venda_block label=344,type1=stry>
+		<venda_story story=<venda_ref1>,template=locaytastry>
+	</venda_block label=344>
+<script type="text/javascript">availDoubleCheck += "<venda_ref1>,";</script>
+</venda_detblock_single>
+
+<div class="searchpsel searchpseltop">
+	<venda_pagination template=pagn_search_style1>
+</div>
+
+<div class="prods">
+	<ul  id="ulProds"><venda_detail_single></ul>
+</div>
+<div class="searchpsel searchpselbtm">
+	<venda_pagination template=pagn_search_style1>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$("#ulProds li").each(function (index) {
+//	if (index % 3 == 0) {
+//		$(this).addClass("listFirst");
+//	}
+	if (index % 3 == 2) {
+		$(this).addClass("nomarginright");
+	}
+	if (index % 3 == 0) {
+		$(this).css({'clear':'both'});
+	}
+	
+});
+});
+</script>

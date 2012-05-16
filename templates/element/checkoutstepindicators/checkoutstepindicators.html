@@ -1,0 +1,20 @@
+<venda_block label=45,workflow=shopcart,workflow=giftcertificates,workflow=singleadbook,operator=or>
+<venda_block label=100,mode=value,<venda_tpxt mode=get,name=track>=,<venda_tpxt mode=get,name=co_comn-login>!=1>
+<venda_block label=55,elxtstepbaskettext!=><venda_inctemplate name=stepindicators,type=includes></venda_block label=55>
+</venda_block label=100>
+
+<venda_block label=101,mode=value,<venda_tpxt mode=get,name=co_comn-login>=1>
+<venda_block label=56,elxtsteplogintext!=><venda_inctemplate name=stepindicators,type=includes></venda_block label=56>
+</venda_block label=101>
+
+<venda_block label=102,mode=value,<venda_tpxt mode=get,name=track>=orbt-screen><venda_block label=1102,param1!=login><venda_block label=57,elxtstep1text!=><venda_inctemplate name=stepindicators,type=includes></venda_block label=57></venda_block label=1102></venda_block label=102><venda_block label=103,mode=value,<venda_tpxt mode=get,name=track>=orzc-screen>
+<venda_block label=1103,param1=login,param1=nopswdlookup,operator=or><venda_block label=157,elxtstep1text!=><venda_inctemplate name=stepindicators,type=includes></venda_block label=157></venda_block label=1103><venda_block label=1105,param1=delivery,param2=editadd,operator=or><venda_block label=158,elxtstep2text!=><venda_inctemplate name=stepindicators,type=includes></venda_block label=158></venda_block label=1105></venda_block label=103>
+
+<venda_block label=104,mode=value,<venda_tpxt mode=get,name=track>=orad-editadd,<venda_tpxt mode=get,name=track>=orad-screen,operator=or><venda_block label=58,elxtstep2text!=><venda_inctemplate name=stepindicators,type=includes></venda_block label=58></venda_block label=104>
+
+<venda_block label=106,mode=value,<venda_tpxt mode=get,name=track>=orcf-screen,<venda_tpxt mode=get,name=track>=orgw-screen,<venda_tpxt mode=get,name=track>=gift-screen,<venda_tpxt mode=get,name=track>=orcp-screen,<venda_tpxt mode=get,name=track>=orpayment-empty,operator=or><venda_block label=59,elxtstep3text!=><venda_inctemplate name=stepindicators,type=includes></venda_block label=59>
+</venda_block label=106>
+
+<venda_block label=107,mode=value,<venda_tpxt mode=get,name=track>=orderreceipt><venda_block label=60,elxtstep4text!=><venda_inctemplate name=stepindicators,type=includes></venda_block label=60>
+</venda_block label=107>
+</venda_block label=45>

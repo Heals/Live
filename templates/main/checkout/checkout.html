@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="<venda_block mode=value,<venda_sessionlanguage>=ae>en-US</venda_block><venda_block mode=value,<venda_sessionlanguage>!=ae><venda_sessionlanguage></venda_block>">
+<venda_inctemplate name=CheckoutWideTracking,type=includes>
+<venda_block label=tagmanorderconf1,mode=value,<venda_tpxt mode=get,name=track>!=orderreceipt>
+<script> 
+TMAN.doTags(TMAN.position.PRE_HEAD); 
+</script>
+</venda_block label=tagmanorderconf1> 
+<head>
+<venda_block label=tagmanorderconf2,mode=value,<venda_tpxt mode=get,name=track>!=orderreceipt>
+<script> 
+TMAN.doTags(TMAN.position.TOP_HEAD); 
+</script>
+</venda_block label=tagmanorderconf2>
+<venda_menu template=title>
+<venda_menu template=metatags>
+<venda_menu template=css_co>
+<venda_menu template=js_co>
+<venda_block label=tagmanorderconf3,mode=value,<venda_tpxt mode=get,name=track>!=orderreceipt>
+<script> 
+TMAN.doTags(TMAN.position.BOTTOM_HEAD); 
+</script>
+</venda_block label=tagmanorderconf3>
+</head>
+<body<venda_block label=110,mode=value,<venda_setting type=ebiz,name=tracktaggoogleanalytics>=1,<venda_islive>=1,<venda_tpxt mode=get,name=track>=orderreceipt> onLoad="__utmSetTrans();"</venda_block label=110> id="mainlayout-checkout">
+<venda_block label=tagmanorderconf4,mode=value,<venda_tpxt mode=get,name=track>!=orderreceipt>
+<div id="TMAN_TOP_BODY"></div>
+<script> 
+TMAN.doTags(TMAN.position.TOP_BODY); 
+</script>
+</venda_block label=tagmanorderconf4>
+<venda_menu template=admin>
+<venda_menu template=demo>
+<venda_menu template=nojavascript>
+
+<p class="re-waiHide"><a href="#content"><venda_text id=site.skip_to_content></a></p>
+
+<!-- start wrapper -->
+<div id="checkoutwrapper">
+
+<!-- start header -->
+<venda_inctemplate name=header,type=menu>
+<!-- end header -->	
+
+<!-- start content-checkout -->
+<div id="content-checkout">
+<!-- start content -->
+<div id="checkout">
+<a name="content" id="content"></a>
+<venda_content>
+</div>
+<!-- end content -->
+</div>
+<!-- end content-checkout -->
+<div id="footer"><venda_inctemplate name=footerLinks,type=menu/footer></div>
+</div>
+<!-- end wrapper -->
+<div id="TMAN_BOTTOM_BODY"></div>
+<script>
+TMAN.doTags(TMAN.position.BOTTOM_BODY); 
+</script>
+</body>
+</html>

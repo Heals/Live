@@ -1,0 +1,236 @@
+<venda_block label=48,mode=value,<venda_setting type=ebiz,name=powerreviews>=1,<venda_setting type=ebiz,name=powerreviewsprodlist>=1><script type="text/javascript"><venda_inctemplate type=includes,name=powerreviewscripts></script></venda_block label=48>
+<venda_detblock>
+	<venda_tpcomment><!-- "icat" defines next step if "ex" is "co_disp-shopc" (sends to home page without this field) - could be set to send to any invt or page instead --></venda_tpcomment>
+	<form name="form<venda_invtref1>" action="<venda_codehttp>" method="get" id="addproduct<venda_invtref1>form">
+	<input type="hidden" name="icat" value="<venda_icatref>">
+	<venda_inventory ref=<venda_invtref1>,temp=locaytainvt>
+	</form>
+</venda_detblock>
+
+<div id="content-default_nocoltwothree">
+  <div id="searchresults1">
+    <div id="addedmsg"></div>
+<div style="width:300px;height:34px;float:left;background-color:#ffffff;">
+<p style="font-weight:normal;color: black;font-size: 18px;
+padding:7px 0 0 8px;margin:0;"><a href="<venda_dispview icat=gifts>" style="color:#000000;">View All Gifts</a></p>
+</div>
+    <venda_tpcomment><!-- start: sort by options --></venda_tpcomment>
+          <div class="sort">
+          <label for="sortby"><venda_text id=site.search_results.label.sort_by></label>
+	    <select name="sortby" id="sortby" onchange="location = this.options[this.selectedIndex].value;">
+  	      <venda_block label=12,mode=value,<venda_setting type=ebiz,name=sortrelevantfirst>=1><option value="/bin/venda?ex=co_wizr-locayta&collate=<venda_setting type=ebiz,name=setsearchcollatestring>&fieldrtype=type&termtextrtype=invt&typertype=exact&fieldpcatid=pcatid&termtextpcatid=<venda_icatref>&typepcatid=exact&fieldcatrestrict=xancestorid&termtextcatrestrict=<venda_icatref>&typecatrestrict=exact&template=wz_locayta&pagenum=1&perpage=<venda_itemsperpage>&threshold=<venda_setting type=ebiz,name=setsearchthreshold>&setsortorder=&setsortname=&setsortprice=&setpagenum=1"<venda_block label=41,sortprice=null,sortname=null,sortrelease=null> selected="selected"</venda_block label=41>><venda_text id=site.search_results.option.most_relevant></option></venda_block label=12>
+	      <venda_block label=14,mode=value,<venda_setting type=ebiz,name=sortpricedesc>=1><option value="/bin/venda?ex=co_wizr-locayta&collate=<venda_setting type=ebiz,name=setsearchcollatestring>&fieldrtype=type&termtextrtype=invt&typertype=exact&fieldpcatid=pcatid&termtextpcatid=<venda_icatref>&typepcatid=exact&fieldcatrestrict=xancestorid&termtextcatrestrict=<venda_icatref>&typecatrestrict=exact&template=wz_locayta&pagenum=1&perpage=<venda_itemsperpage>&threshold=<venda_setting type=ebiz,name=setsearchthreshold>&setsortorder=price,name&setsortprice=descending&setsortrelease=&setpagenum=1"<venda_block label=42,sortprice=descending> selected="selected"</venda_block label=42>><venda_text id=site.search_results.option.price_high_to_low></option></venda_block label=14>
+	      <venda_block label=15,mode=value,<venda_setting type=ebiz,name=sortpriceasc>=1><option value="/bin/venda?ex=co_wizr-locayta&collate=<venda_setting type=ebiz,name=setsearchcollatestring>&fieldrtype=type&termtextrtype=invt&typertype=exact&fieldpcatid=pcatid&termtextpcatid=<venda_icatref>&typepcatid=exact&fieldcatrestrict=xancestorid&termtextcatrestrict=<venda_icatref>&typecatrestrict=exact&template=wz_locayta&pagenum=1&perpage=<venda_itemsperpage>&threshold=<venda_setting type=ebiz,name=setsearchthreshold>&setsortorder=price,name&setsortprice=ascending&setsortrelease=&setpagenum=1"<venda_block label=43,sortprice=ascending> selected="selected"</venda_block label=43>><venda_text id=site.search_results.option.price_low_to_high></option></venda_block label=15>
+	      <venda_block label=16,mode=value,<venda_setting type=ebiz,name=sortatoz>=1><option value="/bin/venda?ex=co_wizr-locayta&collate=<venda_setting type=ebiz,name=setsearchcollatestring>&fieldrtype=type&termtextrtype=invt&typertype=exact&fieldpcatid=pcatid&termtextpcatid=<venda_icatref>&typepcatid=exact&fieldcatrestrict=xancestorid&termtextcatrestrict=<venda_icatref>&typecatrestrict=exact&template=wz_locayta&pagenum=1&perpage=<venda_itemsperpage>&threshold=<venda_setting type=ebiz,name=setsearchthreshold>&setsortorder=name&setsortname=ascending&setpagenum=1&setsortprice=&setsortrelease="<venda_block label=44,sortname=ascending> selected="selected"</venda_block label=44>><venda_text id=site.search_results.option.a_to_z></option></venda_block label=16>
+	      <venda_block label=17,mode=value,<venda_setting type=ebiz,name=sortztoa>=1><option value="/bin/venda?ex=co_wizr-locayta&collate=<venda_setting type=ebiz,name=setsearchcollatestring>&fieldrtype=type&termtextrtype=invt&typertype=exact&fieldpcatid=pcatid&termtextpcatid=<venda_icatref>&typepcatid=exact&fieldcatrestrict=xancestorid&termtextcatrestrict=<venda_icatref>&typecatrestrict=exact&template=wz_locayta&pagenum=1&perpage=<venda_itemsperpage>&threshold=<venda_setting type=ebiz,name=setsearchthreshold>&setsortorder=name&setsortname=descending&setpagenum=1&setsortprice=&setsortrelease="<venda_block label=45,sortname=descending> selected="selected"</venda_block label=45>><venda_text id=site.search_results.option.z_to_a></option></venda_block label=17>
+	      <venda_block label=18,mode=value,<venda_setting type=ebiz,name=releasedtdesc>=1><option value="/bin/venda?ex=co_wizr-locayta&collate=<venda_setting type=ebiz,name=setsearchcollatestring>&fieldrtype=type&termtextrtype=invt&typertype=exact&fieldpcatid=pcatid&termtextpcatid=<venda_icatref>&typepcatid=exact&fieldcatrestrict=xancestorid&termtextcatrestrict=<venda_icatref>&typecatrestrict=exact&template=wz_locayta&pagenum=1&perpage=<venda_itemsperpage>&threshold=<venda_setting type=ebiz,name=setsearchthreshold>&setsortorder=release,name&setsortrelease=descending&setsortprice=&setpagenum=1"<venda_block label=46,sortrelease=descending> selected="selected"</venda_block label=46>><venda_text id=site.search_results.option.release_date_recent_first></option></venda_block label=18>
+	      <venda_block label=19,mode=value,<venda_setting type=ebiz,name=releasedtasc>=1><option value="/bin/venda?ex=co_wizr-locayta&collate=<venda_setting type=ebiz,name=setsearchcollatestring>&fieldrtype=type&termtextrtype=invt&typertype=exact&fieldpcatid=pcatid&termtextpcatid=<venda_icatref>&typepcatid=exact&fieldcatrestrict=xancestorid&termtextcatrestrict=<venda_icatref>&typecatrestrict=exact&template=wz_locayta&pagenum=1&perpage=<venda_itemsperpage>&threshold=<venda_setting type=ebiz,name=setsearchthreshold>&setsortorder=release,name&setsortrelease=ascending&setsortprice=&setpagenum=1"<venda_block label=47,sortrelease=ascending> selected="selected"</venda_block label=47>><venda_text id=site.search_results.option.release_date_recent_last></option></venda_block label=19>
+	    </select>
+	  </div>
+	  <venda_tpcomment><!-- end: sort by options --></venda_tpcomment>
+  </div>
+</div>
+<div style="clear:both;position:relative;left:0;height:100%;">
+<div id="col-two-three">
+<div id="col-two">
+<div id="searchresults" class="productList">
+<venda_media rec=icat,type=movie-swf-pict,key=catbanner>
+<div class="prodListAlt">
+<div class="<venda_icatref>">
+<h1 class="header"><venda_icatname></h1>
+</div>
+<div>
+	<venda_block label=1,errors=notnull><h2 class="error"><venda_errors></h2></venda_block label=1>
+	<div id="addedmsg" class="addedmessage"><venda_block label=13,mode=value,<venda_addedmsg msg=<venda_text id=site.addedmsg>>=notnull><p><venda_addedmsg msg=<venda_text id=site.addedmsg>></p></venda_block label=13></div>
+	<venda_category rec=icat,ref=<venda_icatref>fp,temp=featprods,cacheall=1>	
+	
+	<venda_tpcomment><!-- start: product list item - pagination --></venda_tpcomment>
+	<div class="searchpsel searchpseltop">
+	        <venda_pagination template=pagn_icat_style1>
+		</div>
+	</div></div>
+	<venda_block label=52,rectot=><p><venda_text id=site.productlist.product_empty></p></venda_block label=52>
+	<venda_block label=53,rectot!=><div class="prods"><ul class="ulProds"><venda_detail></ul></div></venda_block label=53>
+	<div class="searchpsel searchpselbtm">
+	        <venda_pagination template=pagn_icat_style1>
+		</div>
+
+	<venda_tpcomment><!-- end: product list item - pagination --></venda_tpcomment>
+</div>
+</div>
+</div>
+
+<div id="col-one" style="background-color:#f1f1f1;">
+<link rel="stylesheet" href="
+<venda_entmediaadd>/ebiz/<venda_bsref>/resources/css/catgrid-gift.css" type="text/css" media="screen, projector">
+<script type="text/javascript">
+$(document).ready(function(){
+$('.acc_accordion_area').hide();
+<venda_block label=womensgift,icatref=womens_fashion,icatref=womens_food_alcohol,icatref=handbags_and_purses,icatref=womens_stocking_fillers,icatref=girls_gadgets,icatref=loungewear_and_slippers,icatref=womens_books,icatref=womens_stationery_gifts,icatref=womens_favourites,icatref=gifts_for_home,operator=or>
+$('.acc_trigger_gift:nth-child(1)').addClass('active').next().show();
+</venda_block label=womensgift><venda_block label=mensgift,icatref=mens_fashion,icatref=mens_food_alcohol,icatref=mens_grooming,icatref=mens_stocking_fillers,icatref=watches_and_cufflinks,icatref=gadgets_boys_toys,icatref=luggage_wallets_bags,icatref=mens_games,icatref=mens_books,icatref=mens_stationery_gifts,icatref=mens_favourites,icatref=mens_robes_slippers,operator=or>
+$('.acc_trigger_gift:nth-child(3)').addClass('active').next().show();
+</venda_block label=mensgift><venda_block label=kidsgift,icatref=kids_stocking_fillers,icatref=kids_food_gifts,icatref=things_to_make_and_do,icatref=bathtime_fun,icatref=kids_games,icatref=kids_stationery,icatref=soft_toys_and_baby,icatref=kids_room,icatref=kids_books,icatref=girls_gifts,icatref=boys_gifts,icatref=kids_heals_favourites,operator=or>
+$('.acc_trigger_gift:nth-child(5)').addClass('active').next().show();
+</venda_block label=kidsgift><venda_block label=homegift,icatref=gift_art,icatref=candles_home_fragrance,icatref=gift_objet,icatref=gift_vases_bowls,icatref=gift_frames,icatref=gift_soft_furnishings,icatref=office_and_stationery,icatref=gift_books,icatref=xmas_party,icatref=home_favourites,operator=or>
+$('.acc_trigger_gift:nth-child(7)').addClass('active').next().show();
+</venda_block label=homegift><venda_block label=toiletriesgift,icatref=toiletries_gift_sets,icatref=bath_body_perfume,icatref=toiletries_stocking,icatref=spa_gifts,icatref=hot_water_bottles,icatref=toiletries_favourites,operator=or>
+$('.acc_trigger_gift:nth-child(9)').addClass('active').next().show();
+</venda_block label=toiletriesgift><venda_block label=foodgift,icatref=gift_deli,icatref=chocolate,icatref=alcohol_and_beverages,icatref=confectionery,icatref=bakery,icatref=food_stocking_fillers,icatref=food_alcohol_gift_sets,icatref=gifts_for_cooks,icatref=food_heals_favourites,operator=or>
+$('.acc_trigger_gift:nth-child(11)').addClass('active').next().show();
+</venda_block label=foodgift>
+$('.acc_trigger_gift').click(function(){
+	if( $(this).next().is(':hidden') ) {
+		$('.acc_trigger_gift').removeClass('active').next().slideUp();
+		$(this).toggleClass('active').next().slideDown();
+	}
+	return false;
+});
+});
+</script>
+<div id="category-left-nav">
+
+<h4 style="padding:8px;margin:28px 5px 20px 5px;font-size:18px;color:#ffffff;
+height:auto;width:174px;background-color:#000000;float:left;font-weight:normal;"><venda_icatname></h4>
+
+<div class="leftnav-header">
+<p style="padding:0 0 0 8px;">Shop Gifts</p>
+</div>
+<div class="accordion_area">
+
+	<h5 class="acc_trigger_gift"><a href="<venda_text id=site.womens_gifts>">All Women's Gifts</a></h5> 
+	<div class="acc_accordion_area"> 
+		<div class="block_gifts"> 
+<p class="border-top"><a href="<venda_text id=site.womens_fashion_accessories>">Women's Fashion</a></p>
+<p><a href="<venda_text id=site.bath_body_perfume>">Bath, Body & Perfume</a></p>
+<p><a href="<venda_text id=site.womens_food_alcohol_gifts>">Women's Food & Alcohol Gifts</a></p>
+<p><a href="<venda_dispview icat=handbags_and_purses>">Handbags & Purses</a></p>
+<p><a href="<venda_text id=site.womens_stocking_fillers>">Women's Stocking Fillers</a></p>
+<p><a href="<venda_text id=site.girls_gadgets>">Girl's Gadgets</a></p>
+<p><a href="<venda_text id=site.candles_home_fragrance>">Candles & Home Fragrance</a></p>
+<p><a href="<venda_text id=site.loungewear_slippers>">Loungewear & Slippers</a></p>
+<p><a href="<venda_text id=site.gifts_for_home>">Gifts For The Home</a></p>
+<p><a href="<venda_text id=site.womens_books>">Women's Books</a></p>
+<p><a href="<venda_text id=site.womens_stationery_gifts>">Women's Stationery Gifts</a></p>
+<p><a href="<venda_text id=site.womens_heals_favourites>">Women's Heal's Favourites</a></p>		
+</div> 
+	</div>
+
+	<h5 class="acc_trigger_gift"><a href="<venda_text id=site.mens_gifts>">All Men's Gifts</a></h5> 
+	<div class="acc_accordion_area"> 
+		<div class="block_gifts"> 
+<p class="border-top"><a href="<venda_text id=site.mens_fashion_accessories>">Men's Fashion Accessories</a></p>
+<p><a href="<venda_text id=site.mens_food_alcohol_gifts>">Men's Food & Alcohol Gifts</a></p>
+<p><a href="<venda_text id=site.mens_grooming>">Men's Grooming</a></p>
+<p><a href="<venda_text id=site.mens_stocking_fillers>">Men's Stocking Fillers</a></p>
+<p><a href="<venda_dispview icat=watches_and_cufflinks>">Watches & Cufflinks</a></p>
+<p><a href="<venda_text id=site.gadgets_boys_toys>">Gadgets & Boys Toys</a></p>
+<p><a href="<venda_text id=site.luggage_bags_wallets>">Luggage Bags & Wallets</a></p>
+<p><a href="<venda_text id=site.mens_stationery_gifts>">Men's Stationery Gifts</a></p>
+<p><a href="<venda_text id=site.mens_games>">Men's Games</a></p>
+<p><a href="<venda_text id=site.mens_books>">Men's Books</a></p>
+<p><a href="<venda_text id=site.mens_robes_slippers>">Men's Robes & Slippers</a></p>
+<p><a href="<venda_text id=site.mens_heals_favourites>">Men's Heal's Favourites</a></p>
+		</div> 
+	</div> 
+
+    
+	<h5 class="acc_trigger_gift"><a href="<venda_text id=site.kids_gifts>">All Kid's Gifts</a></h5> 
+	<div class="acc_accordion_area"> 
+		<div class="block_gifts"> 
+<p class="border-top"><a href="<venda_text id=site.kids_stocking_fillers>">Kid's Stocking Fillers</a></p>
+<p><a href="<venda_text id=site.kids_food_gifts>">Kid's Food Gifts</a></p>
+<p><a href="<venda_text id=site.things_to_make_do>">Things To Make & Do</a></p>
+<p><a href="<venda_text id=site.kids_bathtime_fun>">Kid's Bathtime Fun</a></p>
+<p><a href="<venda_text id=site.kids_games>">Kid's Games</a></p>
+<p><a href="<venda_text id=site.kids_stationery>">Kid's Stationery</a></p>
+<p><a href="<venda_text id=site.soft_toys_baby_gifts>">Soft Toys & Baby Gifts</a></p>
+<p><a href="<venda_text id=site.kids_room>">Kid's Room</a></p>
+<p><a href="<venda_text id=site.kids_books>">Kid's Books</a></p>
+<p><a href="<venda_text id=site.girls_gifts>">Girl's Gifts</a></p>
+<p><a href="<venda_text id=site.boys_gifts>">Boy's Gifts</a></p>
+<p><a href="<venda_text id=site.kids_heals_favourites>">Kid's Heal's Favourites</a></p>
+		</div> 
+	</div>
+    
+	<h5 class="acc_trigger_gift"><a href="<venda_text id=site.home_gifts>">All Gifts For The Home</a></h5> 
+	<div class="acc_accordion_area"> 
+		<div class="block_gifts"> 
+<p class="border-top"><a href="<venda_text id=site.candles_home_fragrance>">Candles & Home Fragrance</a></p>
+<p><a href="<venda_text id=site.gift_art>">Gift Art</a></p>
+<p><a href="<venda_text id=site.gift_objets>">Gift Objets</a></p>
+<p><a href="<venda_text id=site.gift_vases_bowls>">Vases & Bowls</a></p>
+<p><a href="<venda_text id=site.gift_frames>">Frames</a></p>
+<p><a href="<venda_text id=site.gifts_for_cooks>">Gifts For Cooks</a></p>
+<p><a href="<venda_text id=site.gift_soft_furnishings>">Soft Furnishings</a></p>
+<p><a href="<venda_text id=site.gift_office_stationery>">Office & Stationery Gifts</a></p>
+<p><a href="<venda_text id=site.gift_books>">Books</a></p>
+<p><a href="<venda_text id=site.christmas_party>">Christmas Party</a></p>
+<p><a href="<venda_text id=site.kids_room>">Kid's Room</a></p>
+<p><a href="<venda_text id=site.home_gifts_heals_favourites>">Heal's Favourites</a></p>
+		</div> 
+	</div>
+    
+	<h5 class="acc_trigger_gift"><a href="<venda_text id=site.gift_toiletries>">All Toiletries</a></h5> 
+	<div class="acc_accordion_area"> 
+		<div class="block_gifts"> 
+<p class="border-top"><a href="<venda_text id=site.gift_toiletries_gift_sets>">Toiletries Gift Sets</a></p>
+<p><a href="<venda_text id=site.bath_body_perfume>">Bath, Body & Perfume</a></p>
+<p><a href="<venda_text id=site.candles_home_fragrance>">Candles & Home Fragrance</a></p>
+<p><a href="<venda_text id=site.mens_grooming>">Men's Grooming</a></p>
+<p><a href="<venda_text id=site.kids_bathtime_fun>">Kid's Bathtime Fun</a></p>
+<p><a href="<venda_text id=site.gift_toiletries_stocking_fillers>">Toiletries Stocking Fillers</a></p>
+<p><a href="<venda_text id=site.loungewear_slippers>">Loungewear & Slippers</a></p>
+<p><a href="<venda_text id=site.gift_spa_gifts>">Spa Gifts</a></p>
+<p><a href="<venda_text id=site.gift_hot_water_bottles>">Hot Water Bottles</a></p>
+<p><a href="<venda_text id=site.gift_toiletries_heals_favourites>">Heal's Favourites</a></p>
+		</div> 
+	</div>
+    
+	<h5 class="acc_trigger_gift"><a href="<venda_text id=site.gourmet_food_drink>">All Gourmet Food & Drink</a></h5> 
+	<div class="acc_accordion_area"> 
+		<div class="block_gifts"> 
+<p class="border-top"><a href="<venda_text id=site.deli>">Deli</a></p>
+<p><a href="<venda_text id=site.chocolate>">Chocolate</a></p>
+<p><a href="<venda_text id=site.alcohol_beverages>">Alcohol & Beverages</a></p>
+<p><a href="<venda_text id=site.confectionery>">Confectionery</a></p>
+<p><a href="<venda_text id=site.bakery>">Bakery</a></p>
+<p><a href="<venda_text id=site.food_stocking_fillers>">Food Stocking Fillers</a></p>
+<p><a href="<venda_text id=site.food_alcohol_gift_sets>">Food & Alcohol Gift Sets</a></p>
+<p><a href="<venda_text id=site.womens_food_alcohol_gifts>">Women's Food & Alcohol Gifts</a></p>
+<p><a href="<venda_text id=site.mens_food_alcohol_gifts>">Men's Food & Alcohol Gifts</a></p>
+<p><a href="<venda_text id=site.kids_food_gifts>">Kid's Food Gifts</a></p>
+<p><a href="<venda_text id=site.gifts_for_cooks>">Gifts For Cooks</a></p>
+<p><a href="<venda_text id=site.gourmet_food_drink_heals_favourites>">Heal's Favourites</a></p>
+		</div> 
+	</div>
+<br clear="all" /><br /><br />
+<div class="shopbybrand_area" style="height:260px;width:190px;background:url(<venda_ebizurl>/content/ebiz/<venda_bsref>/resources/images/gift-vouchers.jpg);">
+<div class="block_gift_voucher">
+<p class="border-top"><a href="<venda_dispview invt=giftvouchers>">Store Gift Vouchers</a></p>
+<p><a href="<venda_codehttp>/?ex=co_wizr-giftcertificates&bsref=heals">Online Gift Vouchers</a></p>
+</div>
+</div>
+</div>
+</div>
+<venda_block label=110,style=productlistmanualsort>
+<div class="refinelist"><venda_locayta template=wz_locayta,template_type=wizr,perpage=<venda_itemsperpage>,threshold=<venda_setting type=ebiz,name=setsearchthreshold>,fieldrtype=type,termtextrtype=invt,typertype=exact,collate=<venda_setting type=ebiz,name=setsearchcollatestring>,refine_sort_alph=<venda_setting type=ebiz,name=setsearchalphabetstring>,fieldpcatid=pcatid,termtextpcatid=<venda_icatref>,typepcatid=exact,fieldcatrestrict=xancestorid,termtextcatrestrict=<venda_setting type=ebiz,name=setsearchcategoryrestrict>,typecatrestrict=exact,settemplate=wz_locayta-refine,layout=blank>
+</venda_block label=110>
+<venda_listsearchterms template=refinelistmanualsort,collatelimit=50>
+</div>
+</div>
+
+</div>
+<br class="clear-all" />
+<venda_tpcomment>
+<!-- TPXTs are defined for other function:
+activepcatid - is used for bestsellers/ compare products based on current category.
+comparecatref - is used for compare products.
+-->
+</venda_tpcomment>
+<venda_tpxt mode=set,name=track,value=productlist>
+<venda_tpxt mode=set,name=activepcatid,value=<venda_icatref>>
+<venda_block label=41,mode=value,<venda_setting type=ebiz,name=showcompareproductlist>=1>
+<venda_block label=501,mode=value,<venda_setting type=ebiz,name=setalwaysshowcompare>!=1><venda_tpxt mode=set,name=comparecatref,value=<venda_icatref>></venda_block label=501>
+<venda_block label=502,mode=value,<venda_setting type=ebiz,name=setalwaysshowcompare>=1><venda_tpxt mode=set,name=comparecatref,value=allcategory></venda_block label=502>
+</venda_block label=41>

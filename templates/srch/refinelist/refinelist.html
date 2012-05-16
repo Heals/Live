@@ -1,0 +1,107 @@
+<script type="text/javascript"> 
+var itcount=0;
+var xvalue = new Array()
+function toggle(targetId) {
+	target = document.getElementById(targetId);
+	if (target.style.display == "none"){
+		target.style.display="";
+	} else {
+		target.style.display="none";
+	}
+}
+
+function swapText(swapId) {
+	linktarget = document.getElementById(swapId);
+	if (linktarget.innerHTML == "<venda_text id=site.search_results.refine.viewall>"){
+		linktarget.innerHTML="<venda_text id=site.search_results.refine.viewless>";
+	} else {
+		linktarget.innerHTML="<venda_text id=site.search_results.refine.viewall>";
+	}
+}
+//-->
+</script>
+ 
+<!-- refinement block -->
+<venda_detblock_collate>
+
+	<venda_detblock_collatedresult>
+
+		<venda_block label=108,mode=value,<venda_index>=<venda_viewlinkdivcount>,<venda_setting type=ebiz,name=showrefineviewall>=1,operator=and>
+			<script type="text/javascript">document.write('<div id="viewall<venda_collationfield>" style="display:none">')</script>
+		</venda_block label=108>
+		<div class="termtext">
+		<script type="text/javascript">
+		var term = "<venda_searchtermparams>";
+		term = term.replace (/\'s/g,"\\'s");
+		document.write('<a href="#" onclick="refinesearch(\'&setpagenum=1&'+term+'\'); return false;">')
+		</script>
+<!-- Sale pdxt name change -->
+		<venda_block label=162,termtextname=1>ONLINE EXCLUSIVE</venda_block label=162>
+<venda_block label=162,termtextname!=1><venda_termtextname></venda_block label=162> 
+(<venda_count>)</a>
+
+</div>
+
+
+	</venda_detblock_collatedresult>
+
+		<h3><venda_block label=33,fieldname=brand><venda_text id=site.search_results.refine.brand></venda_block label=33><venda_block label=34,fieldname!=brand><venda_dispfield></venda_block label=34></h3>
+		<div class="collatedresult" <venda_block label=330,fieldname=pdxtbrowse>id="terntext_producttype"</venda_block label=330>><venda_detail_collatedresult></div>
+    
+        <venda_block label=155,mode=value,<venda_indextotal>&lt;<venda_viewlinkdivcount>,<venda_setting type=ebiz,name=showrefineviewall>=0,operator=or>
+        <div class="refinementdivider"></div>
+    </venda_block label=155>		
+	<venda_block label=109,mode=value,<venda_indextotal>&gt;<venda_viewlinkrescount>,<venda_setting type=ebiz,name=showrefineviewall>=1,operator=and>
+		<script type="text/javascript">document.write('</div>')</script>
+		<div class="viewall"><a href="#" onclick="toggle('viewall<venda_fieldname>'); swapText('viewlink<venda_fieldname>'); return false;"><span id="viewlink<venda_fieldname>"><venda_text id=site.search_results.refine.viewall></span></a></div>
+		<div class="refinementdivider"></div>
+	</venda_block label=109>
+	<venda_block label=330,fieldname=pdxtbrowse><p id="endsection"></p></venda_block label=330>	
+</venda_detblock_collate>
+
+<!-- remove refinement block -->
+<!-- remove refinement block -->
+<venda_tpcomment>
+<!--
+activekeyword - gets the current keyword value
+active< venda_field > - no matter the parameter gets the current value e.g. pdxtcolour, Brand
+activecategory - gets the pcatid value first, if 'cat' parameter is used later it then stores this instead 
+-->
+</venda_tpcomment>
+<venda_detblock_term>
+	<venda_block label=201,field!=type,field!=xancestorid>
+		<p id="<venda_code>">
+			<venda_block label=1673,field=pcatid>
+			<span class="refine-text"><venda_block label=169,type=keyword><venda_text id=site.search_results.refine.by_phrase></venda_block label=169><venda_block label=170,type!=keyword><venda_block label=35,dispfield=field_display_name_brand><venda_text id=site.search_results.refine.by_brand></venda_block label=35><venda_block label=36,dispfield!=field_display_name_brand><venda_dispfield></venda_block label=36></venda_block label=170>:</span><span class="refine-termtext"><venda_termtextname></span>
+<venda_tpxt mode=set,name=pcatid,value=<venda_termtext>>
+			</venda_block label=1673>
+			<venda_block label=1674,field!=pcatid>
+			<a href="<venda_searchurl>&setpagenum=1&settype<venda_code>="><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/img_removesearch.gif" alt="<venda_text id=site.button.remove_collation>" title="<venda_text id=site.button.remove_collation>" border="0"></a>
+			<span class="refine-text"><venda_block label=169,type=keyword><venda_text id=site.search_results.refine.by_phrase></venda_block label=169><venda_block label=170,type!=keyword><venda_tpxt mode=set,name=avnkeyword,value=1><venda_block label=35,dispfield=field_display_name_brand><venda_text id=site.search_results.refine.by_brand></venda_block label=35><venda_block label=36,dispfield!=field_display_name_brand><venda_dispfield></venda_block label=36></venda_block label=170>:</span>
+			<a href="#"  onclick="refinesearch('&setpagenum=1&settype<venda_code>='); return false;" class="refine-link"><!-- Sale pdxt name change -->
+		<venda_block label=162,termtextname=1>ONLINE EXCLUSIVE</venda_block label=162>
+<venda_block label=162,termtextname!=1><venda_termtextname></venda_block label=162>
+</a>
+			<a href="#"  onclick="refinesearch('&setpagenum=1&settype<venda_code>='); return false;" class="refine-remove"><venda_text id=site.search_results.refine.remove></a>
+			</venda_block label=1674>
+		</p>
+		<venda_block label=1671,type=keyword><venda_tpxt mode=set,name=activekeyword,value=<venda_termtext>></venda_block label=1671>
+		<venda_block label=1672,field!=><venda_tpxt mode=set,name=active<venda_field>,value=<venda_termtext>></venda_block label=1672>
+		<venda_block label=1670,field=pcatid,field=cat,operator=or><venda_tpxt mode=set,name=activecategory,value=<venda_termtext>></venda_block label=1670>
+	</venda_block label=201>
+</venda_detblock_term>
+
+<div id="term">
+<div class="exh2"><span></span>
+<venda_block label=211,mode=value,<venda_tpxt mode=get,name=activepcatid>!=><venda_text id=site.search_results.refine.you_are_viwing></venda_block label=211>
+<venda_block label=211,mode=value,<venda_tpxt mode=get,name=activepcatid>=><venda_text id=site.search_results.refine.you_searched_by></venda_block label=211>
+</div>
+<venda_detail_term>
+</div>
+
+<venda_block label=345,totalresults!=0>
+<div id="collate">
+<div class="exh2"><span></span><venda_text id=site.search_results.refine.further_refine_by></div>
+<venda_detail_collate>
+</div>
+</venda_block label=345>

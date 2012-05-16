@@ -1,0 +1,24 @@
+<div class="header-center">
+<ul class="header-links">
+<venda_block label=signedout,ustype!=R>
+<li class="login">
+<!--USER IS NOT LOGGED IN-->
+<a href="<venda_codehttps>?ex=co_wizr-register&amp;bsref=heals">Log In / Register</a>
+</li>
+</venda_block label=signedout>
+<venda_block label=signein,ustype=R>
+<!--USER IS LOGGED IN-->
+<li class="myaccount"><a href="<venda_dispview page=myaccount>">My Account</a></li>
+<li class="logout"><a href="<venda_dispview page=home>&amp;log=4">Log Out</a></li>
+</venda_block label=signein>
+</ul>	
+</ul>
+<venda_block label=welcome,ustype!=R>
+<!--USER IS NOT LOGGED IN-->
+<p class="welcome">Welcome to <venda_setting type=ebiz,name=name></p>
+</venda_block label=welcome>
+<venda_block label=welcomeback,ustype=R>
+<!--USER IS LOGGED IN-->
+<p class="welcome"><venda_userinfo>Welcome back<span> <venda_sesfname> <venda_seslname></span></venda_userinfo></p>
+</venda_block label=welcomeback>
+</div>

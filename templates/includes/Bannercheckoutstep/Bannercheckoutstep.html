@@ -1,0 +1,43 @@
+<venda_block label=45,workflow=shopcart,workflow=giftcertificates,operator=or>
+<!-- Start -->
+<venda_block label=100,mode=value,<venda_tpxt mode=get,name=track>=,<venda_tpxt mode=get,name=co_comn-login>!=1>
+<venda_page page=step_basket>
+</venda_block label=100>
+
+<venda_block label=101,mode=value,<venda_tpxt mode=get,name=co_comn-login>=1>
+<venda_page page=step_login>
+</venda_block label=101>
+
+<venda_block label=102,mode=value,<venda_tpxt mode=get,name=track>=orbt-screen><venda_block label=1102,param1!=login>
+<venda_page page=step_orbtscreen>
+</venda_block label=1102></venda_block label=102>
+
+<venda_block label=103,mode=value,<venda_tpxt mode=get,name=track>=orzc-screen>
+<venda_block label=1103,param1=login,param1=nopswdlookup>
+<venda_page page=step_orzcscreen>
+</venda_block label=1103></venda_block label=103>
+
+
+<venda_block label=105,mode=value,<venda_tpxt mode=get,name=track>=orzc-screen>
+<venda_block label=1105,param1=delivery>
+<venda_page page=step_adddelivery>
+</venda_block label=1105></venda_block label=105>
+
+
+<venda_block label=104,mode=value,<venda_tpxt mode=get,name=track>=orad-editadd,<venda_tpxt mode=get,name=track>=orad-screen,operator=or>
+<venda_page page=step_oradeditadd>
+</venda_block label=104>
+
+
+<venda_block label=106,mode=value,<venda_tpxt mode=get,name=track>=orcf-screen,<venda_tpxt mode=get,name=track>=orgw-screen,<venda_tpxt mode=get,name=track>=gift-screen,<venda_tpxt mode=get,name=track>=orcp-screen,<venda_tpxt mode=get,name=track>=orpayment-empty,operator=or>
+<venda_page page=step_orcfscreen>
+</venda_block label=59>
+</venda_block label=106>
+
+<venda_block label=107,mode=value,<venda_tpxt mode=get,name=track>=orderreceipt><venda_block label=60,elxtstep4text!=>
+<venda_page page=step_orderreceipt>
+</venda_block label=60>
+</venda_block label=107>
+
+
+</venda_block label=45>

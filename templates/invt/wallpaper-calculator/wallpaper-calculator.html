@@ -1,0 +1,126 @@
+<script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/wallpaperCalc.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){WallpaperCalculator();});
+function hideWall(b){$(b).hide()}function showWall(a){$(a).show()}
+</script>
+<style>
+.HealsWallpaperCalculatorWhite {position:absolute;background:white none repeat scroll 0 0;opacity:0.7;filter:alpha(opacity=70);width:100%;height:100%;display:none;z-index:5000;top:0;left:0;}
+#HealsWallpaperCalculatorContainer {position:absolute;width:100%;height:100%;display:none;z-index:5001;top:0;left:0;}
+.HealsWallpaperCalculator {position:absolute;top:15%;left:23%;width:500px;height:520px;background-color:#ffffff;}
+.WallpaperCalculator {width:480px;height:500px;border:1px solid #cccccc;padding:10px;background-color:#f1f1f1;position:relative;overflow:hidden;}
+.WallpaperClose {position:absolute;right:10px;top:10px;}
+.WallpaperCalculatorHeader {height:auto;width:460px;position:relative;}
+.WallpaperCalculatorImage {height:140px;width:140px;border:1px solid #cccccc;float:left;}
+.wallpaperImage {padding:10px;float:left;}
+.WallpaperCalculatorTitle {width:310px;height:auto;float:left;}
+.wallpaperTitle {padding:0 10px 10px 10px;float:left;font-size:20px;font-weight:bold;}
+.wallpaperText {padding:0 10px 10px 10px;float:left;}
+.WallpaperCalculatorStart {padding:10px 0;float:left;height:auto;width:480px;position:relative;}
+.CalculatorTitle {margin:0;background-color:#858D81;height:40px;line-height:40px;width:480px;font-size:16px;float:left;font-weight:normal;color:white;}
+.CalculatorTitle span {padding-left:30px;}
+.Calculator {width:478px;height:280px;border:1px solid #cccccc;float:left;overflow:auto;}
+.CalculatorText {padding:10px;position:relative;height:auto;}
+.addwall1, .addwall2, .addwall3 {padding-left:10px;}
+.conf-buttons {padding:8px 0;}
+.HealsWallpaperCalculatorWhite a {width:100%;height:100%;}
+</style>
+
+<div style="float:left;"><a href="javascript:showWall('#HealsWallpaperCalculatorContainer,.HealsWallpaperCalculatorWhite');"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/wallpaper-calculator-badge.gif" border="0"></a>
+</div>
+<div class="HealsWallpaperCalculatorWhite">
+</div>
+<div id="HealsWallpaperCalculatorContainer">
+<div class="HealsWallpaperCalculator">
+<div class="WallpaperCalculator">
+<div class="WallpaperClose"><a href="javascript:hideWall('#HealsWallpaperCalculatorContainer,.HealsWallpaperCalculatorWhite')">
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/wallpaper-close.jpg" alt="Close" title="Close"></a>
+</div>
+<div class="WallpaperCalculatorHeader">
+<div class="WallpaperCalculatorImage">
+<span class="wallpaperImage"><venda_media rec=invt,type=movie-swf-pict,key=medium,dyn=yes,width=120,height=120></span>
+</div>
+<div class="WallpaperCalculatorTitle">
+<span class="wallpaperTitle"><venda_invtname></span>
+<span class="wallpaperText"><venda_extflds template=pdxtlist,group=4,ref=<venda_invtref>,ivtype=<venda_invtivtype>></span>
+<span class="wallpaperText">To calculate the amount of rolls needed for multiple walls, click 'Add a wall' below. Enter figures to the nearest whole number.<br>Please Note: This is an approximation only.</span>
+</div>
+</div>
+
+<div class="WallpaperCalculatorStart">
+<div class="CalculatorTitle">
+<span>Wallpaper Calculator</span>
+</div>
+<div class="Calculator">
+<div class="CalculatorText">
+<div id="calc">
+<div class="row double">
+<div>Unit of Measurement:</div>
+<div>
+<select id="unit" name="unit">
+<option value="m">Metric (Metres and Centimetres)</option>
+<option value="i">Imperial (Feet and Inches)</option>
+</select>
+</div>
+</div>
+<div class="row double">
+<div>Height of wall:</div>
+<div>
+<input id="height_m" name="height_m" value=""><span class="u_m">m</span><input id="height_c" name="height_c" value=""><span class="u_c">cm</span>
+</div>
+</div>
+<div class="length1">
+<div>Length of 1st wall:</div>
+<div>
+<input id="length1_m" name="length1_m" value=""><span class="u_m">m</span><input id="length1_c" name="length1_c" value=""><span class="u_c">cm</span><span class="addwall1"><a href="javascript:hideWall('.addwall1');javascript:showWall('.length2');">Add a wall</a></span>
+</div>
+</div>
+<div class="length2" style="display:none;">
+<div>Length of 2nd wall:</div>
+<div>
+<input id="length2_m" name="length2_m" value=""><span class="u_m">m</span><input id="length2_c" name="length2_c" value=""><span class="u_c">cm</span><span class="addwall2"><a href="javascript:showWall('.length3');javascript:hideWall('.addwall2');">Add a wall</a></span>
+</div>
+</div>
+<div class="length3" style="display:none;">
+<div>Length of 3rd wall:</div>
+<div>
+<input id="length3_m" name="length3_m" value=""><span class="u_m">m</span><input id="length3_c" name="length3_c" value=""><span class="u_c">cm</span><span class="addwall3"><a href="javascript:showWall('.length4');javascript:hideWall('.addwall3');">Add a wall</a></span>
+</div>
+</div>
+<div class="length4" style="display:none;">
+<div>Length of 4th wall:</div>
+<div>
+<input id="length4_m" name="length4_m" value=""><span class="u_m">m</span><input id="length4_c" name="length4_c" value=""><span class="u_c">cm</span>
+</div>
+</div>
+<div>
+<div>Pattern repeat: (See above for details)</div>
+<div>
+<input id="repeat" name="repeat" value=""><span class="u_c">cm</span>
+</div>
+</div>
+<div>
+<div>Roll width: (See above for details)</div>
+<div>
+<input id="width" name="width" value=""><span class="u_c">cm</span>
+</div>
+</div>
+<div>
+<div class="conf-buttons">
+<a href="javascript:void(0);" id="reset"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/reset-wallpaper.jpg" alt="Reset"></a>
+<a href="javascript:void(0);" id="estimate"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/submit-wallpaper.jpg" alt="Estimate Quantity"></a>
+</div>
+</div>
+<div class="row">
+<div class="result">
+<strong>Approx:</strong> <input id="res" name="res" value="" readonly="readonly"> rolls of <span id="qu_m">10m (33ft)</span> paper needed.
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>

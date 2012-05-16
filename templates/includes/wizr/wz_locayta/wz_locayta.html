@@ -1,0 +1,106 @@
+<!-- YOU ARE ONLY PERMITTED TO CHANGE THE ORDER OF THE INCTEMPLATE TAGS WITHIN THIS TEMPLATE. YOU MAY NOT ADD OR CHANGE ANY OTHER CODE. -->
+<!-- start content-default_nocoltwothree -->
+<script type="text/javascript">
+var availDoubleCheck = "";
+</script>
+<div id="content-default_nocoltwothree">
+<div id="searchresults1">
+	<venda_block label=343,mode=value,<venda_setting type=ebiz,name=showcategorysearchcontent>=disabled>
+		<venda_inctemplate type=includes/wizr/wz_locayta,name=heading_intro>
+	</venda_block label=343>
+	<venda_block label=344,mode=value,<venda_setting type=ebiz,name=showcategorysearchcontent>!=disabled>
+	</venda_block label=344>
+	<venda_block label=350,mode=value,<venda_setting type=ebiz,name=showcategorysearchcontent>!=disabled>
+		<venda_inctemplate type=includes/wizr/wz_locayta,name=addedmsg_your_categorysearch>
+	</venda_block label=350>
+	<venda_inctemplate type=includes/wizr/wz_locayta,name=refine_search>
+</div>
+</div>
+<div class="clear-all"></div>
+<!-- start column 1 -->
+<venda_block label=151,mode=value,<venda_setting type=ebiz,name=powerreviews>=1,<venda_setting type=ebiz,name=powerreviewsproddetail>=1>
+<script type="text/javascript">
+<venda_inctemplate type=includes,name=powerreviewscripts>
+</script>
+</venda_block label=151>
+<venda_page page=swapimage_js>
+<div id="tag-searchkeyword" style="display:none;"><venda_primarysearchtext></div>
+<script type="text/javascript" src="http://service.avail.net/2009-02-13/dynamic/8f6b6820-5425-11de-92c7-12313b0039c1/emark.js"></script>
+<script type="text/javascript"><!-- translate htxt for Avail-->
+var availsrch="<venda_htxt mode=make,availsrch=<venda_primarysearchtext>>";
+</script>
+<div class="clear-all"></div>
+<div id="col-one">
+	<venda_inctemplate type=includes/wizr/wz_locayta,name=col_one>
+</div>
+<!-- end column 1 -->
+
+<!-- start columns 2 and 3 -->
+<div id="col-two-three">	
+
+<!-- start column 2 -->
+<div id="col-two">
+
+<!-- start content -->
+<a name="content" id="content"></a>
+
+<div id="searchresults">
+	<venda_inctemplate name=availSearch,type=includes><div class="clear-all"></div>
+	<venda_block label=345,totalresults!=0>
+	<venda_block label=349,mode=value,<venda_setting type=ebiz,name=showcategorysearchcontent>=disabled>
+		<venda_inctemplate type=includes/wizr/wz_locayta,name=addedmsg_your_search>
+	</venda_block label=349>
+	<venda_block label=570,mode=value,<venda_setting type=ebiz,name=showsearchgridlistview>=1>
+	<venda_inctemplate type=includes/wizr/wz_locayta,name=gridlistview_search>
+	</venda_block label=570>
+	<venda_inctemplate type=includes/wizr/wz_locayta,name=collation_prods>
+
+	<venda_block label=1214541,mode=value,<venda_tpxt mode=get,name=pcatid>=notnull><venda_page page=<venda_tpxt mode=get,name=pcatid>></venda_block label=1214541>
+	</venda_block label=345>
+	
+	<venda_block label=346,totalresults=0>
+	<venda_inctemplate type=includes/wizr/wz_locayta,name=your_search_no_results>
+	</venda_block label=346>
+	
+	<venda_block label=348,mode=value,<venda_setting type=ebiz,name=showcategorysearchcontent>!=disabled>
+		<venda_inctemplate type=includes/wizr/wz_locayta,name=footer_search_content>
+	</venda_block label=348>
+	
+<script type="text/javascript">
+	function refinesearch(gURL){
+		var bkList = "bklist=<venda_cattree bklist=mycatref,type=icat>";
+		var term = "<venda_searchurl>";
+		term = term.replace (/\'s/g,"\\'s");
+		window.location=term+gURL+'&'+bkList;
+	}
+</script>
+</div>
+<venda_inctemplate type=includes/wizr/wz_locayta,name=extras>
+<!-- end content -->
+
+</div>
+<!-- end column 2 -->
+</div>
+<div class="catslider" style="clear:both;">
+<venda_category temp=slider_cat1,ref=<venda_tpxt mode=get,name=activepcatid>slider,rec=icat>
+<venda_category temp=slider_cat2,ref=<venda_tpxt mode=get,name=activepcatid>slider2,rec=icat>
+</div>
+
+<venda_inctemplate name=hbxlocalvars5,type=includes/tracking>
+<venda_inctemplate name=hitboxOthers,type=includes/tracking>
+<venda_inctemplate name=cm-wz_locayta,type=includes/tracking/coremetrics>
+<!-- <venda_glxt mode=set,name=searchurl,value=<venda_searchurl>> -->
+<venda_tpcomment><!-- TPXTs are set for webtrends meta tag --></venda_tpcomment>
+<venda_tpxt mode=set,name=totalresults,value=<venda_totalresults>>
+<venda_tpxt mode=set,name=primarysearchtext,value=<venda_primarysearchtext>>
+<script type="text/javascript">
+<!--
+
+var availLinks = (YAHOO.util.Dom.getElementsByClassName('availlink', 'a'));
+var i=0;
+for (i=0;i<availLinks.length;i++)
+{
+availLinks[i].href = (availLinks[i].href+'?htxt='+availsrch);
+}
+-->
+</script>

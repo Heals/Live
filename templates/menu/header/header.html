@@ -1,0 +1,19 @@
+<div id="header">
+<venda_inctemplate name=header-logo,type=menu>
+<venda_inctemplate name=header-center,type=menu>
+<venda_inctemplate name=header-basket,type=menu>
+<div class="header-bottom">
+<venda_inctemplate name=searchbox,type=menu>
+<ul class="storeandphone">
+<li id="storefirst"><a href="<venda_dispview pcat=our_stores>">Store Locator</a></li>
+<li>TEL: <span>08700 240 780</span></li>
+</ul>
+</div>
+<venda_block label=notshopcart,mode=value,workflow!=shopcart>
+<venda_inctemplate name=topnavcategories,type=cats>
+<venda_inctemplate name=crumbtrail,type=includes>
+</venda_block label=notshopcart>
+<venda_block label=isshopcart,mode=value,workflow=shopcart>
+<br /><br />
+</venda_block label=isshopcart>
+</div>

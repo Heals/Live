@@ -1,0 +1,119 @@
+<style type="text/css">
+/* STYLE FOR SIGN IN ONLY */
+#checkout .checkoutL {float:none !important;width:938px; !inportant;}
+</style>
+<venda_category rec=elementcat,ref=signintopcontent>
+
+<div class="checkoutL">
+<div class="container signin">
+
+<venda_inctemplate type=includes/admn/co_comn-login,name=heading_intro>
+
+<form name="loginform" id="loginform" method="post" action="<venda_codehttps>" onSubmit="return passEmail();">
+<venda_esat>
+<venda_block label=11,errors=notnull>
+<input type="hidden" name="param1" value="<venda_param1>">
+</venda_block label=11>
+
+<venda_tpcomment><!-- common values --></venda_tpcomment>
+<venda_block label=21,mode=value,<venda_htxt mode=get,name=group>=>
+<input type="hidden" name="log" value="1">
+</venda_block label=21>
+<input type="hidden" name="bsref" value="<venda_bsref>">
+<input type="hidden" name="trrfext" value="1">
+<input type="hidden" name="htxt" value="<venda_htxt mode=get,name=foo>"><venda_tpcomment><!-- used by sign in popup - not detrimental as part of standard sign in --></venda_tpcomment>
+
+<venda_block label=20,workflow!=shopcart,workflow!=giftcertificates,workflow!=refer>
+<venda_block label=23,workflow!=giftlist>
+<venda_tpcomment><!-- values for workflow=register, or view if you have errors --></venda_tpcomment>
+<input type="hidden" name="page" value="checkgroup">
+<input type="hidden" name="ex" value="co_disp-view">
+<input type="hidden" name="curlayout" value="checkout">
+<input type="hidden" name="layout" value="myaccount">
+<venda_block label=20,mode=value,<venda_htxt mode=get,name=group>=press>
+<input type="hidden" name="log" value="1">
+<input type="hidden" name="assignusgrref" value="press">
+</venda_block label=20>
+</venda_block label=23>
+
+<venda_block label=21,workflow=giftlist,step!=glstmang>
+<venda_tpcomment><!-- values for workflow=giftlist create --></venda_tpcomment>
+<input type="hidden" name="step" value="glstcreate">
+<input type="hidden" name="curstep" value="glstcreate">
+<input type="hidden" name="ex" value="co_wizr-giftlist">
+<input type="hidden" name="curlayout" value="default">
+<input type="hidden" name="layout" value="default">
+<input type="hidden" name="glstlogout" value="1">
+</venda_block label=21>
+
+<venda_block label=22,workflow=giftlist,step=glstmang>
+<venda_tpcomment><!-- values for workflow=giftlist mang --></venda_tpcomment>
+<input type="hidden" name="step" value="glstmang">
+<input type="hidden" name="ex" value="co_wizr-giftlist">
+<input type="hidden" name="curlayout" value="default">
+<input type="hidden" name="layout" value="default">
+</venda_block label=22>
+</venda_block label=20>
+
+<venda_block label=12,workflow=shopcart,workflow=giftcertificates,operator=or>
+<venda_tpcomment><!-- values for workflow=shopcart or giftcertificates (and co_comn-login shopcart) only --></venda_tpcomment>
+<venda_block label=13,usgrref!=instore><input type="hidden" name="step" value="confirm"></venda_block label=13>
+<venda_block label=14,usgrref=instore>
+<input type="hidden" name="step" value="searchuser">
+<input type="hidden" name="wizard" value="instore">
+<input type="hidden" name="param1" value="details">
+<input type="hidden" name="log" value="2">
+<input type="hidden" name="copysc" value="0">
+</venda_block label=14>
+<input type="hidden" name="ex" value="co_wizr-shopcart">
+<input type="hidden" name="curlayout" value="checkout">
+</venda_block label=12>
+
+<venda_block label=13,workflow=refer>
+<venda_tpcomment><!-- values for workflow=refer (and co_comn-login refer) only --></venda_tpcomment>
+<input type="hidden" name="step" value="refer">
+<input type="hidden" name="ex" value="co_wizr-refer">
+<input type="hidden" name="curlayout" value="checkout">
+<input type="hidden" name="layout" value="myaccount">
+</venda_block label=13>
+
+<venda_block label=15,usgrref!=instore><input type="hidden" name="glxt" value="<venda_glxt mode=make,addsnotdone=1>"></venda_block label=15>
+<div id="exisitinguser">
+<h1>Existing Customers</h1>
+<venda_inctemplate type=includes/admn/co_comn-login,name=email_address>
+<venda_inctemplate type=includes/admn/co_comn-login,name=password>
+<venda_inctemplate type=includes/admn/co_comn-login,name=js_buttons>
+</div>
+<div class="notregister">
+<div class="notregisterinput">
+<h1><venda_text id=site.sign_in.label.not_registered></h1></div>
+<div class="notregistertxt"><venda_text id=site.sign_in.create_password_later></div>
+<div id="buttons2">
+<venda_block label=75,workflow!=shopcart>
+<input class="right" type="image" alt="<venda_text id=site.button.register>" onclick="document.loginform.registered[0].checked=true;document.loginform.registered[1].checked=false;" src="/content/ebiz/heals/resources/images/bt_registersmall.gif"/>
+</venda_block label=75>
+<venda_block label=76,workflow=shopcart>
+<input class="right" type="image" alt="<venda_text id=site.button.registerandcheckout>" onclick="document.loginform.registered[0].checked=true;document.loginform.registered[1].checked=false;" src="/content/ebiz/heals/resources/images/bt_registerandcheckout.gif"/>
+</venda_block label=76>
+</div>
+<br class="clear-all">
+</div>
+<venda_inctemplate type=includes/admn/co_comn-login,name=express_checkout>
+
+
+</form>
+
+</div>
+
+<venda_category rec=elementcat,ref=signincontent>
+
+</div>
+
+<venda_tpcomment><!-- 
+step:<venda_curstep>
+param1: <venda_param1>
+param2: <venda_param2>
+workflow: <venda_workflow>
+page: co_comn-login
+ --></venda_tpcomment>
+<venda_tpxt mode=set,name=co_comn-login,value=1>
