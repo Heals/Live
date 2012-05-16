@@ -1,6 +1,0 @@
-Live
-====
-
-Live
-
-now live
