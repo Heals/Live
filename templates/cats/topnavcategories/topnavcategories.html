@@ -774,12 +774,14 @@
             </span></div></li> 
 
             <li class="right"><div class="offers">
-            <venda_block label=saleoff1,mode=value,<venda_time time=now,format=dd/mm/yyyy>&lt;09/06/2012>
-            <a href="<venda_dispview icat=special_offers>">OFFERS</a>
-            </venda_block label=saleoff1>
-            <venda_block label=saleoff2,mode=value,<venda_time time=now,format=dd/mm/yyyy>&gt;01/05/2012>
-            <a href="<venda_dispview icat=special_offers>">OFFERS</a>
-            </venda_block label=saleoff2>
+<script>
+var x=new Date();
+x.setFullYear(2012,5,9);
+var today = new Date();
+if (x<today){document.write("<a href=\"<venda_dispview icat=sale>\">SALE</a>");}
+else if (x>today){document.write("<a href=\"<venda_dispview icat=special_offers>\">OFFERS</a>");}
+else{document.write("<a href=\"<venda_dispview icat=sale>\">SALE</a>");}
+</script>
             </div></li>
     </ul> 
 </div>
