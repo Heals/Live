@@ -773,6 +773,16 @@
 </div>
             </span></div></li> 
 
-            <li class="right"><div class="offers"><a href="<venda_dispview icat=special_offers>">OFFERS</a></div></li>
+            <li class="right"><div class="offers">
+            <venda_block label=saleoff1,mode=value,<venda_time time=now,format=dd/mm/yyyy>&lt;09/06/2012>
+            <a href="<venda_dispview icat=special_offers>">OFFERS</a>
+            </venda_block label=saleoff1>
+            <venda_block label=saleoff2,mode=value,<venda_time time=now,format=dd/mm/yyyy>&gt;01/05/2012>
+            <a href="<venda_dispview icat=special_offers>">OFFERS</a>
+            </venda_block label=saleoff2>
+            <venda_block label=saleon,mode=value,<venda_time time=now,format=dd/mm/yyyy>&gt;08/06/2012>
+            <a href="<venda_dispview icat=sale>">SALE</a>
+            </venda_block label=saleon>
+            </div></li>
     </ul> 
 </div>
