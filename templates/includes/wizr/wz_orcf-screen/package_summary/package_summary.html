@@ -1,6 +1,11 @@
 <script type="text/javascript" id="postcodelist"></script>
-
 <venda_inctemplate name=orderDetblocks,type=includes>
+<script>
+var s = "<venda_order shopcart=1,template=productType>";
+if (s.indexOf("Fragile") != -1){
+var invtwunits = "Fragile"}
+else {var invtwunits = "NotFragile"}
+</script>
 
 <venda_detblock3>
 	<script type="text/javascript">
