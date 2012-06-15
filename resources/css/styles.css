@@ -425,13 +425,15 @@ ul.products .price {margin-bottom:29px;}
 #collate .termtext a{color: #666666; font-size:0.9em; font-weight:normal;}
 #ttvalue {display: none;}
 /* Pagination */
-.pnumber-search, .pnumber{vertical-align:text-middle; float: left; padding-left: 5px; width: 455px;}
-.pnumber-search a, .pnumber a {text-decoration: underline;}
-.pagnNumbers span, .pagnNumbers a{padding: 0 3px;}
+.pnumber-search, .pnumber{vertical-align:text-middle; float: left; padding-left: 5px; width: 660px;}
+.pnumber-search a, .pnumber a {text-decoration: none;}
+.pnumber a:hover {text-decoration: underline;}
+.pagnNumbers span, .pagnNumbers a, .pnumber span {padding: 0 3px;font-weight:bold;}
+.pnumber span a {font-weight:normal;}
 .pagnNumbers span.pagnCurrent{font-weight:bold;text-decoration:none;}
 .pagnViewAll, .pagnShowViewByPaged {font-weight: bold; text-transform: lowercase; float: right; margin-right: 35px;}
-.pagnNext-off , .pagnNext{background: url(../images/next_bullet.gif) right 12px no-repeat; float: right; text-transform: lowercase; padding-right: 10px; margin: 0 10px 0 15px;  font-weight: bold;}
-.pagnPrev-off, .pagnPrev{background: url(../images/previous_bullet.gif) 0 12px no-repeat; float: right; text-transform: lowercase; padding-left: 10px; margin-right: 10px; font-weight: bold;}
+.pagnNext-off , .pagnNext, .nextpage {background: url(../images/next_bullet.gif) right 12px no-repeat; float: right; text-transform: lowercase; padding-right: 10px; margin: 0 10px 0 15px;  font-weight: bold;}
+.pagnPrev-off, .pagnPrev , .previouspage {background: url(../images/previous_bullet.gif) 0 12px no-repeat; float: right; text-transform: lowercase; padding-left: 10px; margin-right: 10px; font-weight: bold;}
 .refinementdivider {/* avoid collapsing divs - especially ns6 (pc) */
 	line-height:10px; font-size:0; clear:both; height:10px;}
 #searchResults h1 {display: none; font-size: 1.3em; margin: 0 0 0 5px;}
