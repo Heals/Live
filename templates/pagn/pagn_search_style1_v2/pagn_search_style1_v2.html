@@ -3,7 +3,7 @@
 		<span class="pagnCurrent"><venda_number></span>
 	</venda_block label=1111>	
 	<venda_block label=1112,mode=value,<venda_currentpage>!=<venda_number>>           
-		<a href="<venda_baseurl>&setpagenum=<venda_number><venda_block label=1128,mode=value,<venda_pgn_isviewall>=1>&isviewall=1</venda_block label=1128>&perpage=<venda_perpage>" class="updatesearch" title="<venda_text id=site.page_numbers.gotopage>" onclick="percentageEars();"><venda_number></a>
+		<a href="<venda_baseurl>&setpagenum=<venda_number><venda_block label=1128,mode=value,<venda_pgn_isviewall>=1>&isviewall=1</venda_block label=1128>&perpage=<venda_perpage>" class="updatesearch" title="<venda_text id=site.page_numbers.gotopage>"><venda_number></a>
 	</venda_block label=1112>
 </venda_detblock_pageslist>
 
@@ -24,10 +24,10 @@
 						<span class="pagnViewAll">
 							<venda_block label=1125,mode=value,<venda_setting type=ebiz,name=setsearchviewallvalue>=notnull>
 								<venda_block label=1123,mode=value,<venda_pgn_totalitems>&lt;<venda_setting type=ebiz,name=setsearchviewallvalue>>
-									<a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&isviewall=1&perpage=<venda_pgn_totalitems>" title="<venda_text id=site.page_numbers.showall>" onclick="percentageEars();"><venda_text id=site.page_numbers.viewall></a>
+									<a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&isviewall=1&perpage=<venda_pgn_totalitems>" title="<venda_text id=site.page_numbers.showall>"><venda_text id=site.page_numbers.viewall></a>
 								</venda_block label=1123>
 								<venda_block label=1124,mode=value,<venda_pgn_totalitems>&gt;<venda_setting type=ebiz,name=setsearchviewallvalue>>
-									<a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&isviewall=1&perpage=102" title="<venda_text id=site.search.page_numbers.showallmax>" onclick="percentageEars();"><venda_text id=site.search.page_numbers.viewallmax></a>
+									<a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&isviewall=1&perpage=102" title="<venda_text id=site.search.page_numbers.showallmax>"><venda_text id=site.search.page_numbers.viewallmax></a>
 								</venda_block label=1124>
 							</venda_block label=1125>	
 						</span>
@@ -38,7 +38,7 @@
 
 				<!--show the next page XXX -->	
 				<venda_block label=1116,mode=value,<venda_pgn_currentpage>&lt;<venda_pgn_totalpages>>	
-					<span class="pagnNext"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=<venda_pgn_nextpage><venda_block label=1132,mode=value,<venda_pgn_isviewall>=1>&isviewall=1</venda_block label=1132>&perpage=<venda_pgn_perpage>" title="<venda_text id=site.page_numbers.gotonextpage>" onclick="percentageEars();"><venda_text id=site.page_numbers.link.next></a></span>
+					<span class="pagnNext"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=<venda_pgn_nextpage><venda_block label=1132,mode=value,<venda_pgn_isviewall>=1>&isviewall=1</venda_block label=1132>&perpage=<venda_pgn_perpage>" title="<venda_text id=site.page_numbers.gotonextpage>"><venda_text id=site.page_numbers.link.next></a></span>
 				</venda_block label=1116>
 				<venda_block label=11161,mode=value,<venda_pgn_currentpage>=<venda_pgn_totalpages>>
 					<span class="pagnNext-off"><venda_text id=site.page_numbers.link.next></span>
@@ -46,7 +46,7 @@
 
 				<!-- show the previous link-->
 				<venda_block label=1117,mode=value,<venda_pgn_currentpage>&gt;1>
-					<span class="pagnPrev"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=<venda_pgn_previouspage><venda_block label=1129,mode=value,<venda_pgn_isviewall>=1>&isviewall=1</venda_block label=1129>&perpage=<venda_pgn_perpage>" title="<venda_text id=site.page_numbers.gotopreviouspage>" onclick="percentageEars();"><venda_text id=site.page_numbers.link.previous></a></span>
+					<span class="pagnPrev"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=<venda_pgn_previouspage><venda_block label=1129,mode=value,<venda_pgn_isviewall>=1>&isviewall=1</venda_block label=1129>&perpage=<venda_pgn_perpage>" title="<venda_text id=site.page_numbers.gotopreviouspage>"><venda_text id=site.page_numbers.link.previous></a></span>
 				</venda_block label=1117>
 				<venda_block label=11171,mode=value,<venda_pgn_currentpage>=1>
 					<span class="pagnPrev-off"><venda_text id=site.page_numbers.link.previous></span>
@@ -55,7 +55,7 @@
 				<!-- show the first page link-->
 Page 
 				<venda_block label=1115,mode=value,<venda_pgn_windowstartpage>&gt;1>	
-					<span class="pagnFirst"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1<venda_block label=1130,mode=value,<venda_pgn_isviewall>=1>&isviewall=1</venda_block label=1130>&perpage=<venda_pgn_perpage>" title="<venda_text id=site.page_numbers.gotofirstpage>" onclick="percentageEars();">1</a></span>
+					<span class="pagnFirst"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1<venda_block label=1130,mode=value,<venda_pgn_isviewall>=1>&isviewall=1</venda_block label=1130>&perpage=<venda_pgn_perpage>" title="<venda_text id=site.page_numbers.gotofirstpage>">1</a></span>
 				</venda_block label=1115>
 						
 				<venda_block label=1113,mode=value,<venda_pgn_leftgap>&gt;1>
@@ -72,7 +72,7 @@ Page
 		
 				<!-- show the last link -->	
 				<venda_block label=1118,mode=value,<venda_pgn_windowendpage>&lt;<venda_pgn_totalpages>>			
-					<span class="pagnLast"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=<venda_pgn_totalpages><venda_block label=1131,mode=value,<venda_pgn_isviewall>=1>&isviewall=1</venda_block label=1131>&perpage=<venda_pgn_perpage>" title="<venda_text id=site.page_numbers.gotolastpage>" onclick="percentageEars();"><venda_pgn_totalpages></a></span>
+					<span class="pagnLast"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=<venda_pgn_totalpages><venda_block label=1131,mode=value,<venda_pgn_isviewall>=1>&isviewall=1</venda_block label=1131>&perpage=<venda_pgn_perpage>" title="<venda_text id=site.page_numbers.gotolastpage>"><venda_pgn_totalpages></a></span>
 				</venda_block label=1118>
 				
 
@@ -81,7 +81,7 @@ Page
 		</div>
 		<venda_block label=1120,mode=value,<venda_pgn_isviewall>=1>
 			<!-- show paged view -->
-			<span class="pagnShowViewByPaged<venda_block label=1136,mode=value,<venda_pgn_totalpages>=1> setMarginPagedView</venda_block label=1136>"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&perpage=<venda_setting type=ebiz,name=setsearchviewbypagevalue>" title="<venda_text id=site.page_numbers.gobacktopagedview>" onclick="percentageEars();"><venda_text id=site.page_numbers.viewbypage></a></span>
+			<span class="pagnShowViewByPaged<venda_block label=1136,mode=value,<venda_pgn_totalpages>=1> setMarginPagedView</venda_block label=1136>"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&perpage=<venda_setting type=ebiz,name=setsearchviewbypagevalue>" title="<venda_text id=site.page_numbers.gobacktopagedview>"><venda_text id=site.page_numbers.viewbypage></a></span>
 		</venda_block label=1120>
 		<venda_block label=1119,mode=value,<venda_pgn_isviewall>!=1>
 			<venda_block label=20,mode=value,<venda_setting type=ebiz,name=setitemsperpagestylesearch>=itemsperpagedropdownsearch>
@@ -105,12 +105,12 @@ Page
 				<span class="pagnPerpage">
 					<ul class="pagnItemPerPage">
 						<li class="pagnTextView"><venda_text id=site.page_numbers.textview></li>
-						<venda_block label=40,mode=value,<venda_setting type=ebiz,name=setitemsperpage1linkssearch>=notnull><li class="<venda_block label=1137,mode=value,<venda_setting type=ebiz,name=setitemsperpage2linkssearch>=null>setlastperpage</venda_block label=1137><venda_block label=1138,mode=value,<venda_setting type=ebiz,name=setitemsperpage2linkssearch>=notnull>setperpage</venda_block label=1138> <venda_block label=91,mode=value,<venda_pgn_perpage>=<venda_setting type=ebiz,name=setitemsperpage1linkssearch>>setperpage_active</venda_block label=91>"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&perpage=<venda_setitemsperpage1linkssearch>" onclick="percentageEars();"><venda_setting type=ebiz,name=setitemsperpage1linkssearch></a></li></venda_block label=40>
-						<venda_block label=41,mode=value,<venda_setting type=ebiz,name=setitemsperpage2linkssearch>=notnull><li class="<venda_block label=1137,mode=value,<venda_setting type=ebiz,name=setitemsperpage3linkssearch>=null>setlastperpage</venda_block label=1137><venda_block label=1138,mode=value,<venda_setting type=ebiz,name=setitemsperpage3linkssearch>=notnull>setperpage</venda_block label=1138> <venda_block label=92,mode=value,<venda_pgn_perpage>=<venda_setting type=ebiz,name=setitemsperpage2linkssearch>>setperpage_active</venda_block label=92>"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&perpage=<venda_setting type=ebiz,name=setitemsperpage2linkssearch>" onclick="percentageEars();"><venda_setting type=ebiz,name=setitemsperpage2linkssearch></a></li></venda_block label=41>
-						<venda_block label=42,mode=value,<venda_setting type=ebiz,name=setitemsperpage3linkssearch>=notnull><li class="<venda_block label=1137,mode=value,<venda_setting type=ebiz,name=setitemsperpage4linkssearch>=null>setlastperpage</venda_block label=1137><venda_block label=1138,mode=value,<venda_setting type=ebiz,name=setitemsperpage4linkssearch>=notnull>setperpage</venda_block label=1138> <venda_block label=93,mode=value,<venda_pgn_perpage>=<venda_setting type=ebiz,name=setitemsperpage3linkssearch>>setperpage_active</venda_block label=93>"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&perpage=<venda_setting type=ebiz,name=setitemsperpage3linkssearch>" onclick="percentageEars();"><venda_setting type=ebiz,name=setitemsperpage3linkssearch></a></li></venda_block label=42>
-						<venda_block label=43,mode=value,<venda_setting type=ebiz,name=setitemsperpage4linkssearch>=notnull><li class="<venda_block label=1137,mode=value,<venda_setting type=ebiz,name=setitemsperpage5linkssearch>=null>setlastperpage</venda_block label=1137><venda_block label=1138,mode=value,<venda_setting type=ebiz,name=setitemsperpage5linkssearch>=notnull>setperpage</venda_block label=1138> <venda_block label=94,mode=value,<venda_pgn_perpage>=<venda_setting type=ebiz,name=setitemsperpage4linkssearch>>setperpage_active</venda_block label=94>"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&perpage=<venda_setting type=ebiz,name=setitemsperpage4linkssearch>" onclick="percentageEars();"><venda_setting type=ebiz,name=setitemsperpage4linkssearch></a></li></venda_block label=43>
-						<venda_block label=44,mode=value,<venda_setting type=ebiz,name=setitemsperpage5linkssearch>=notnull><li class="<venda_block label=1137,mode=value,<venda_setting type=ebiz,name=setitemsperpage6linkssearch>=null>setlastperpage</venda_block label=1137><venda_block label=1138,mode=value,<venda_setting type=ebiz,name=setitemsperpage6linkssearch>=notnull>setperpage</venda_block label=1138> <venda_block label=95,mode=value,<venda_pgn_perpage>=<venda_setting type=ebiz,name=setitemsperpage5linkssearch>>setperpage_active</venda_block label=95>"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&perpage=<venda_setting type=ebiz,name=setitemsperpage5linkssearch>" onclick="percentageEars();"><venda_setting type=ebiz,name=setitemsperpage5linkssearch></a></li></venda_block label=44>
-						<venda_block label=45,mode=value,<venda_setting type=ebiz,name=setitemsperpage6linkssearch>=notnull><li class="setlastperpage <venda_block label=96,mode=value,<venda_pgn_perpage>=<venda_setting type=ebiz,name=setitemsperpage6linkssearch>>setperpage_active</venda_block label=96>"><a class="updatesearch" href="pgn_baseurl&setpagenum=1&perpage=<venda_setting type=ebiz,name=setitemsperpage6linkssearch>" onclick="percentageEars();"><venda_setting type=ebiz,name=setitemsperpage6linkssearch></a></li></venda_block label=45>
+						<venda_block label=40,mode=value,<venda_setting type=ebiz,name=setitemsperpage1linkssearch>=notnull><li class="<venda_block label=1137,mode=value,<venda_setting type=ebiz,name=setitemsperpage2linkssearch>=null>setlastperpage</venda_block label=1137><venda_block label=1138,mode=value,<venda_setting type=ebiz,name=setitemsperpage2linkssearch>=notnull>setperpage</venda_block label=1138> <venda_block label=91,mode=value,<venda_pgn_perpage>=<venda_setting type=ebiz,name=setitemsperpage1linkssearch>>setperpage_active</venda_block label=91>"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&perpage=<venda_setitemsperpage1linkssearch>"><venda_setting type=ebiz,name=setitemsperpage1linkssearch></a></li></venda_block label=40>
+						<venda_block label=41,mode=value,<venda_setting type=ebiz,name=setitemsperpage2linkssearch>=notnull><li class="<venda_block label=1137,mode=value,<venda_setting type=ebiz,name=setitemsperpage3linkssearch>=null>setlastperpage</venda_block label=1137><venda_block label=1138,mode=value,<venda_setting type=ebiz,name=setitemsperpage3linkssearch>=notnull>setperpage</venda_block label=1138> <venda_block label=92,mode=value,<venda_pgn_perpage>=<venda_setting type=ebiz,name=setitemsperpage2linkssearch>>setperpage_active</venda_block label=92>"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&perpage=<venda_setting type=ebiz,name=setitemsperpage2linkssearch>"><venda_setting type=ebiz,name=setitemsperpage2linkssearch></a></li></venda_block label=41>
+						<venda_block label=42,mode=value,<venda_setting type=ebiz,name=setitemsperpage3linkssearch>=notnull><li class="<venda_block label=1137,mode=value,<venda_setting type=ebiz,name=setitemsperpage4linkssearch>=null>setlastperpage</venda_block label=1137><venda_block label=1138,mode=value,<venda_setting type=ebiz,name=setitemsperpage4linkssearch>=notnull>setperpage</venda_block label=1138> <venda_block label=93,mode=value,<venda_pgn_perpage>=<venda_setting type=ebiz,name=setitemsperpage3linkssearch>>setperpage_active</venda_block label=93>"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&perpage=<venda_setting type=ebiz,name=setitemsperpage3linkssearch>"><venda_setting type=ebiz,name=setitemsperpage3linkssearch></a></li></venda_block label=42>
+						<venda_block label=43,mode=value,<venda_setting type=ebiz,name=setitemsperpage4linkssearch>=notnull><li class="<venda_block label=1137,mode=value,<venda_setting type=ebiz,name=setitemsperpage5linkssearch>=null>setlastperpage</venda_block label=1137><venda_block label=1138,mode=value,<venda_setting type=ebiz,name=setitemsperpage5linkssearch>=notnull>setperpage</venda_block label=1138> <venda_block label=94,mode=value,<venda_pgn_perpage>=<venda_setting type=ebiz,name=setitemsperpage4linkssearch>>setperpage_active</venda_block label=94>"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&perpage=<venda_setting type=ebiz,name=setitemsperpage4linkssearch>"><venda_setting type=ebiz,name=setitemsperpage4linkssearch></a></li></venda_block label=43>
+						<venda_block label=44,mode=value,<venda_setting type=ebiz,name=setitemsperpage5linkssearch>=notnull><li class="<venda_block label=1137,mode=value,<venda_setting type=ebiz,name=setitemsperpage6linkssearch>=null>setlastperpage</venda_block label=1137><venda_block label=1138,mode=value,<venda_setting type=ebiz,name=setitemsperpage6linkssearch>=notnull>setperpage</venda_block label=1138> <venda_block label=95,mode=value,<venda_pgn_perpage>=<venda_setting type=ebiz,name=setitemsperpage5linkssearch>>setperpage_active</venda_block label=95>"><a class="updatesearch" href="<venda_pgn_baseurl>&setpagenum=1&perpage=<venda_setting type=ebiz,name=setitemsperpage5linkssearch>"><venda_setting type=ebiz,name=setitemsperpage5linkssearch></a></li></venda_block label=44>
+						<venda_block label=45,mode=value,<venda_setting type=ebiz,name=setitemsperpage6linkssearch>=notnull><li class="setlastperpage <venda_block label=96,mode=value,<venda_pgn_perpage>=<venda_setting type=ebiz,name=setitemsperpage6linkssearch>>setperpage_active</venda_block label=96>"><a class="updatesearch" href="pgn_baseurl&setpagenum=1&perpage=<venda_setting type=ebiz,name=setitemsperpage6linkssearch>"><venda_setting type=ebiz,name=setitemsperpage6linkssearch></a></li></venda_block label=45>
 					</ul>
 				</span>
 			</venda_block label=21><venda_tpcomment><!-- end itemsperpage style --></venda_tpcomment>
