@@ -48,6 +48,7 @@ var x = "<venda_invtwas>";
 var f = "<venda_invtsell>";
 var g = 1-(f/x);
 percent= (g * 100).toFixed(2);
+function percentageEars() {
 if ((percent > 4.00) && (percent < 10.00)) {
 	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/5percent.png\">");}
 if ((percent > 9.00) && (percent < 15.00)) {
@@ -74,6 +75,8 @@ if ((percent > 69.00) && (percent < 75.00)) {
 	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/70percent.png\">");}
 if (percent > 74.00) {
 	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/70percentplus.png\">");}
+}
+percentageEars();
 </script>
 </a>
 </div>
