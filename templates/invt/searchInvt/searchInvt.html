@@ -49,34 +49,36 @@ availDoubleCheck = availDoubleCheck + '<venda_invtref>,';
 <script type="text/javascript">
 var x = "<venda_invtwas>";
 var f = "<venda_invtsell>";
-var g = 1- f/x;
+var g = 1-(f/x);
+function percentageEars() {
 percent= (g * 100).toFixed(2);
 if ((percent > 4.00) && (percent < 10.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/5percent.png\">");}
+	$(".discount50").innerHTML="<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/5percent.png\">";}
 if ((percent > 9.00) && (percent < 15.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/10percent.png\">");}
+	$(".discount50").innerHTML="<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/10percent.png\">";}
 if ((percent > 14.00) && (percent < 20.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/15percent.png\">");}
+	$(".discount50").innerHTML="<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/15percent.png\">";}
 if ((percent > 19.00) && (percent < 25.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/20percent.png\">");}
+	$(".discount50").innerHTML="<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/20percent.png\">";}
 if ((percent > 24.00) && (percent < 30.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/25percent.png\">");}
+	$(".discount50").innerHTML="<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/25percent.png\">";}
 if ((percent > 29.00) && (percent < 35.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/30percent.png\">");}
+	$(".discount50").innerHTML="<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/30percent.png\">";}
 if ((percent > 34.00) && (percent < 40.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/35percent.png\">");}
+	$(".discount50").innerHTML="<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/35percent.png\">";}
 if ((percent > 39.00) && (percent < 45.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/40percent.png\">");}
+	$(".discount50").innerHTML="<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/40percent.png\">";}
 if ((percent > 44.00) && (percent < 50.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/45percent.png\">");}
+	$(".discount50").innerHTML="<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/45percent.png\">";}
 if ((percent > 49.00) && (percent < 60.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/50percent.png\">");}
+	$(".discount50").innerHTML="<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/50percent.png\">";}
 if ((percent > 59.00) && (percent < 70.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/60percent.png\">");}
+	$(".discount50").innerHTML="<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/60percent.png\">";}
 if ((percent > 69.00) && (percent < 75.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/70percent.png\">");}
+	$(".discount50").innerHTML="<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/70percent.png\">";}
 if (percent > 74.00) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/70percentplus.png\">");}
+	$(".discount50").innerHTML="<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/70percentplus.png\">";}
+};
 </script>
 </a>
 </div>
