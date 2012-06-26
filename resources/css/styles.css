@@ -425,7 +425,7 @@ ul.products .price {margin-bottom:29px;}
 #collate .termtext a{color: #666666; font-size:0.9em; font-weight:normal;}
 #ttvalue {display: none;}
 /* Pagination */
-.pnumber-search, .pnumber{vertical-align:text-middle; float: left; padding-left: 5px; width: 660px;}
+.pnumber-search, .pnumber{vertical-align:text-middle; float: left; padding-left: 5px; width: 440px;}
 .pnumber-search a, .pnumber a {text-decoration: none;}
 .pnumber a:hover {text-decoration: underline;}
 .pagnNumbers span, .pagnNumbers a, .pnumber span {padding: 0 3px;font-weight:bold;}
