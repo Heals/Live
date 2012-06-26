@@ -28,60 +28,8 @@ availDoubleCheck = availDoubleCheck + '<venda_invtref>,';
 </venda_block label=801>
 	</div>
 <div class="discount50">
-<a href="<venda_dispview invt=<venda_invtref>>" class="availlink">
-<!-- Product Specific -->
-<venda_block label=535,invtref=richmondchair,invtref=richmondside,invtref=415755,invtref=415834,invtref=415588,invtref=modacoffee,invtref=moda2door,invtref=moda3door,invtref=911984,invtref=972722,operator=or>
-<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/70percent.png">
-</venda_block label=535>
-<venda_block label=536,invtref=998003,invtref=979571,operator=or>
-<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/20percent.png">
-</venda_block label=536>
-<venda_block label=538,invtref=hotelblue,invtref=hotelbrown,invtref=hotelcream,invtref=822981,operator=or>
-<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/30percent.png">
-</venda_block label=538>
-<venda_block label=539,invtref=548355>
-<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/50percent.png">
-</venda_block label=539>
-<venda_block label=540,invtref=multyrange>
-<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/15percent.png">
-</venda_block label=540>
-<!-- Generic -->
-<script type="text/javascript">
-var x = "<venda_invtwas>";
-var f = "<venda_invtsell>";
-var g = 1-(f/x);
-percent= (g * 100).toFixed(2);
-function percentageEars() {
-if ((percent > 4.00) && (percent < 10.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/5percent.png\">");}
-if ((percent > 9.00) && (percent < 15.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/10percent.png\">");}
-if ((percent > 14.00) && (percent < 20.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/15percent.png\">");}
-if ((percent > 19.00) && (percent < 25.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/20percent.png\">");}
-if ((percent > 24.00) && (percent < 30.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/25percent.png\">");}
-if ((percent > 29.00) && (percent < 35.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/30percent.png\">");}
-if ((percent > 34.00) && (percent < 40.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/35percent.png\">");}
-if ((percent > 39.00) && (percent < 45.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/40percent.png\">");}
-if ((percent > 44.00) && (percent < 50.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/45percent.png\">");}
-if ((percent > 49.00) && (percent < 60.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/50percent.png\">");}
-if ((percent > 59.00) && (percent < 70.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/60percent.png\">");}
-if ((percent > 69.00) && (percent < 75.00)) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/70percent.png\">");}
-if (percent > 74.00) {
-	document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/70percentplus.png\">");}
-}
-percentageEars();
-</script>
-</a>
+<div class="discountWasPrice" style="display:none;"><venda_invtwas></div>
+<div class="discountSellPrice" style="display:none;"><venda_invtsell></div>
 </div>
 	<venda_block label=4,med-medium=notnull>
 	<a href="<venda_dispview invt=<venda_invtref>>" class="availlink"><img width="220px" height="220px" border="0" style="padding: 2px 2px;" alt="<venda_invtname>" name="small" src="<venda_media rec=invt,type=movie-swf-pict,key=medium,jump=no,img=no>" <venda_block label=06284,med-medium1=notnull>onmouseover="swapImage(this, '<venda_media rec=invt,type=movie-swf-pict,key=medium1,jump=no,img=no>', event)" onmouseout="swapImage(this, '<venda_media rec=invt,type=movie-swf-pict,key=medium,jump=no,img=no>', event)" </venda_block label=06284>/></a>
