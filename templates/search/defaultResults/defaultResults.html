@@ -370,46 +370,5 @@ availLinks[i].href = (availLinks[i].href+'?htxt='+availsrch);
 jQuery(Venda.Search.start);
 </script>
 <script>
-jQuery('#content-search').bind('search-loading-end', function(evt) {
-$('.discount50').each(function(containerIndex) {
-    //console.log($(this));
-	var x = ''
-    $(this).find('.discountWasPrice').each(function(itemx) {
-	 //console.log($(this).text());
-	 x = $(this).text();})
-	var f = ''
-	$(this).find('.discountSellPrice').each(function(itemf) {
-	 //console.log($(this).text());
-	 f = $(this).text();})
-	var g = 1-(f/x);
-	percent = (g * 100).toFixed(2);	
-	if ((percent > 4.00) && (percent < 10.00)) {
-	$(this).html("<a href=\"<venda_dispview invt=<venda_invtref>>\" class=\"availlink\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/5percent.png\"></a>");}
-if ((percent > 9.00) && (percent < 15.00)) {
-	$(this).html("<a href=\"<venda_dispview invt=<venda_invtref>>\" class=\"availlink\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/10percent.png\"></a>");}
-if ((percent > 14.00) && (percent < 20.00)) {
-	$(this).html("<a href=\"<venda_dispview invt=<venda_invtref>>\" class=\"availlink\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/15percent.png\"></a>");}
-if ((percent > 19.00) && (percent < 25.00)) {
-	$(this).html("<a href=\"<venda_dispview invt=<venda_invtref>>\" class=\"availlink\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/20percent.png\"></a>");}
-if ((percent > 24.00) && (percent < 30.00)) {
-	$(this).html("<a href=\"<venda_dispview invt=<venda_invtref>>\" class=\"availlink\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/25percent.png\"></a>");}
-if ((percent > 29.00) && (percent < 35.00)) {
-	$(this).html("<a href=\"<venda_dispview invt=<venda_invtref>>\" class=\"availlink\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/30percent.png\"></a>");}
-if ((percent > 34.00) && (percent < 40.00)) {
-	$(this).html("<a href=\"<venda_dispview invt=<venda_invtref>>\" class=\"availlink\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/35percent.png\"></a>");}
-if ((percent > 39.00) && (percent < 45.00)) {
-	$(this).html("<a href=\"<venda_dispview invt=<venda_invtref>>\" class=\"availlink\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/40percent.png\"></a>");}
-if ((percent > 44.00) && (percent < 50.00)) {
-	$(this).html("<a href=\"<venda_dispview invt=<venda_invtref>>\" class=\"availlink\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/45percent.png\"></a>");}
-if ((percent > 49.00) && (percent < 60.00)) {
-	$(this).html("<a href=\"<venda_dispview invt=<venda_invtref>>\" class=\"availlink\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/50percent.png\"></a>");}
-if ((percent > 59.00) && (percent < 70.00)) {
-	$(this).html("<a href=\"<venda_dispview invt=<venda_invtref>>\" class=\"availlink\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/60percent.png\"></a>");}
-if ((percent > 69.00) && (percent < 75.00)) {
-	$(this).html("<a href=\"<venda_dispview invt=<venda_invtref>>\" class=\"availlink\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/70percent.png\"></a>");}
-if (percent > 74.00) {
-	$(this).html("<a href=\"<venda_dispview invt=<venda_invtref>>\" class=\"availlink\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/70percentplus.png\"></a>");}
-	//console.log(percent);  
-});
-});
+$("#content-search").bind("search-loading-end",function(a){$(".discount50").each(function(c){var b="";$(this).find(".discountWasPrice").each(function(f){b=$(this).text()});var e="";$(this).find(".discountSellPrice").each(function(f){e=$(this).text()});var h="";$(this).find(".discountSkuInvt").each(function(f){h=$(this).text()});var g="";$(this).find(".discountLive").each(function(f){g=$(this).text()});var d=1-(e/b);percent=(d*100).toFixed(2);if((percent>4)&&(percent<10)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/5percent.png"></a>')}if((percent>9)&&(percent<15)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/10percent.png"></a>')}if((percent>14)&&(percent<20)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/15percent.png"></a>')}if((percent>19)&&(percent<25)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/20percent.png"></a>')}if((percent>24)&&(percent<30)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/25percent.png"></a>')}if((percent>29)&&(percent<35)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/30percent.png"></a>')}if((percent>34)&&(percent<40)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/35percent.png"></a>')}if((percent>39)&&(percent<45)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/40percent.png"></a>')}if((percent>44)&&(percent<50)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/45percent.png"></a>')}if((percent>49)&&(percent<60)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/50percent.png"></a>')}if((percent>59)&&(percent<70)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/60percent.png"></a>')}if((percent>69)&&(percent<75)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/70percent.png"></a>')}if(percent>74){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/70percentplus.png"></a>')}})});
 </script>
