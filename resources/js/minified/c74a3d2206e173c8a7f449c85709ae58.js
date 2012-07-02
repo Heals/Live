@@ -1,0 +1,8 @@
+if(typeof Venda=="undefined"||!Venda){var Venda=function(){};}
+Venda.namespace=function(){var a=arguments,o=null,i,j,d;for(i=0;i<a.length;i=i+1){d=a[i].split(".");o=Venda;for(j=(d[0]=="Venda")?1:0;j<d.length;j=j+1){o[d[j]]=o[d[j]]||{};o=o[d[j]];}}
+return o;};Venda.namespace("Widget");Venda.namespace("Platform");Venda.Platform=function(){};Venda.Platform.getUrlParam=function(url,urlParam){var re=new RegExp('[?&]'+urlParam+'=([^&]+)');var match=url.match(re);return match?unescape(match[1]):false;};Venda.Platform.escapeHTML=function(strToEscape){var container=document.createElement('span');container.appendChild(document.createTextNode(strToEscape));return container.innerHTML;};Venda.Platform.SelectBoxToggle=function(selectBoxName,selectBoxValue,arrayToHide,arrayToShow,rSpeed){var spd=(typeof rSpeed==="undefined")?0:rSpeed;var hideFields=function(){if(this.value==selectBoxValue){for(var i=0;i<arrayToHide.length;i++){jQuery("#"+arrayToHide[i]+" > *").each(function(){if(this.type=='text'){this.value='';}
+else if(this.type=='select-one'){jQuery("#"+this.id+" > *").each(function(){if(this.value==''){this.selected=true;}});}});jQuery("#"+arrayToHide[i]).hide(spd);}
+for(var i=0;i<arrayToShow.length;i++){jQuery("#"+arrayToShow[i]).show(spd);}}
+else{for(var i=0;i<arrayToShow.length;i++){jQuery("#"+arrayToShow[i]+" > *").each(function(){if(this.type=='text'){this.value='';}
+else if(this.type=='select-one'){jQuery("#"+this.id+" > *").each(function(){if(this.value==''){this.selected=true;}});}});jQuery("#"+arrayToShow[i]).hide(spd);}
+for(var i=0;i<arrayToHide.length;i++){jQuery("#"+arrayToHide[i]).show(spd);}}};jQuery("#"+selectBoxName).each(hideFields).bind('change',hideFields);};
