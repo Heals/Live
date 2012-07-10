@@ -46,7 +46,11 @@
 	<tr class="standarditem">
 		<venda_block label=111,invtatt1=notnull>
 		<!-- if product has attributes -->
-		<venda_block label=4,med-medium=notnull><td class="thumb" style="-width:25%;"><a href="<venda_dispview invt=<venda_invtparef>>"><venda_media rec=invt,type=movie-swf-pict,key=medium,border=0,width=120,height=120></a></td></venda_block label=4>
+		<venda_block label=4,med-medium=notnull><td class="thumb" style="-width:25%;"><a href="<venda_dispview invt=<venda_invtparef>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtparef>/<venda_oiivref>_s.jpg" border="0" width="120px" height="120px" onError="noImage<venda_oiivref>(this);" /></a>
+<script>function noImage<venda_oiivref>(changeImage){
+changeImage.src = '<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtparef>/<venda_invtparef>_m.jpg';}
+</script>
+        </td></venda_block label=4>
 		<venda_block label=5,med-medium=null><td class="thumb noimage"><a href="<venda_dispview invt=<venda_invtparef>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_<venda_setting type=ebiz,name=setshoppingbasketimagekey>.gif" alt="<venda_text id=site.link.alt.no_image.invt>"></a></td></venda_block label=5>
 		<td class="name"><a href="<venda_dispview invt=<venda_invtparef>>"><venda_invtname></a> <venda_text id=site.basket.product_name.attribute_start><venda_invtatt1><venda_block label=7,invtatt2=notnull><venda_text id=site.basket.product_name.attribute_separator><venda_invtatt2></venda_block label=7><venda_block label=8,invtatt3=notnull><venda_text id=site.basket.product_name.attribute_separator><venda_invtatt3></venda_block label=8><venda_block label=9,invtatt4=notnull><venda_text id=site.basket.product_name.attribute_separator><venda_invtatt4></venda_block label=9><venda_text id=site.basket.product_name.attribute_end><venda_extflds exfldtype=orderitem,group=1,template=oixfields_display,type=includes,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixfields_display,type=includes,ref=<venda_invtref>,displayonly=1><span class="sku"><venda_text id=site.basket.product_sku><venda_invtref></span></td>
 		</venda_block label=111>

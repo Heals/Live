@@ -1,0 +1,149 @@
+<div align="center">
+	<venda_block label=10,med-medium=notnull>
+		<div itemprop="image"><venda_block label=35,pdxtimageware=1>
+				<a href="<venda_dispview invt=<venda_invtref>>?temp=imageware&layout=flashpopup" id="zoom_img" target="_blank" title="<venda_text id=site.product_detail.zoomable_image.title>">
+					<venda_media rec=invt,type=movie-swf-pict,key=multi,dyn=yes,default=medium,width=270px,border=0>
+				</a>
+		</venda_block label=35>
+           <venda_block label=36,pdxtimageware=null,pdxtimageware!=1,operator=or>
+			<!-- show "medium" key by default -->
+				<venda_block label=361,med-large=notnull>
+					<a href="<venda_dispview invt=<venda_invtref>>?temp=enlarged&layout=empty" id="enlarge_link" target="_blank" title="<venda_text id=site.product_detail.view_large_image.title>"><venda_media rec=invt,type=movie-swf-pict,key=multi,dyn=yes,default=medium,width=270px></a>
+				</venda_block label=361>
+				<venda_block label=362,med-large=null>
+					<venda_media rec=invt,type=movie-swf-pict,key=multi,dyn=yes,default=medium,width=270px>
+				</venda_block label=362>
+		</venda_block label=36>
+		</div>
+	</venda_block label=10>
+	<venda_block label=11,med-medium=null>
+		<div><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_m.gif" border="0" title="No Image Available"></div>
+	</venda_block label=11>
+</div>
+
+<script type="text/javascript">
+function swapAltImg(med,large) {
+	var enlargeLink = '<venda_dispview invt=<venda_invtref>>&temp=enlarged&layout=empty&imagenam='+large;
+		if (med != ' ') {
+			document.multi.src =med ;		
+			if(large==undefined){
+			large="<venda_media rec=invt,jump=no,img=no,type=pict,key=medium1,border=0>";
+	        enlargeLink = '<venda_dispview invt=<venda_invtref>>&temp=enlarged&layout=empty';
+			}
+	        //<venda_block label=40,med-medium=notnull,med-large=notnull,pdxtimageware!=1>
+			//document.getElementById("imgpopuplink").href = enlargeLink;
+			//document.getElementById("imgpopuplink_alt").href = enlargeLink;
+		
+	        //</venda_block label=40>
+		} 
+		else { // revert to medium key image(if available)
+			<venda_block label=10,med-medium=notnull>
+				document.medium.src = '<venda_media rec=invt,type=movie-swf-pict,key=medium,img=no>';
+			</venda_block label=10>
+			<venda_block label=11,med-medium=null>
+				document.medium.src = '<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_m.gif';
+			</venda_block label=11>
+		}
+}
+function noImg() {
+	window.event.srcElement.src = '<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_m.gif';
+}
+</script>
+
+
+<div class="enlarge">
+<!-- Imageware popup -->
+<venda_block label=35,pdxtimageware=1>
+	<venda_block label=99,med-medium1=notnull,med-medium2=notnull,operator=or>
+	<a href="<venda_dispview invt=<venda_invtref>>?temp=imageware&layout=flashpopup" id="zoom_link" target="_blank" title="<venda_text id=site.product_detail.zoomable_image.title>">Enlarge image and alternative views</a> 
+	</venda_block label=99>	
+	<venda_block label=919,med-medium1=null,med-medium2=null,operator=and>
+	<a href="<venda_dispview invt=<venda_invtref>>?temp=imageware&layout=flashpopup" id="zoom_link" target="_blank" title="<venda_text id=site.product_detail.zoomable_image.title>">Enlarge image and alternative views</a> 
+	</venda_block label=919>
+</venda_block label=35>
+
+<!-- Imageware popup -->
+
+<!-- Enlarge popup -->
+<venda_block label=42,pdxtimageware!=1>
+	<venda_block label=199,med-large=notnull,operator=and>
+		<div class="enlarge"><a href="<venda_dispview invt=<venda_invtref>>?temp=enlarged&layout=empty" id="enlarge_link" target="_blank" title="<venda_text id=site.product_detail.view_large_image.title>">Enlarge image and alternative views</a></div>
+	</venda_block label=199>
+</venda_block label=42>
+<!-- Enlarge popup -->
+
+</div>
+<br class="clear-all">
+<!-- Alternative Images -->
+<venda_block label=9101,med-medium1=notnull,med-medium2=notnull,med-medium=notnull,operator=or>
+	<div id="alternativeimages">
+			<venda_block label=1101,med-medium1=notnull,med-medium2=notnull,med-medium=notnull,operator=or>
+			</venda_block label=1101>
+			<!-- show Alt images -->
+			<venda_block label=101,med-medium1=notnull>
+			<div class="image">
+				<script type="text/javascript">
+					if (typeof Venda.Widget.Lightbox != "undefined" || Venda.Widget.Lightbox) {
+						var Lightbox2 = new Venda.Widget.Lightbox();
+						Lightbox2.create(['zoom_link1'], ['enlarge_link1'], 
+							{
+								drag: true, modal: true, fixedCenter: true, fade: 0.24,
+							//flash settings
+					flSource:'http://imageware.venda.com/erez4/fsi4/fsi.swf?showcase_server=http://imageware.venda.com/erez4&showcase_dir=<venda_setting type=ebiz,name=ref>/invt/<venda_invtref>/&cfg=showcase_presets/showcase_info&Showcase_LabelTextSize=0&Showcase_ToolTips=0', flId:'lightboxflash', flContainer: 'imageware', flWidth: '480px', flHeight: '500px', flVer: '6.0.0' , flBgColour: '#ffffff', 
+							  	invtname: 	document.getElementById('tag-invtname').innerHTML,
+							  	redirect: 	document.getElementById('tag-redirect').innerHTML,
+							  	loadmessage: 	document.getElementById('tag-lightboxloadmessage').innerHTML
+						});
+					}
+				</script>
+	<venda_block label=191,med-large1=null><div onmouseover="swapAltImg('<venda_media rec=invt,jump=no,img=no,type=pict,key=medium1,border=0>','<venda_block label=903,med-large1=notnull><venda_media rec=invt,jump=no,img=no,type=pict,key=large1,border=0></venda_block label=903><venda_block label=904,med-large1=null><venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_l.gif</venda_block label=904>');"><venda_media rec=invt,type=movie-swf-pict,key=medium1,border=0,width=120,height=120></div></venda_block label=191>
+		<venda_block label=192,med-large1=notnull><a href="<venda_dispview invt=<venda_invtref>>?temp=enlarge1&layout=empty&img=1" id="enlarge_link1" onmouseover="swapAltImg('<venda_media rec=invt,jump=no,img=no,type=pict,key=medium1,border=0>','<venda_block label=905,med-large1=notnull><venda_media rec=invt,jump=no,img=no,type=pict,key=large1,border=0></venda_block label=905><venda_block label=906,med-large1=null><venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_l.gif</venda_block label=906>');"title="<venda_invtname>" target="_blank"><venda_media rec=invt,type=movie-swf-pict,key=medium1,border=0,width=120,height=120></a></venda_block label=192>
+	
+		</div>
+			</venda_block label=101>
+			<venda_block label=102,med-medium2=notnull>
+			<div class="image">
+				<script type="text/javascript">
+					if (typeof Venda.Widget.Lightbox != "undefined" || Venda.Widget.Lightbox) {
+						var Lightbox3 = new Venda.Widget.Lightbox();
+						Lightbox3.create(['zoom_link2'], ['enlarge_link2'], 
+							{
+								drag: true, modal: true, fixedCenter: true, fade: 0.24,
+							//flash settings
+					flSource:'http://imageware.venda.com/erez4/fsi4/fsi.swf?showcase_server=http://imageware.venda.com/erez4&showcase_dir=<venda_setting type=ebiz,name=ref>/invt/<venda_invtref>/&cfg=showcase_presets/showcase_info&Showcase_LabelTextSize=0&Showcase_ToolTips=0', flId:'lightboxflash', flContainer: 'imageware', flWidth: '480px', flHeight: '500px', flVer: '6.0.0' , flBgColour: '#ffffff', 
+							  	invtname: 	document.getElementById('tag-invtname').innerHTML,
+							  	redirect: 	document.getElementById('tag-redirect').innerHTML,
+							  	loadmessage: 	document.getElementById('tag-lightboxloadmessage').innerHTML
+						});
+					}
+				</script>
+		<venda_block label=201,med-large2=null><div onmouseover="swapAltImg('<venda_media rec=invt,jump=no,img=no,type=pict,key=medium2,border=0>','<venda_block label=909,med-large2=notnull><venda_media rec=invt,jump=no,img=no,type=pict,key=large2,border=0></venda_block label=909><venda_block label=910,med-large2=null><venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_l.gif</venda_block label=910>');"><venda_media rec=invt,type=movie-swf-pict,key=medium2,border=0,width=120,height=120><venda_block label=307438,invtref=moretta1,invtref=catalina,invtref=cloudvelvet,invtref=vitamodular,invtref=cloud,invtref=piccolo,invtref=modello,operator=or><div class="cornerorientation">
+<font style="font-size:9px;text-transform:uppercase;text-decoration:none;">Left Hand Corner</font></div></venda_block label=307438></div></venda_block label=201>
+		<venda_block label=202,med-large2=notnull><a href="<venda_dispview invt=<venda_invtref>>?temp=enlarge2&layout=empty&img=2" id="enlarge_link2" onmouseover="swapAltImg('<venda_media rec=invt,jump=no,img=no,type=pict,key=medium2,border=0>','<venda_block label=911,med-large2=notnull><venda_media rec=invt,jump=no,img=no,type=pict,key=large2,border=0></venda_block label=911><venda_block label=912,med-large2=null><venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_l.gif</venda_block label=912>');"title="<venda_invtname>"><venda_media rec=invt,type=movie-swf-pict,key=medium2,border=0,width=120,height=120></a></venda_block label=202>
+			</div>
+			</venda_block label=102>
+			<venda_block label=103,med-medium=notnull>
+			<div class="image">
+				<script type="text/javascript">
+					if (typeof Venda.Widget.Lightbox != "undefined" || Venda.Widget.Lightbox) {
+						var Lightbox4 = new Venda.Widget.Lightbox();
+						Lightbox4.create(['zoom_link3'], ['enlarge_link3'], 
+							{
+								drag: true, modal: true, fixedCenter: true, fade: 0.24,
+							//flash settings
+					flSource:'http://imageware.venda.com/erez4/fsi4/fsi.swf?showcase_server=http://imageware.venda.com/erez4&showcase_dir=<venda_setting type=ebiz,name=ref>/invt/<venda_invtref>/&cfg=showcase_presets/showcase_info&Showcase_LabelTextSize=0&Showcase_ToolTips=0', flId:'lightboxflash', flContainer: 'imageware', flWidth: '480px', flHeight: '500px', flVer: '6.0.0' , flBgColour: '#ffffff', 
+							  	invtname: 	document.getElementById('tag-invtname').innerHTML,
+							  	redirect: 	document.getElementById('tag-redirect').innerHTML,
+							  	loadmessage: 	document.getElementById('tag-lightboxloadmessage').innerHTML
+						});
+					}
+				</script>
+		<venda_block label=211,med-medium=null><div onmouseover="swapAltImg('<venda_media rec=invt,jump=no,img=no,type=pict,key=medium,border=0>','<venda_block label=915,med-medium=notnull><venda_media rec=invt,jump=no,img=no,type=pict,key=medium,border=0></venda_block label=915>');"><venda_media rec=invt,type=movie-swf-pict,key=medium,border=0,width=120,height=120></div></venda_block label=211>
+		<venda_block label=212,med-medium=notnull><a onmouseover="swapAltImg('<venda_media rec=invt,jump=no,img=no,type=pict,key=medium,border=0>','<venda_block label=917,med-medium=notnull><venda_media rec=invt,jump=no,img=no,type=pict,key=medium,border=0></venda_block label=917>');"title="<venda_invtname>"><venda_media rec=invt,type=movie-swf-pict,key=medium,border=0,width=120,height=120></a><venda_block label=307437,invtref=moretta1,invtref=catalina,invtref=cloudvelvet,invtref=vitamodular,invtref=cloud,invtref=piccolo,invtref=modello,operator=or><div class="cornerorientation">
+<font style="font-size:9px;text-transform:uppercase;text-decoration:none;">Right Hand Corner</font></div></venda_block label=307437></venda_block label=212></div>
+			</venda_block label=103>
+	</div>
+</venda_block label=9101>
+<br class="clear-all">
+<!--End Alternative Images -->
+

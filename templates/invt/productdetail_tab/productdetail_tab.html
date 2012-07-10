@@ -1,10 +1,59 @@
-<div class="tabdetail">
-	<div class="tablink">
-		<div class="tabheader"><a href="javascript:toggle1('reviewDiv1','tab_description');"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/<venda_cattree index=1,value=catref>/tab_description.gif" alt="Description" border="0" id="reviewDiv1img"></a></div>		
-		<div class="tabheader" style="margin: 0 5px;"><a href="javascript:toggle1('reviewDiv2','tab_details');"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/<venda_cattree index=1,value=catref>/reviewDiv2.gif" alt="Details" border="0" id="reviewDiv2img"></a></div>
-		<div class="tabheader"><a href="javascript:toggle1('reviewDiv3','tab_review');"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/<venda_cattree index=1,value=catref>/reviewDiv3.gif" alt="Reviews" border="0" id="reviewDiv3img"></a></div>
-	</div>
-	<div id="reviewDiv1" style="display:block;">
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+$(".scroll").click(function(event){		
+event.preventDefault();
+$('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);});});
+function showproductdetailtabs(a){$(a).show();}
+function hideproductdetailtabs(a){$(a).hide();}
+</script>
+<style>
+.description-text, .details-text, .reviews-text {background-color:#fff;border:1px solid #b4b4b4;}
+.tabdetail {margin:9px 0 0 0;}
+</style>
+<venda_block mode=value,<venda_invtivtype>!=furniturerange>
+<div class="tabdetail" style="margin:20px 0;">
+</venda_block>
+<venda_block mode=value,<venda_invtivtype>=furniturerange>
+<div class="tabdetail" style="margin:10px 0;">
+</venda_block>
+<div class="tablink">
+
+<div class="tabheader">
+<div class="tab-clicked-description" style="display:block;">
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/tab-clicked-description.gif" alt="Description" border="0">
+</div>
+<div class="tab-description" style="display:none;">
+<a onclick="showproductdetailtabs('.tab-clicked-description,.description-text,.tab-details,.tab-reviews');hideproductdetailtabs('.tab-description,.tab-clicked-details,.tab-clicked-reviews,.details-text,.reviews-text')">
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/tab-description.gif" alt="Description" border="0">
+</a>
+</div>
+</div>
+
+<div class="tabheader" style="margin:0 5px;">
+<div class="tab-clicked-details" style="display:none;">
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/tab-clicked-details.gif" alt="Details" border="0">
+</div>
+<div class="tab-details" style="display:block;">
+<a onclick="showproductdetailtabs('.tab-clicked-details,.details-text,.tab-description,.tab-reviews');hideproductdetailtabs('.tab-details,.tab-clicked-description,.tab-clicked-reviews,.description-text,.reviews-text')">
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/tab-details.gif" alt="Details" border="0">
+</a>
+</div>
+</div>
+
+<div class="tabheader">
+<div class="tab-clicked-reviews" style="display:none;">
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/tab-clicked-reviews.gif" alt="Reviews" border="0">
+</div>
+<div class="tab-reviews" style="display:block;">
+<a onclick="showproductdetailtabs('.tab-clicked-reviews,.reviews-text,.tab-description,.tab-details');hideproductdetailtabs('.tab-reviews,.tab-clicked-description,.tab-clicked-details,.description-text,.details-text')">
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/tab-reviews.gif" alt="Reviews" border="0">
+</a>
+</div>
+</div>
+
+</div>
+
+	<div class="description-text" style="display:block;">
 			<div class="maintab tabcontent">					
 			<venda_block label=12,invtdesc1=notnull><p class="invtdesc1"><span itemprop="description"><venda_invtdesc1></span></p></venda_block label=12>
 			<div class="dimension left">
@@ -13,8 +62,10 @@
 			<div class="taboneleft left">
 			<venda_block label=799,pdxtexclusive=1><p class="exclusive bold">Exclusive to Heal's</p></venda_block label=799>
 			<p class="sku bold">Product ID : <span itemprop="productID"><venda_invtref></span></p>
+<venda_block label=pir,mode=value,<venda_invtivtype>=range,<venda_invtivtype>=gardenfurniturerange,operator=or>
+<p><a href="#rangeProducts" class="scroll" style="color:#333333;">View all <strong><venda_invtatrtot></strong> products in <strong><venda_invtname></strong> range.</a></p>
+</venda_block label=pir>
 			</div>
-			<div class="clear-all"></div>
 			<!-- don't use it below -->
 			<venda_tpcomment>
 			<venda_block label=13,invtdesc2=notnull><p class="invtdesc2"><venda_invtdesc2></p></venda_block label=13>
@@ -22,7 +73,6 @@
 			<venda_block label=15,invtdesc4=notnull><p class="invtdesc4"><venda_invtdesc4></p></venda_block label=15>
 			</venda_tpcomment>
 			<!-- don't use it below -->
-			</div>
 			<div class="anyquestion left">
 <venda_block label=801,invtref=louisconsole,invtref=798988,invtref=317903,invtref=lunachair,invtref=436368,invtref=string,invtref=stringpocket,operator=or>
 <div style="text-align:center;float:right;margin:-5px 0 5px 5px;padding:4px 5px;width:150px;border:1px solid #ebe9ea;background:url(<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/gradient.gif);background-repeat-x: repeat;background-repeat-y: norepeat;background-position-x: 0px;background-position-y: 0px;">
@@ -34,10 +84,13 @@
 <venda_block label=10006,invtref=string,invtref=stringpocket,operator=or><a href="<venda_dispview pcat=stringsystem>"></venda_block label=10006>
 <b>HEAL'S</b> DESIGN <b>CLASSIC</b></a></div></venda_block label=801>
 			<venda_extflds template=pdxtlist,group=3,ref=<venda_invtref>,ivtype=<venda_invtivtype>>
-                  </div>
-<venda_block label=800,pdxtstoreavail=1><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/online_only_product.gif"></venda_block label=800>
-	</div>
-	<div id="reviewDiv2" style="display: none;">
+</div>
+<div class="clear-all"></div>
+</div>
+<venda_block label=800,pdxtstoreavail=1><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/online_only_product.gif"></venda_block label=800>
+</div>
+
+	<div class="details-text" style="display: none;">
 		<div class="tabcontent">					
 			<table width="100%" class="tbl-details">
 			<!-- Set group Pdxts to displayed controlled by client in VCP -->
@@ -47,7 +100,8 @@
 			</table>
 		</div>
 	</div>	
-	<div id="reviewDiv3" style="display: none;">
+
+	<div class="reviews-text" style="display: none;">
 			<div class="tabcontent">					
 			<venda_block label=54,mode=value,<venda_setting type=ebiz,name=powerreviews>=1,<venda_setting type=ebiz,name=powerreviewsproddetail>=1>
 				<!-- power review engine function call to read reviews -->
@@ -59,10 +113,17 @@
 </div>
 <venda_tpxt mode=set,name=mailsubject,value=<venda_invtname>>
 <!-- End Tab -->
-	<br class="clear-all">
+	<div class="clear-all"></div>
 		
 <div class="share"><div class="bookmark-link"><script type="text/javascript">addthis_pub = 'Heals';</script>
-					<a href="http://www.addthis.com/bookmark.php" style="text-decoration:none;" onClick="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseOut="addthis_close()" onclick="return addthis_sendto();">Share/Bookmark<img class="email-pic" src="http://www.heals.co.uk/content/ebiz/heals/resources/images/img_bookmark.gif" /></a>
-					<script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script></div><div class="email-link"><a href="<venda_dispview invt=<venda_invtref>>&temp=tellafriend" id="tellafriend_link">Email<img class="email-pic" src="http://www.heals.co.uk/content/ebiz/heals/resources/images/img_email.gif" /></a></div><div class="print-link"><a href="javascript:window.print();" title="Print version">Print<img class="email-pic" src="http://www.heals.co.uk/content/ebiz/heals/resources/images/img_print.gif" /></a></div><div class="twitter-link"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="Heals_Furniture">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
-<div class="facebook-link"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="<venda_dispview invt=<venda_invtref>>" send="true" layout="button_count" width="150" show_faces="false" font="arial" height="25" scrolling="0"></fb:like>
+					<a href="http://www.addthis.com/bookmark.php" onClick="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseOut="addthis_close()" onclick="return addthis_sendto();">Share/Bookmark<img class="email-pic" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/site-wide/img_bookmark.gif" /></a>
+					<script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script></div><div class="email-link"><a href="<venda_dispview invt=<venda_invtref>>&temp=tellafriend" id="tellafriend_link">Email<img class="email-pic" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/site-wide/img_email.gif" /></a></div><div class="print-link"><a href="javascript:window.print();" title="Print version">Print<img class="email-pic" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/site-wide/img_print.gif" /></a></div><div class="twitter-link"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="Heals_Furniture">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+<div class="facebook-link"><div id="fb-root"></div><div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><fb:like href="<venda_dispview invt=<venda_invtref>>" send="true" layout="button_count" width="150" show_faces="false" font="arial" height="25" scrolling="0"></fb:like>
 </div></div>
