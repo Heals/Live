@@ -30,7 +30,7 @@ Venda.Widget.MinicartDetail.Create = function () {
 	
 	Venda.Widget.MinicartDetail.settings = {
 		
-		enable : true,
+		enable : false,
 		
 		topPad : 140,
 		leftPad : 174,

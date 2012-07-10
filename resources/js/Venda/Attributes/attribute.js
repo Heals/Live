@@ -611,6 +611,7 @@ Venda.Attributes.SelectedValues = function (att1,att2,att3,att4, uID){
 
 	var productselected = jQuery('#attributes-productselected').text();
 	var productstatus	= jQuery('#attributes-productstatus').text();
+	var pdxtAttrName = jQuery('#pdxtAttrName').text();
 	
 	
 	for(var j = 0; j < Venda.Attributes.productArr.length; j++) {  
@@ -624,6 +625,9 @@ Venda.Attributes.SelectedValues = function (att1,att2,att3,att4, uID){
 					productselected += Venda.Attributes.productArr[j].attSet[attNumber].selected + ', ';
 				}
 				else{
+					if (Venda.Attributes.productArr[j].attSet[attNumber].name == 'Colour') {
+						Venda.Attributes.productArr[j].attSet[attNumber].name = pdxtAttrName;
+					}
 					productstatus += Venda.Attributes.productArr[j].attSet[attNumber].name + ', ';
 				}
 			}
@@ -905,8 +909,6 @@ Venda.Attributes.updateAttributes = function (uID, what, param) {
 
 };
 
-
-
 /* PRODUCT IMAGE SWAP */
 
 Venda.Attributes.ImageSwapReset = function() {
@@ -971,7 +973,16 @@ Venda.Attributes.StoreImageSwaps = function(obj) {
 			CloudHTML += "<a href=\"\" onclick=\"return false;\"" + " class=\"cloud-zoom-gallery\" id=\"CloudThumb_id_" + i + "\" rel=\"useZoom: 'zoom1', smallImage: '" + obj.images.imgM[i] +"'\"><img src=\"" + obj.images.imgS[i] + "\"></a>";
 }
 		}
+		
+		var pdxtVideoUrl = jQuery('#pdxtVideoUrl').text();
+		var pdxtVideoPlay = jQuery('#pdxtVideo-play').text();
+		var pdxtVideo = "<a href=\"" + pdxtVideoUrl + "\" target=\"_blank\" style=\"position:relative;\"><img src=\"" + pdxtVideoPlay + "\" id=\"pdxtVideoPlay-button\" /><img src=\"" + obj.images.imgM[0] + "\" width=\"120px\" height=\"120px\" /></a>";
+		if (pdxtVideoUrl == ""){
 		jQuery("#productdetail-altview").html(CloudHTML);
+		}
+		else {
+		jQuery("#productdetail-altview").html(pdxtVideo + CloudHTML);
+		}
 		jQuery("#productdetail-viewlarge").html("<a href='javascript: Venda.Attributes.ViewLargeImg(" + Venda.Attributes.imgParam + ", " + Venda.Attributes.imgNo + ");'>View Large Image</a>");
 		Venda.Attributes.initImgObj = obj;
 		
@@ -996,14 +1007,12 @@ Venda.Attributes.ImageSwap = function(att) {
 	for(var i = 0; i < Venda.Attributes.howManyZoomImgs; i++) {
 		if(obj.images.imgS[i] != "") {
 			jQuery("#productdetail-altview #CloudThumb_id_" + i + " img").attr({"src": obj.images.imgS[i]});
-			jQuery("#productdetail-altview #CloudThumb_id_" + i).attr({"href": obj.images.imgL[i] });
-			jQuery("#productdetail-altview #CloudThumb_id_" + i).attr({"rel": "useZoom: 'zoom1', smallImage: '" + obj.images.imgM[i] +"'"});
+			jQuery("#productdetail-altview #CloudThumb_id_" + i).attr({"href": "" });
 		}
 	}
 	
 	if((obj.images.imgM[0] != "") || (obj.images.imgL[0] !="")) {
-		jQuery("#productdetail-image a").attr({"href": obj.images.imgL[0]});
+		jQuery("#productdetail-image a").attr({"href": ""});
 		jQuery("#productdetail-image a img").attr({"src": obj.images.imgM[0]});
-		jQuery('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
 	}
 };
