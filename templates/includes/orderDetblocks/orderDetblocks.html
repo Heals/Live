@@ -1,20 +1,4 @@
 <venda_detblock1>
-<script type="text/javascript">
-        var _nucjs = (("https:" == document.location.protocol) ? "https://rainbowx" : "http://rainbow");
-        document.write(unescape("%3Cscript src='" + _nucjs + ".mythings.com/n.js' type='text/javascript'%3E%3C/script%3E"));
- </script>
-<script type="text/javascript">
-<venda_block label=121,mode=value,<venda_islive>=1>
-if (typeof(NUCONOMY)!="undefined"){
-        NUCONOMY.ProjectToken = "1083-100-uk";
-}
-</venda_block label=121>
-<venda_block label=122,mode=value,<venda_islive>=null>
-if (typeof(NUCONOMY)!="undefined"){
-NUCONOMY.ProjectToken = "xxxxxxxxx";
-}
-</venda_block label=122>
- </script>
 <div class="padding_T5 step1">
 <div class="content_box_catlist"><div class="contentb_box"><div class="contentl_box"><div class="contentr_box"><div class="contentbl_box"><div class="contentbr_box"><div class="contenttl_box"><div class="contenttr_box">
 <!-- Contact Detail -->
@@ -98,13 +82,11 @@ userPostCodeStem[nAddr] = new UserPostRec(allUserInfo.userpostcode, allUserInfo.
 <tbody>
 <venda_block label=7631201,workflow=shopcart,curstep=confirm>
 <script type="text/javascript">
-<venda_tpcomment>
 // hasFuritem - Yes = there is any furniture items, No = there is NO furniture items
 // hasNormitem - Yes = there is any normal items, No = there is NO normal items
 // validIndex - Keep the index of postcode list array. -1 = Not found means user's postcode stem is invalid.
 // validGTrate - Keep the delivery rate for order >= 1000
 // validLTrate - Keep the delivery rate for order < 1000
-</venda_tpcomment>
 hasFuritem[nAddr] = 'no';
 hasNormitem[nAddr] = 'no';
 validIndex[nAddr] = -1;
@@ -180,13 +162,6 @@ document.getElementById('postcodelist').src = '<venda_entmediaadd>/ebiz/<venda_b
 var availProdsDet = "";
 </script>
 <!-- Avail -->
-
-<!-- Affiliate Window tracking -->
-<venda_page page=affiliatewindowtrackingjs>
-<script type="text/javascript">
-var awinProdVal = "";
-</script>
-<!-- Affiliate Window tracking -->
 
 <venda_detblock2>
 <!-- Avail -->
@@ -322,24 +297,7 @@ $("#invt<venda_oiivref>").load("/bin/venda?ex=co_wizr-productgrid&bsref=<venda_b
 </venda_block label=222>
 
 <venda_block label=223,mode=value,<venda_tpxt mode=get,name=track>=orderreceipt>
- 
-<script type="text/javascript">
-if (typeof(NUCONOMY)!="undefined"){
-for(var i=0;i < <venda_oiqty>;i++){
-//alert("xxx");
-<!-- Tracking order product part Begin-->
-// Tracking a product order ? we assume we get this for every product in the cart/transaction
-NUCONOMY.ContentType = 295; // Product Page
-NUCONOMY.ContentTitle = "<venda_invtref>" // the title of the page or product;
-NUCONOMY.Tags = ""; // any metadata on the product or shop
-NUCONOMY.ActivityParameter1 = ""; // the name of the main category of the product
-NUCONOMY.ActivityParameter2 = "";
-NUCONOMY.ActivityParameter3 = "";
-NUCONOMY.Logger.LogActivity("<venda_userinfo><venda_sesid></venda_userinfo>", "<venda_invtbrand>", "<venda_invtref>", 1062, "<venda_oisub>");
-<!-- Tracking order product part End-->
-}
-}
-</script>
+
 </venda_block label=223>
 
 <!-- Affiliate Window tracking -->

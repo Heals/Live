@@ -1375,7 +1375,7 @@ a.cloud-zoom {padding:70px 0 0 92px;}
 .prodMulti .productDetailGradientBox {padding:3px 3px 8px 5px;}
 .buyControls,.buyControlsMulti {text-align:left;}
 .buyControls .button,.buyControlsMulti .button {margin-left:0;}
-.sku {display:block;margin:5px 0 10px;}
+p.sku {display:block;margin:5px 0 10px;}
 .invtmedia {text-align:center;z-index:101;}
 .invtatr label {display:inline-block;margin-bottom:10px;width:80px;}
 .oneProduct .priceField {text-align:center;margin:0;}
