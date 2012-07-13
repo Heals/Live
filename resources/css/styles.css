@@ -1293,7 +1293,9 @@ color:#333 !important;}
 background: url(../images/bull-point.gif) no-repeat 0px 3px;padding-left: 10px;font-size: 11px;}
 #productdetail-shipping {width:463px;height:auto;position:relative;border-top:1px solid #b4b4b4;margin:0;padding:0;clear: both;}
 .prod-shipping, .prod-availability{width:290px;height:auto;float:left;margin:10px 0 0 0;}
-.shipping-badge, .availability-badge{width:290px;height:auto;margin:0 0 10px 0;}
+.shipping-badge, .availability-badge{width:290px;height:auto;}
+.shipping-badge {margin:0 0 10px 0;}
+.availability-badge {margin:0;}
 .shipping-logic, .availability-logic {width:290px;height:auto;margin: 0 0 10px 0\9;}
 .avail-wallpaper {width:463px;height:auto;margin:0;padding:0;clear:both;}
 .european-shipping, .wallpaper-calculator {width:172px;height:auto;float:right;margin:10px 0 0 0;}
@@ -1326,6 +1328,7 @@ background: url(../images/bull-point.gif) no-repeat 0px 3px;padding-left: 10px;f
 div.box.productDetailGradientBox.buyControls {margin:10px 0 0 0;}
 .intshipping_wallpaper {clear:both;width:463px;height:auto;}
 .intwall_contents {margin:10px 0;}
+.offersAvailability {width:102px;background-color:#ffffff;border-left:1px solid #B4B4B4;border-right:1px solid #B4B4B4;border-bottom:1px solid #B4B4B4;padding:5px;text-align:center;}
 
 /* Non-Furniture Attribute css */
 
