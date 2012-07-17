@@ -250,7 +250,7 @@ $(document).ready(function() {
 <input type="hidden" name="param1" value="bulk">
 <input type="hidden" name="param2" value="invt">	
 		
-<div class="oneProduct" id="oneProduct_<venda_invtuuid>" style="clear:both;margin-top:-37px;">		
+<div class="oneProduct" id="oneProduct_<venda_invtuuid>" style="clear:both;margin-top:-37px;margin-top/*\**/:-10px\9;">		
 <div class="oneProductContent hide">
 
 <div id="attributeInputs" class="attributeInputs" style="display:none;">
@@ -330,13 +330,13 @@ var one_day=1000*60*60*24*7;
 if ((onhand > 0) && (etadate <= today)) {
 document.write("In Stock")}
 if ((onhand > 0) && (etadate > today)) {
-document.write("Available in 1/2 weeks")}
+document.write("Available in 1 - 2 weeks")}
 if ((onhand <= 0) && (etadate > today)){
 if (Math.ceil((etadate.getTime()-today.getTime())/(one_day)) > 15){
 document.write("Awaiting Stock - Over 15 weeks")}
 else {
-document.write("Awaiting Stock - "+Math.ceil((etadate.getTime()-today.getTime())/(one_day))+
-"/"+(Math.ceil((etadate.getTime()-today.getTime())/(one_day))+2)+" weeks")}
+document.write("Awaiting Stock "+Math.ceil((etadate.getTime()-today.getTime())/(one_day))+
+" - "+(Math.ceil((etadate.getTime()-today.getTime())/(one_day))+2)+" weeks")}
 }
 if ((onhand <= 0) && (etadate < today)) {
 document.write("Out of stock")
@@ -356,14 +356,14 @@ if ((onhand > 0) && (etadate > today)) {
 if (Math.ceil((etadate.getTime()-today.getTime())/(one_day)) > 15){
 document.write("Awaiting Stock - Over 15 weeks")}
 else {
-document.write("Awaiting Stock - "+Math.ceil((etadate.getTime()-today.getTime())/(one_day))+
-"/"+(Math.ceil((etadate.getTime()-today.getTime())/(one_day))+2)+" weeks")}}
+document.write("Awaiting Stock "+Math.ceil((etadate.getTime()-today.getTime())/(one_day))+
+" - "+(Math.ceil((etadate.getTime()-today.getTime())/(one_day))+2)+" weeks")}}
 if ((onhand <= 0) && (etadate > today)){
 if (Math.ceil((etadate.getTime()-today.getTime())/(one_day)) > 15){
 document.write("Special Order - Over 15 weeks")}
 else {
-document.write("Special Order - "+Math.ceil((etadate.getTime()-today.getTime())/(one_day))+
-"/"+(Math.ceil((etadate.getTime()-today.getTime())/(one_day))+2)+" weeks")}
+document.write("Special Order "+Math.ceil((etadate.getTime()-today.getTime())/(one_day))+
+" - "+(Math.ceil((etadate.getTime()-today.getTime())/(one_day))+2)+" weeks")}
 }
 if ((onhand <= 0) && (etadate < today)) {
 document.write("Out of stock")
