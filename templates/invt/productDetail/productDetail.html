@@ -110,6 +110,7 @@ var searchKeyWord = cj.get(CJ_COOKIE_NAME);
 <!-- end: Jotis Alternate Images -->
 </div>
 <div id="detailzone">
+<div class="product-detailATabs">
 <venda_block invtivtype!=furniturerange>
 <venda_block label=32,mode=value,<venda_addedmsg msg=<venda_text id=site.addedmsg>>=notnull><div id="tag-addedmsgref" style="text-align:center;border:1px solid #B4B4B4;padding:5px;background-color:#F1F1F1;"><venda_addedmsg msg=You have added addedqty x addedname to your basket></div></venda_block label=32>
 </venda_block>
@@ -436,6 +437,16 @@ $(function(){$("#addproductform").submit(function(){if(jQuery(".qty").val()>0){r
 </venda_block label=219>
 </div>
 <div class="clear-all"></div>
+</div>
+<script>
+$(document).ready(function() {
+	var imageArea = $('.zoomableImages').height();
+	var productDetailAtabs = $('.product-detailATabs').height();
+	var productTabs = (imageArea - productDetailAtabs) - 118;
+	$('.description-text,.details-text,.reviews-text').css('min-height', productTabs);
+	console.log(imageArea+" "+productDetailAtabs+" "+productTabs)
+});
+</script>
 <!-- Start Including TAB -->
 <venda_inctemplate name=productdetail_tab,type=invt>
 <!-- End Including TAB -->

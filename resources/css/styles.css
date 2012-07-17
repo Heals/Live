@@ -743,7 +743,7 @@ font-size:11px;
 #productdetail .tabheader {float:left; width: 117px;position:relative;bottom:-1px;cursor:pointer;}	
 /*122255*/
 #productdetail .tablink{height: 28px;}
-#productdetail .tabcontent{padding:5px 5px 0px 5px; width: 453px;-width: 450px; min-height:160px; height:auto;}
+#productdetail .tabcontent{padding:5px; width: 453px;-width: 450px; height:auto;}
 * html #productdetail .tabcontent {height: 160px; padding-bottom: 5px;}
 #productdetail .tabcontent li{list-style:none;}
 #productdetail table.tbl-details td.col1{width:40%}

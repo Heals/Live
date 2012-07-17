@@ -98,6 +98,7 @@ var searchKeyWord = cj.get(CJ_COOKIE_NAME);
 <!-- end: Jotis Alternate Images -->
 </div>
 <div id="detailzone">
+<div class="product-detailATabs">
 <venda_block label=32,mode=value,<venda_addedmsg msg=<venda_text id=site.addedmsg>>=notnull><div id="tag-addedmsgref" style="text-align:center;border:1px solid #B4B4B4;padding:5px;background-color:#F1F1F1;"><venda_addedmsg msg=You have added addedqty x addedname to your basket></div></venda_block label=32>
 <venda_block errors=notnull><h2 class="error"><venda_errors></h2></venda_block>
 <!--Avail--><venda_block label=332,mode=value,<venda_addedmsg msg=<venda_text id=site.addedmsg>>=notnull><script type="text/javascript">vendaAvailSaveSearch()</script></venda_block label=332>
@@ -213,6 +214,16 @@ European: 2-5 Working Days &pound;8.95
 </div>
 <div class="clear-all"></div>
 <!-- Start Including TAB -->
+</div>
+<script>
+$(document).ready(function() {
+	var imageArea = $('.zoomableImages').height();
+	var productDetailAtabs = $('.product-detailATabs').height();
+	var productTabs = (imageArea - productDetailAtabs) - 110;
+	$('.description-text,.details-text,.reviews-text').css('min-height', productTabs);
+	console.log(imageArea+" "+productDetailAtabs+" "+productTabs)
+});
+</script>
 <venda_inctemplate name=productdetail_tab,type=invt>
 <!-- End Including TAB -->
 </div>
@@ -239,7 +250,7 @@ European: 2-5 Working Days &pound;8.95
 <input type="hidden" name="param1" value="bulk">
 <input type="hidden" name="param2" value="invt">	
 		
-<div class="oneProduct" id="oneProduct_<venda_invtuuid>" style="clear:both;">		
+<div class="oneProduct" id="oneProduct_<venda_invtuuid>" style="clear:both;margin-top:-37px;">		
 <div class="oneProductContent hide">
 
 <div id="attributeInputs" class="attributeInputs" style="display:none;">

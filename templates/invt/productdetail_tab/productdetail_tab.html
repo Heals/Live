@@ -10,10 +10,10 @@ function hideproductdetailtabs(a){$(a).hide();}
 .description-text, .details-text, .reviews-text {background-color:#fff;border:1px solid #b4b4b4;}
 .tabdetail {margin:9px 0 0 0;}
 </style>
-<venda_block mode=value,<venda_invtivtype>!=furniturerange>
+<venda_block mode=value,<venda_invtivtype>=normal,<venda_invtivtype>=furniture,<venda_invtivtype>=gardenfurniture,operator=or>
 <div class="tabdetail" style="margin:20px 0 10px 0;">
 </venda_block>
-<venda_block mode=value,<venda_invtivtype>=furniturerange>
+<venda_block mode=value,<venda_invtivtype>=furniturerange,<venda_invtivtype>=range,<venda_invtivtype>=gardenfurniturerange,operator=or>
 <div class="tabdetail" style="margin:10px 0;">
 </venda_block>
 <div class="tablink">
@@ -53,7 +53,7 @@ function hideproductdetailtabs(a){$(a).hide();}
 
 </div>
 
-	<div class="description-text" style="display:block;">
+	<div class="description-text" style="display:block;position:relative;">
 			<div class="maintab tabcontent">					
 			<venda_block label=12,invtdesc1=notnull><p class="invtdesc1"><span itemprop="description"><venda_invtdesc1></span></p></venda_block label=12>
 			<div class="dimension left">
@@ -74,8 +74,10 @@ function hideproductdetailtabs(a){$(a).hide();}
 			</venda_tpcomment>
 			<!-- don't use it below -->
 			<div class="anyquestion left">
+<venda_extflds template=pdxtlist,group=3,ref=<venda_invtref>,ivtype=<venda_invtivtype>></div>
+<br />
 <venda_block label=801,invtref=louisconsole,invtref=798988,invtref=317903,invtref=lunachair,invtref=436368,invtref=string,invtref=stringpocket,operator=or>
-<div style="text-align:center;float:right;margin:-5px 0 5px 5px;padding:4px 5px;width:150px;border:1px solid #ebe9ea;background:url(<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/gradient.gif);background-repeat-x: repeat;background-repeat-y: norepeat;background-position-x: 0px;background-position-y: 0px;">
+<div style="text-align:center;float:left;margin:10px 0 5px 5px;padding:4px 5px;width:150px;border:1px solid #ebe9ea;background:url(<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/gradient.gif);background-repeat-x: repeat;background-repeat-y: norepeat;background-position-x: 0px;background-position-y: 0px;">
 <venda_block label=10001,invtref=louisconsole><a href="<venda_dispview pcat=louisconsoletable>"></venda_block label=10001>
 <venda_block label=10002,invtref=798988><a href="<venda_dispview pcat=lignerosetharrysofa>"></venda_block label=10002>
 <venda_block label=10003,invtref=317903><a href="<venda_dispview pcat=1227anglepoise>"></venda_block label=10003>
@@ -83,11 +85,10 @@ function hideproductdetailtabs(a){$(a).hide();}
 <venda_block label=10005,invtref=436368><a href="<venda_dispview pcat=weberonetouch>"></venda_block label=10005>
 <venda_block label=10006,invtref=string,invtref=stringpocket,operator=or><a href="<venda_dispview pcat=stringsystem>"></venda_block label=10006>
 <b>HEAL'S</b> DESIGN <b>CLASSIC</b></a></div></venda_block label=801>
-			<venda_extflds template=pdxtlist,group=3,ref=<venda_invtref>,ivtype=<venda_invtivtype>>
-</div>
+
 <div class="clear-all"></div>
 </div>
-<venda_block label=800,pdxtstoreavail=1><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/online_only_product.gif"></venda_block label=800>
+<venda_block label=800,pdxtstoreavail=1><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/online_only_product.gif" style="position:absolute;bottom:0;"></venda_block label=800>
 </div>
 
 	<div class="details-text" style="display: none;">
