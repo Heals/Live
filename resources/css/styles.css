@@ -751,7 +751,7 @@ font-size:11px;
 #productdetail .buy, #productdetail .buy_over{float:right; margin-left:10px;} /* margin-top: 8px;  */
 
 #productdetail ul#addionalinfo li{font-size:0.9em; margin:2px 5px;padding:0 5px 0 18px;}
-.relatesection {position:relative;height: 317px; width: 940px; *height: 317px; float: right; overflow:hidden; background-color:transparent;margin:-24px 0 0 0;}
+.relatesection {position:relative;height: 317px; width: 940px; *height: 317px; float: right; overflow:hidden; background-color:transparent;margin:-24px 0 0 0;margin-top/*\**/:0\9;top/*\**/:0px\9;position/*\**/:relative\9;}
 
 
 /*************************************************/
