@@ -740,7 +740,7 @@ font-size:11px;
 #productdetail .reviews{display:none;} /*disable 500-600 ,500-700 */
 
 /*122255*/
-#productdetail .tabheader {float:left; width: 117px;position:relative;bottom:-1px;cursor:pointer;}	
+#productdetail .tabheader {float:left; width: 117px;position:relative;bottom:-1px;cursor:pointer;z-index:10;}	
 /*122255*/
 #productdetail .tablink{height: 28px;}
 #productdetail .tabcontent{padding:5px; width: 453px;-width: 450px; height:auto;}
