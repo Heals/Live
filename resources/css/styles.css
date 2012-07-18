@@ -1192,7 +1192,7 @@ padding:5px 0;
 .pdxtcolournormgreen {background:#228B22;}
 
 .ui-widget-content {border:1px solid #ccc; background:#f1f1f1; color:#656565; padding:0;}
-.ui-dialog {position:absolute; width:auto; overflow:hidden; text-align:left;}
+.ui-dialog {position:absolute; width:auto; overflow:hidden; text-align:left;box-shadow: 1px 1px 25px #333;}
 .ui-dialog .ui-dialog-titlebar { position: relative;}
 .ui-dialog .ui-dialog-titlebar-close {cursor:pointer;position:absolute; right:5px;padding:1px; margin: 4px 0 0 5px;}
 .ui-dialog .ui-dialog-titlebar-close span {display:block; margin: -1px 0 0 3px;}
