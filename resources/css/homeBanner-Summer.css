@@ -12,7 +12,7 @@
 .HealsHomeSlideContainer .HealsHomeSlideThumbs .HealsHomeSlideThumb{display:inline-block; margin:0 3px;width:48px; height:5px;border:1px solid #ccc;}
 #HealsHomeSlide_1{background:#fff;}
 #HealsHomeSlide_1 ul li .HealsHomeSlideCaption{display:block; position:relative; padding:0; width:940px; height:400px; color:#666; text-decoration:none;}
-#HealsHomeSlide_1 ul li .HealsHomeSlideCaption span{display:block; position:absolute; padding:0;width:263px;color:#666666;}
+#HealsHomeSlide_1 ul li .HealsHomeSlideCaption span{display:block; position:absolute; padding:0;width:263px;color:#fff;}
 #HealsHomeSlide_1 ul .HealsHomeSlideSlide_1 .HealsHomeSlideCaption span{left:7px; top:319px;}
 #HealsHomeSlide_1 ul .HealsHomeSlideSlide_2 .HealsHomeSlideCaption span{left:7px; top:319px;}
 #HealsHomeSlide_1 ul .HealsHomeSlideSlide_3 .HealsHomeSlideCaption span{left:7px; top:319px;}
