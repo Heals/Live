@@ -216,12 +216,17 @@ European: 2-5 Working Days &pound;8.95
 <!-- Start Including TAB -->
 </div>
 <script>
+$(document).ready(function(){
+    var imageArea = $('.zoomableImages').height();
+	var productDetailAtabs = $('.product-detailATabs').height();
+	var productTabs = (imageArea - productDetailAtabs) - 110;
+	$('.description-text,.details-text,.reviews-text').css('min-height', productTabs);
+});
 $(window).load(function() {
 	var imageArea = $('.zoomableImages').height();
 	var productDetailAtabs = $('.product-detailATabs').height();
 	var productTabs = (imageArea - productDetailAtabs) - 110;
 	$('.description-text,.details-text,.reviews-text').css('min-height', productTabs);
-	console.log(imageArea+" "+productDetailAtabs+" "+productTabs)
 });
 </script>
 <venda_inctemplate name=productdetail_tab,type=invt>
@@ -383,9 +388,9 @@ today=new Date();
 var etadate=new Date(<venda_atretayr>, <venda_atretamn>-1, <venda_atretady>);
 var one_day=1000*60*60*24*7;
 if ((onhand <= 0) && (etadate < today)) {
-document.write("<a href='<venda_dispview invt=<venda_invtref>>?htxt=<venda_htxt mode=make,attrref=<venda_atrsku>>&temp=emailinstock' title='<venda_text id=site.link.title.email_when_in_stock.invt>' data-invtref='<venda_atrsku>' id='emwbis_link_button' class='emwbisLink button' data-track='open-emwbis' style='display:block;'><img src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/emwbis-range.gif' alt='Email Me When Back In Stock' style='display:block;' /></a>")}
+document.write("<a href=\"<venda_dispview invt=<venda_invtref>>?htxt=<venda_htxt mode=make,attrref=<venda_atrsku>>&temp=emailinstock\" title=\"<venda_text id=site.link.title.email_when_in_stock.invt>\" data-invtref=\"<venda_atrsku>\" id=\"emwbis_link_button\" class=\"emwbisLink button\" data-track=\"open-emwbis\" style=\"display:block;\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/emwbis-range.gif\" alt=\"Email Me When Back In Stock\" style=\"display:block;\" /></a>")}
 else {
-document.write("<input type='hidden' name='itemlist' class='itemlist' value='<venda_atrsku>' id='itemlist_<venda_atrsku>'><div class='buttonMultiAdd box productDetailGradientBox buyControls' style='padding:0;margin:0;text-decoration:none;'><img src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/quantity.gif' alt='Quantity'><input class='qty textInput' name='qtylist' id='qtylist_<venda_atrsku>' type='text' value='0' size='3' maxlength='3'><input id='addProduct_<venda_atrsku>' type='image' class='button buttonAlt buttonArrow add submitM addproduct' value='<venda_text id=site.button.add_to_basket>' onClick=\"document.form.ex.value='co_disp-shopc';\" data-track='addtobasket' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/add-to-basket.gif' /></div>")}
+document.write("<input type=\"hidden\" name=\"itemlist\" class=\"itemlist\" value=\"<venda_atrsku>\" id=\"itemlist_<venda_atrsku>\"><div class=\"buttonMultiAdd box productDetailGradientBox buyControls\" style=\"padding:0;margin:0;text-decoration:none;\"><img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/quantity.gif\" alt=\"Quantity\"><input class=\"qty textInput\" name=\"qtylist\" id=\"qtylist_<venda_atrsku>\" type=\"text\" value=\"0\" size=\"3\" maxlength=\"3\"><input id=\"addProduct_<venda_atrsku>\" type=\"image\" class=\"button buttonAlt buttonArrow add submitM addproduct\" value=\"<venda_text id=site.button.add_to_basket>\" onClick=\"document.form.ex.value='co_disp-shopc';\" data-track=\"addtobasket\" src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/add-to-basket.gif\" /></div>")}
 </script>
 </div>
 </div>
@@ -405,21 +410,24 @@ absoluteImage.style.bottom="0";}
 </venda_detblock_attribute>
     
 </div><!-- End of productdetail -->
+<venda_block invtacctot&gt;0>
+<script>
+$(".multiList").css('padding','10px 0 35px 0');
+</script>
 <div id="productdetail_bottom">
-	<div class="relatesection">
-	<div id="availprodrecs" style="width:955px;font-size:1.1em;">
+<div class="relatesection">
+<div id="availprodrecs" style="width:955px;font-size:1.1em;">
 <div id="avail-emarkid" style="display:none;">8f6b6820-5425-11de-92c7-12313b0039c1</div>
 <div class="recommendedProducts" style="display:block" id="h2availpd">
 <img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/tab-clicked-recommended-products.gif" alt="Recommended Products" style="bottom:-1px;position:relative;">
 </div>
-		<script type="text/javascript"> var accessorySKU = ""; </script>
-		<venda_invtacc template=avaccessories>
-		<venda_inctemplate name=availpd,type=includes>
-		<!-- accessories -->
-		
-</div>	
-	</div><br class="clear-all">
+<script type="text/javascript"> var accessorySKU = ""; </script>
+<venda_invtacc template=avaccessories>
+<venda_inctemplate name=availpd,type=includes>
+</div></div>
+<br class="clear-all">
 </div>
+</venda_block>
 <!-- tag values used to append crumbtrail with product name. -->
 <div id="tags_invtName" class="hide"><venda_invtname></div>
 

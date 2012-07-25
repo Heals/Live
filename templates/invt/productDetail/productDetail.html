@@ -439,12 +439,17 @@ $(function(){$("#addproductform").submit(function(){if(jQuery(".qty").val()>0){r
 <div class="clear-all"></div>
 </div>
 <script>
+$(document).ready(function(){
+    var imageArea = $('.zoomableImages').height();
+	var productDetailAtabs = $('.product-detailATabs').height();
+	var productTabs = (imageArea - productDetailAtabs) - 118;
+	$('.description-text,.details-text,.reviews-text').css('min-height', productTabs);
+});
 $(window).load(function() {
 	var imageArea = $('.zoomableImages').height();
 	var productDetailAtabs = $('.product-detailATabs').height();
 	var productTabs = (imageArea - productDetailAtabs) - 118;
 	$('.description-text,.details-text,.reviews-text').css('min-height', productTabs);
-	console.log(imageArea+" "+productDetailAtabs+" "+productTabs)
 });
 </script>
 <!-- Start Including TAB -->
@@ -454,6 +459,10 @@ $(window).load(function() {
 <div class="clear-all"></div>
 </div>
 
+<venda_block invtacctot&gt;0>
+<script>
+$(".multiList").css('padding','10px 0 35px 0');
+</script>
 <div id="productdetail_bottom">
 <div class="relatesection">
 <div id="availprodrecs" style="width:955px;font-size:1.1em;">
@@ -464,10 +473,11 @@ $(window).load(function() {
 <script type="text/javascript"> var accessorySKU = ""; </script>
 <venda_invtacc template=avaccessories>
 <venda_inctemplate name=availpd,type=includes>
-		
-</div>	
-	</div><br class="clear-all">
+</div></div>
+<br class="clear-all">
 </div>
+</venda_block>
+
 <!-- tag values used to append crumbtrail with product name. -->
 <div id="tags_invtName" class="hide"><venda_invtname></div>
 

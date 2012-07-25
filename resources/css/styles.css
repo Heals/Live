@@ -751,7 +751,7 @@ font-size:11px;
 #productdetail .buy, #productdetail .buy_over{float:right; margin-left:10px;} /* margin-top: 8px;  */
 
 #productdetail ul#addionalinfo li{font-size:0.9em; margin:2px 5px;padding:0 5px 0 18px;}
-.relatesection {position:relative;height: 317px; width: 940px; *height: 317px; float: right; overflow:hidden; background-color:transparent;margin:-24px 0 0 0;margin-top/*\**/:0\9;top/*\**/:0px\9;position/*\**/:relative\9;}
+.relatesection {position:relative;height: auto; width: 940px; *height: 317px; float: right; overflow:hidden; background-color:transparent;margin:-24px 0 0 0;margin-top/*\**/:0\9;top/*\**/:0px\9;position/*\**/:relative\9;}
 
 
 /*************************************************/
@@ -1391,7 +1391,7 @@ p.sku {display:block;margin:5px 0 10px;}
 .altImageListPopup {padding-right:10px;width:70px;border-right:1px solid #ccc;height:91%;position:absolute;}
 .jqZoomPup,.jqZoomWindow {border:1px solid #ccc;}
 .zoomlarge {margin:0 auto;}
-.multiList {padding:10px 0 35px 0;}
+.multiList {padding:10px 0 10px 0;}
 .prodMulti {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #ccc;overflow:hidden;}
 .prodMulti .attributeImage,.prodMulti .image {float:left;padding-right:10px;}
 #productdetail-altview a img {width:120px; height:120px; border:1px solid #d9d9d9;}
