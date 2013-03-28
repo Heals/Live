@@ -398,7 +398,6 @@ html > body .featcats ul li { /* IE7 - Moz */
 
 .catslider{clear: both; background-color: #FFFFFF;}
 
-
 /*****************/
 /* CATEGORY LEFT NAVIGATION */
 /*****************/
@@ -418,6 +417,122 @@ html > body .featcats ul li { /* IE7 - Moz */
 .hdr-event{background:#666666 none repeat scroll 0;color:#fff;font-weight:bold;padding-left:5px;margin-top:5px;}
 .whatnew{border:1px solid #ddd;border-top:none;border-bottom:none;font-weight:bold;padding-left:5px;}
 
+/*****************/
+/* CATEGORY LANDING PAGES */
+/*****************/
+
+.category_links {width:100%; position: relative; margin-bottom:10px;}
+.toptab {margin: 0;z-index: 30; color:#666666;}
+.toptab:hover, .toptab a:hover {cursor:pointer; color:#000000;}
+.toptab a {display:block; padding:4px 0;text-align:center; text-decoration:none; font-size:14px;}
+.browse_option1, .browse_option2, .browse_option3, .browse_option4, .browse_option5, .browse_option6 {float:left; width: 100%; padding-top:10px; overflow: hidden; text-align:center; margin-bottom: 10px;}
+.browse_by {float:right; background:#ffffff; width:270px; margin:30px 20px 30px 650px; position: absolute; height: 230px; text-align:center;}
+.feature_left {width:48%; display:block; border-top: 1px solid #777777;; float:left; padding:10px 0;}
+.feature_left_text {width:55%; float:left}
+.feature_left_text h2, .feature_left_text p, .feature_right_text h2, .feature_right_text p {margin-left:5px}
+.feature_left img {float:right; height: 280px;
+margin-bottom: 10px;}
+.feature_right {width:48%; display:block; border-top: 1px solid #777777;; float:right; padding:10px 0;}
+.feature_right_text {width:55%; float:left}
+.feature_right img {float:right}
+.feature_cta {padding:6px 10px; background:#666666; margin-top:15px; color:#fff; font-size:14px; text-align:center;clear: both;}
+.feature_cta:hover {background:#333333;}
+.feature_ads {clear:both;}
+.feature_ads img {margin:10px;}
+.brand_header {background:#999999; padding:15px 0; text-align:center;}
+.brand_header h1 {color:#ffffff; padding:0; font-weight:normal;
+margin: 0; padding-right: 20px;padding-top: 5px; border-right: 2px solid #fff; margin-right: 20px; height: 25px;}
+.brand_header p {color:#ffffff; padding:0; font-weight:normal;
+margin: 0; text-align: left;}
+.brand_range {width:100%; float:left; margin-top:20px;}
+.paraText {padding: 10px; border-top:1px solid #777777; margin: 15px 0;}
+.paraText h1 {color: #666666; font-weight:normal; margin:15px 0;}
+.paraText p {color: #666666; line-height:18px;}
+
+#boxmenu_brands a:hover {
+	display:block
+	}
+
+/* Brands START */
+#subcat_col_one_brands {width:140px;height:auto;float:left; margin-left:10px;margin-bottom:10px; margin-top:0px;}
+#subcat_col_two_brands {width:142px;height:auto;float:right; margin-left:0px;margin-bottom:10px; margin-top:0px; margin-right:0px;}
+#subcat_col_three_brands, #subcat_col_four_brands {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px; margin-right:5px;}
+#subcat_col_five_brands {width:134px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:10px;}
+#subcat_col_six_brands {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:10px;}
+.aqua_di_parma {background:url(../images/topnav/topnav-brands.png) 0 0; height:25px; width:120px;}
+.aldo_londi {background:url(../images/topnav/topnav-brands.png) -120px 0; height:25px; width:120px;}
+.alessi {background:url(../images/topnav/topnav-brands.png) -240px 0; height:25px; width:120px;}
+.alex_mccarthy {background:url(../images/topnav/topnav-brands.png) -360px 0; height:25px; width:120px;}
+.ali_tomlin {background:url(../images/topnav/topnav-brands.png) -480px 0; height:25px; width:120px;}
+.anglepoise {background:url(../images/topnav/topnav-brands.png) -600px 0; height:25px; width:120px;}
+.blu_dot {background:url(../images/topnav/topnav-brands.png) -720px 0; height:25px; width:120px;}
+.bodum {background:url(../images/topnav/topnav-brands.png) -0 -25px; height:25px; width:120px;}
+.brink_and_campman {background:url(../images/topnav/topnav-brands.png) -120px -25px; height:25px; width:120px;}
+.brinkhaus {background:url(../images/topnav/topnav-brands.png) -240px -25px; height:25px; width:120px;}
+.calligaris {background:url(../images/topnav/topnav-brands.png) -360px -25px; height:25px; width:120px;}
+.cantori {background:url(../images/topnav/topnav-brands.png) -480px -25px; height:25px; width:120px;}
+.chisel_and_mouse {background:url(../images/topnav/topnav-brands.png) -600px -25px; height:25px; width:120px;}
+.cire_trudon {background:url(../images/topnav/topnav-brands.png) -720px -25px; height:25px; width:120px;}
+.clarissa_hulse {background:url(../images/topnav/topnav-brands.png) 0 -50px; height:25px; width:120px;}
+.cole_and_son {background:url(../images/topnav/topnav-brands.png) -120px -50px; height:25px; width:120px;}
+.contempo {background:url(../images/topnav/topnav-brands.png) -240px -50px; height:25px; width:120px;}
+.cowshed {background:url(../images/topnav/topnav-brands.png) -360px -50px; height:25px; width:120px;}
+.culti {background:url(../images/topnav/topnav-brands.png) -480px -50px; height:25px; width:120px;}
+.cumbria_crystal {background:url(../images/topnav/topnav-brands.png) -600px -50px; height:25px; width:120px;}
+.deknudt_decora {background:url(../images/topnav/topnav-brands.png) -720px -50px; height:25px; width:120px;}
+.de_la_espada {background:url(../images/topnav/topnav-brands.png) 0 -75px; height:25px; width:120px;}
+.designers_guild {background:url(../images/topnav/topnav-brands.png) -120px -75px; height:25px; width:120px;}
+.dualit {background:url(../images/topnav/topnav-brands.png) -240px -75px; height:25px; width:120px;}
+.egizia {background:url(../images/topnav/topnav-brands.png) -360px -75px; height:25px; width:120px;}
+.eleanor_lakelin {background:url(../images/topnav/topnav-brands.png) -480px -75px; height:25px; width:120px;}
+.ercol {background:url(../images/topnav/topnav-brands.png) -600px -75px; height:25px; width:120px;}
+.esteban {background:url(../images/topnav/topnav-brands.png) -720px -75px; height:25px; width:120px;}
+.fissler {background:url(../images/topnav/topnav-brands.png) 0 -100px; height:25px; width:120px;}
+.gaggia {background:url(../images/topnav/topnav-brands.png) -120px -100px; height:25px; width:120px;}
+.georg_jensen {background:url(../images/topnav/topnav-brands.png) -240px -100px; height:25px; width:120px;}
+.gervasoni {background:url(../images/topnav/topnav-brands.png) -360px -100px; height:25px; width:120px;}
+.getty_images {background:url(../images/topnav/topnav-brands.png) -480px -100px; height:25px; width:120px;}
+.harlequin {background:url(../images/topnav/topnav-brands.png) -600px -100px; height:25px; width:120px;}
+.heals {background:url(../images/topnav/topnav-brands.png) -720px -100px; height:25px; width:120px;}
+.jonathan_adler {background:url(../images/topnav/topnav-brands.png) 0 -125px; height:25px; width:120px;}
+.kartell {background:url(../images/topnav/topnav-brands.png) -120px -125px; height:25px; width:120px;}
+.kathryn_roberts {background:url(../images/topnav/topnav-brands.png) -240px -125px; height:25px; width:120px;}
+.kay_and_stemmer {background:url(../images/topnav/topnav-brands.png) -360px -125px; height:25px; width:120px;}
+.kitchenaid {background:url(../images/topnav/topnav-brands.png) -480px -125px; height:25px; width:120px;}
+.le_creuset {background:url(../images/topnav/topnav-brands.png) -600px -125px; height:25px; width:120px;}
+.ligne_roset {background:url(../images/topnav/topnav-brands.png) -720px -125px; height:25px; width:120px;}
+.linari {background:url(../images/topnav/topnav-brands.png) 0 -150px; height:25px; width:120px;}
+.lobjet {background:url(../images/topnav/topnav-brands.png) -120px -150px; height:25px; width:120px;}
+.lsa {background:url(../images/topnav/topnav-brands.png) -240px -150px; height:25px; width:120px;}
+.marimekko {background:url(../images/topnav/topnav-brands.png) -360px -150px; height:25px; width:120px;}
+.mauviel {background:url(../images/topnav/topnav-brands.png) -480px -150px; height:25px; width:120px;}
+.michael_aram {background:url(../images/topnav/topnav-brands.png) -600px -150px; height:25px; width:120px;}
+.missoni {background:url(../images/topnav/topnav-brands.png) -720px -150px; height:25px; width:120px;}
+.missoni_home {background:url(../images/topnav/topnav-brands.png) 0 -175px; height:25px; width:120px;}
+.molton_brown {background:url(../images/topnav/topnav-brands.png) -120px -175px; height:25px; width:120px;}
+.neals_yard {background:url(../images/topnav/topnav-brands.png) -240px -175px; height:25px; width:120px;}
+.neom {background:url(../images/topnav/topnav-brands.png) -360px -175px; height:25px; width:120px;}
+.nespresso {background:url(../images/topnav/topnav-brands.png) -480px -175px; height:25px; width:120px;}
+.newgate {background:url(../images/topnav/topnav-brands.png) -600px -175px; height:25px; width:120px;}
+.normann_copenhagen {background:url(../images/topnav/topnav-brands.png) -720px -175px; height:25px; width:120px;}
+.original_btc {background:url(../images/topnav/topnav-brands.png) 0 -200px; height:25px; width:120px;}
+.orla_kiely {background:url(../images/topnav/topnav-brands.png) -120px -200px; height:25px; width:120px;}
+.ortigia {background:url(../images/topnav/topnav-brands.png) -240px -200px; height:25px; width:120px;}
+.osborne_and_little {background:url(../images/topnav/topnav-brands.png) -360px -200px; height:25px; width:120px;}
+.penhaligons {background:url(../images/topnav/topnav-brands.png) -480px -200px; height:25px; width:120px;}
+.poole_pottery {background:url(../images/topnav/topnav-brands.png) -600px -200px; height:25px; width:120px;}
+.sanderson {background:url(../images/topnav/topnav-brands.png) -720px -200px; height:25px; width:120px;}
+.scanpan {background:url(../images/topnav/topnav-brands.png) 0 -225px; height:25px; width:120px;}
+.scp {background:url(../images/topnav/topnav-brands.png) -120px -225px; height:25px; width:120px;}
+.seletti {background:url(../images/topnav/topnav-brands.png) -240px -225px; height:25px; width:120px;}
+.sophie_woodrow {background:url(../images/topnav/topnav-brands.png) -360px -225px; height:25px; width:120px;}
+.tempur {background:url(../images/topnav/topnav-brands.png) -480px -225px; height:25px; width:120px;}
+.this_works {background:url(../images/topnav/topnav-brands.png) -600px -225px; height:25px; width:120px;}
+.tom_dixon {background:url(../images/topnav/topnav-brands.png) 0 -225px; height:25px; width:120px;}
+.vitra {background:url(../images/topnav/topnav-brands.png) 0 -250px; height:25px; width:120px;}
+.wusthof {background:url(../images/topnav/topnav-brands.png) -120px -250px; height:25px; width:120px;}
+
+/* Brands END */
 
 /*****************/
 /* PRODUCT LISTS */
@@ -445,7 +560,7 @@ ul.products .price {margin-bottom:29px;}
 /* SEARCH RESULTS */
 /******************/
 #terntext_producttype .termtext a {font-size: 0.9em !important;}
-#collate .termtext a{color: #666666; font-size:0.9em; font-weight:normal;}
+#collate .termtext a{color: #666666; font-weight:normal;}
 #ttvalue {display: none;}
 /* Pagination */
 .pnumber-search, .pnumber{vertical-align:text-middle; float: left; padding-left: 5px; width: 440px;}
@@ -1389,7 +1504,7 @@ margin-top: 26px;}
 .product-more ul li {text-align: left;display: block;
 background: url(../images/bull-point.gif) no-repeat 0px 3px;padding-left: 10px;font-size: 11px;}
 #productdetail-shipping {width:463px;height:auto;position:relative;border-top:1px solid #b4b4b4;margin:0;padding:0;clear: both;}
-.prod-shipping, .prod-availability{width: 100%;height:auto;float:left;margin:10px 0 0 0;}
+.prod-shipping, .prod-availability{width: 50%;height:auto;float:left;margin:10px 0;}
 .shipping-badge, .availability-badge{width:290px;height:auto;}
 .express-badge-holder {display:block;height: auto;float: right;}
 .express-badge {margin:0 0 8px 0;width:176px;height:26px;background: url(<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/heals-express.gif);display:block;}
@@ -1473,7 +1588,7 @@ width:55%;
 .attribute-list-availability-container {float:left;width:293px;height:25px;margin:0 0 5px 0;}
 .attribute-list-availability {height: 15px;width: 202px;background-color: white;border-top: 1px solid #B4B4B4;border-right: 1px solid #B4B4B4;border-bottom: 1px solid #B4B4B4;float: right;padding:4px;color:#333;}
 .attribute-list-add {float:left;width:293px;height:auto;}
-.attribute-list-details label {float:left;width:80px;border: 1px solid #B4B4B4;height: 19px;text-align: center;padding-top: 4px;background: url(../images/product-detail/attribute-inputs-gradient.gif) repeat;color: #4A4A4A;}
+.attribute-list-details label {float:left;width:79px;border: 1px solid #B4B4B4;height: 19px;text-align: center;padding-top: 4px;background: url(../images/product-detail/attribute-inputs-gradient.gif) repeat;color: #4A4A4A;}
 .attribute-list-add input.qty.textInput {height: 13px;width: 38px;border-top: 1px solid #B4B4B4;border-right: 1px solid #B4B4B4;border-bottom: 1px solid #B4B4B4;border-left: none;text-align:center;margin:0 25px 0 0;margin/*\**/:0 23px 0 0\9;padding:5px;}
 .attribute-list-price .wasprice {text-decoration:line-through;color:#666;}
 .attribute-list-price .nowprice {color:#C1392D;}
